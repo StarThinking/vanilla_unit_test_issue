@@ -1,0 +1,836 @@
+2020-12-03 07:22:09,339 [Thread-0] INFO  util.log (Log.java:initialized(192)) - Logging initialized @1055ms
+2020-12-03 07:22:09,506 [Thread-0] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.kms is not defined
+2020-12-03 07:22:09,517 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:22:09,520 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context kms
+2020-12-03 07:22:09,520 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:22:09,521 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:22:09,558 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 39448
+2020-12-03 07:22:09,560 [Thread-0] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:22:09,613 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@1480e28e{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:22:09,614 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@4d9ebd49{/static,jar:file:/root/.m2/repository/org/apache/hadoop/hadoop-kms/3.2.1/hadoop-kms-3.2.1.jar!/webapps/static,AVAILABLE}
+2020-12-03 07:22:09,706 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(88)) - -------------------------------------------------------------
+2020-12-03 07:22:09,706 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(89)) -   Java runtime version : 1.8.0_242-8u242-b08-0ubuntu3~18.04-b08
+2020-12-03 07:22:09,706 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(91)) -   User: root
+2020-12-03 07:22:09,711 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(92)) -   KMS Hadoop Version: 3.2.1
+2020-12-03 07:22:09,711 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(93)) - -------------------------------------------------------------
+2020-12-03 07:22:09,727 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'CREATE' ACL '*'
+2020-12-03 07:22:09,731 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'DELETE' ACL '*'
+2020-12-03 07:22:09,732 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'ROLLOVER' ACL '*'
+2020-12-03 07:22:09,732 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'GET' ACL '*'
+2020-12-03 07:22:09,733 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'GET_KEYS' ACL '*'
+2020-12-03 07:22:09,733 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'GET_METADATA' ACL '*'
+2020-12-03 07:22:09,733 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'SET_KEY_MATERIAL' ACL '*'
+2020-12-03 07:22:09,734 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'GENERATE_EEK' ACL '*'
+2020-12-03 07:22:09,734 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:setKMSACLs(107)) - 'DECRYPT_EEK' ACL '*'
+2020-12-03 07:22:09,735 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:parseAclsWithPrefix(185)) - default.key.acl. for KEY_OP 'READ' is set to '*'
+2020-12-03 07:22:09,736 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:parseAclsWithPrefix(185)) - default.key.acl. for KEY_OP 'MANAGEMENT' is set to '*'
+2020-12-03 07:22:09,736 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:parseAclsWithPrefix(185)) - default.key.acl. for KEY_OP 'GENERATE_EEK' is set to '*'
+2020-12-03 07:22:09,737 [Thread-0] INFO  server.KMSACLs (KMSACLs.java:parseAclsWithPrefix(185)) - default.key.acl. for KEY_OP 'DECRYPT_EEK' is set to '*'
+2020-12-03 07:22:09,820 [Thread-0] INFO  server.KMSAudit (KMSAudit.java:initializeAuditLoggers(157)) - Initializing audit logger class org.apache.hadoop.crypto.key.kms.server.SimpleKMSAuditLogger
+2020-12-03 07:22:10,024 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(143)) - Initialized KeyProvider CachingKeyProvider: jceks://file@/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/dc143159-57ea-4908-ab9c-1efa240d0a05/kms.keystore
+2020-12-03 07:22:10,033 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(157)) - Initialized KeyProviderCryptoExtension EagerKeyGeneratorKeyProviderCryptoExtension: KeyProviderCryptoExtension: CachingKeyProvider: jceks://file@/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/dc143159-57ea-4908-ab9c-1efa240d0a05/kms.keystore
+2020-12-03 07:22:10,033 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(162)) - Default key bitlength is 128
+2020-12-03 07:22:10,033 [Thread-0] INFO  server.KMSWebApp (KMSWebApp.java:contextInitialized(163)) - KMS Started
+2020-12-03 07:22:10,066 [Thread-0] INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(347)) - Updating the current master key for generating delegation tokens
+2020-12-03 07:22:10,069 [Thread[Thread-13,5,main]] INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(679)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:22:10,070 [Thread[Thread-13,5,main]] INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(347)) - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:22:10 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.crypto.key.kms.server
+Dec 03, 2020 7:22:10 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.crypto.key.kms.server.KMS
+Dec 03, 2020 7:22:10 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.crypto.key.kms.server.KMSJSONWriter
+  class org.apache.hadoop.crypto.key.kms.server.KMSExceptionsProvider
+  class org.apache.hadoop.crypto.key.kms.server.KMSJSONReader
+Dec 03, 2020 7:22:10 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:22:11,528 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@22bbbffe{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/tmp/kms/webapp/,AVAILABLE}{/kms}
+2020-12-03 07:22:11,537 [Thread-0] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@7a250cb6{HTTP/1.1,[http/1.1]}{localhost:39448}
+2020-12-03 07:22:11,537 [Thread-0] INFO  server.Server (Server.java:doStart(419)) - Started @3256ms
+2020-12-03 07:22:11,636 [Thread-0] INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(118)) - Loaded properties from hadoop-metrics2.properties
+2020-12-03 07:22:11,662 [Thread-0] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(374)) - Scheduled Metric snapshot period at 0 second(s).
+2020-12-03 07:22:11,663 [Thread-0] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - KMS metrics system started
+2020-12-03 07:22:11,676 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@1dc65210] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:22:11,710 [Thread-0] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:<init>(493)) - starting cluster: numNameNodes=1, numDataNodes=1
+Formatting using clusterid: testClusterID
+2020-12-03 07:22:12,173 [Thread-0] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:22:12,198 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: KeyProviderCryptoExtension: org.apache.hadoop.crypto.key.kms.LoadBalancingKMSClientProvider@3845e104
+2020-12-03 07:22:12,199 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:22:12,200 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:22:12,200 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:22:12,200 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:22:12,200 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:22:12,201 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: false
+2020-12-03 07:22:12,264 [Thread-0] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:22:12,275 [Thread-0] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - hadoop.configured.node.mapping is deprecated. Instead, use net.topology.configured.node.mapping
+2020-12-03 07:22:12,275 [Thread-0] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:22:12,276 [Thread-0] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:22:12,279 [Thread-0] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:22:12,280 [Thread-0] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:22:12
+2020-12-03 07:22:12,283 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:22:12,283 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:12,285 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:22:12,285 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:22:12,304 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:22:12,304 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:22:12,312 [Thread-0] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:22:12,312 [Thread-0] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:22:12,313 [Thread-0] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:22:12,313 [Thread-0] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:22:12,314 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 1
+2020-12-03 07:22:12,314 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:22:12,314 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:22:12,314 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:22:12,314 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:22:12,315 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:22:12,315 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:22:12,341 [Thread-0] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
+2020-12-03 07:22:12,342 [Thread-0] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
+2020-12-03 07:22:12,342 [Thread-0] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
+2020-12-03 07:22:12,342 [Thread-0] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
+2020-12-03 07:22:12,356 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:22:12,356 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:12,357 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:22:12,357 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:22:12,363 [Thread-0] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:22:12,363 [Thread-0] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:22:12,363 [Thread-0] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:22:12,364 [Thread-0] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:22:12,368 [Thread-0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:<init>(213)) - Configured throttleLimitHandlerRatio=1.0 for re-encryption
+2020-12-03 07:22:12,375 [Thread-0] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:22:12,378 [Thread-0] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:22:12,383 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:22:12,383 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:12,384 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:22:12,384 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:22:12,394 [Thread-0] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:22:12,395 [Thread-0] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:22:12,395 [Thread-0] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:22:12,398 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:22:12,399 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:22:12,401 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:22:12,401 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:12,402 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:22:12,402 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:22:12,431 [Thread-0] INFO  namenode.FSImage (FSImage.java:format(185)) - Allocated new BlockPoolId: BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:12,503 [Thread-0] INFO  common.Storage (NNStorage.java:format(595)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 has been successfully formatted.
+2020-12-03 07:22:12,570 [Thread-0] INFO  common.Storage (NNStorage.java:format(595)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2 has been successfully formatted.
+2020-12-03 07:22:12,595 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(512)) - Saving image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage.ckpt_0000000000000000000 using no compression
+2020-12-03 07:22:12,595 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(512)) - Saving image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current/fsimage.ckpt_0000000000000000000 using no compression
+2020-12-03 07:22:12,933 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(516)) - Image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage.ckpt_0000000000000000000 of size 399 bytes saved in 0 seconds .
+2020-12-03 07:22:12,933 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(516)) - Image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current/fsimage.ckpt_0000000000000000000 of size 399 bytes saved in 0 seconds .
+2020-12-03 07:22:13,016 [Thread-0] INFO  namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(203)) - Going to retain 1 images with txid >= 0
+2020-12-03 07:22:13,020 [Thread-0] INFO  namenode.NameNode (NameNode.java:createNameNode(1632)) - createNameNode []
+2020-12-03 07:22:13,031 [Thread-0] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - NameNode metrics system started (again)
+2020-12-03 07:22:13,036 [Thread-0] INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://127.0.0.1:0
+2020-12-03 07:22:13,066 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@ff8d289] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:22:13,067 [Thread-0] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for hdfs at: http://localhost:0
+2020-12-03 07:22:13,068 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:22:13,070 [Thread-0] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:22:13,071 [Thread-0] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.namenode is not defined
+2020-12-03 07:22:13,071 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:22:13,074 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:22:13,075 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2020-12-03 07:22:13,075 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:22:13,075 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:22:13,083 [Thread-0] INFO  http.HttpServer2 (NameNodeHttpServer.java:initWebHdfs(102)) - Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2020-12-03 07:22:13,083 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(806)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2020-12-03 07:22:13,086 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 44429
+2020-12-03 07:22:13,086 [Thread-0] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:22:13,089 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@6c0fa323{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:22:13,089 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@ab1b42d{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:22:13,096 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@37d89d31{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/hdfs/,AVAILABLE}{/hdfs}
+2020-12-03 07:22:13,098 [Thread-0] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@5dd51950{HTTP/1.1,[http/1.1]}{localhost:44429}
+2020-12-03 07:22:13,098 [Thread-0] INFO  server.Server (Server.java:doStart(419)) - Started @4817ms
+2020-12-03 07:22:13,108 [Thread-0] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:22:13,111 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: KeyProviderCryptoExtension: org.apache.hadoop.crypto.key.kms.LoadBalancingKMSClientProvider@571a0535
+2020-12-03 07:22:13,111 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:22:13,111 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:22:13,112 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:22:13,112 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:22:13,112 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:22:13,112 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: false
+2020-12-03 07:22:13,113 [Thread-0] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:22:13,113 [Thread-0] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:22:13,113 [Thread-0] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:22:13,114 [Thread-0] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:22:13,114 [Thread-0] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:22:13
+2020-12-03 07:22:13,114 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:22:13,114 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:13,115 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.9 GB = 39.3 MB
+2020-12-03 07:22:13,115 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:22:13,118 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:22:13,118 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:22:13,119 [Thread-0] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:22:13,119 [Thread-0] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:22:13,119 [Thread-0] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:22:13,119 [Thread-0] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:22:13,119 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 1
+2020-12-03 07:22:13,120 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:22:13,120 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:22:13,120 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:22:13,120 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:22:13,120 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:22:13,120 [Thread-0] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:22:13,121 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:22:13,121 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:13,121 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.9 GB = 19.6 MB
+2020-12-03 07:22:13,121 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:22:13,123 [Thread-0] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:22:13,123 [Thread-0] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:22:13,123 [Thread-0] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:22:13,124 [Thread-0] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:22:13,124 [Thread-0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:<init>(213)) - Configured throttleLimitHandlerRatio=1.0 for re-encryption
+2020-12-03 07:22:13,124 [Thread-0] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:22:13,124 [Thread-0] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:22:13,124 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:22:13,125 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:13,125 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.9 GB = 4.9 MB
+2020-12-03 07:22:13,125 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:22:13,126 [Thread-0] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:22:13,127 [Thread-0] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:22:13,127 [Thread-0] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:22:13,127 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:22:13,127 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:22:13,127 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:22:13,127 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:22:13,128 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.9 GB = 603.0 KB
+2020-12-03 07:22:13,128 [Thread-0] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:22:13,187 [Thread-0] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/in_use.lock acquired by nodename 6442@4b46bc0786e9
+2020-12-03 07:22:13,255 [Thread-0] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/in_use.lock acquired by nodename 6442@4b46bc0786e9
+2020-12-03 07:22:13,259 [Thread-0] INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current
+2020-12-03 07:22:13,259 [Thread-0] INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current
+2020-12-03 07:22:13,260 [Thread-0] INFO  namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2020-12-03 07:22:13,260 [Thread-0] INFO  namenode.FSImage (FSImage.java:loadFSImageFile(797)) - Planning to load image: FSImageFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2020-12-03 07:22:13,292 [Thread-0] INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2020-12-03 07:22:13,299 [Thread-0] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2020-12-03 07:22:13,299 [Thread-0] INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000
+2020-12-03 07:22:13,304 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1110)) - Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)
+2020-12-03 07:22:13,305 [Thread-0] INFO  namenode.FSEditLog (FSEditLog.java:startLogSegment(1365)) - Starting log segment at 1
+2020-12-03 07:22:13,383 [Thread-0] INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2020-12-03 07:22:13,383 [Thread-0] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(727)) - Finished loading FSImage in 254 msecs
+2020-12-03 07:22:13,602 [Thread-0] INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(448)) - RPC server is binding to localhost:0
+2020-12-03 07:22:13,634 [Thread-0] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:22:13,649 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:22:13,714 [Listener at localhost/40872] INFO  namenode.NameNode (NameNode.java:initialize(722)) - Clients are to use localhost:40872 to access this namenode/service.
+2020-12-03 07:22:13,717 [Listener at localhost/40872] INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5090)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2020-12-03 07:22:13,735 [Listener at localhost/40872] INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(171)) - Number of blocks under construction: 0
+2020-12-03 07:22:13,747 [Listener at localhost/40872] INFO  blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(4922)) - initializing replication queues
+2020-12-03 07:22:13,747 [Listener at localhost/40872] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(400)) - STATE* Leaving safe mode after 0 secs
+2020-12-03 07:22:13,748 [Listener at localhost/40872] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(406)) - STATE* Network topology has 0 racks and 0 datanodes
+2020-12-03 07:22:13,748 [Listener at localhost/40872] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(408)) - STATE* UnderReplicatedBlocks has 0 blocks
+2020-12-03 07:22:13,752 [Listener at localhost/40872] INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(347)) - Updating the current master key for generating delegation tokens
+2020-12-03 07:22:13,756 [Thread[Thread-48,5,main]] INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(679)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:22:13,756 [Thread[Thread-48,5,main]] INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(347)) - Updating the current master key for generating delegation tokens
+2020-12-03 07:22:13,758 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3585)) - Total number of blocks            = 0
+2020-12-03 07:22:13,758 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3586)) - Number of invalid blocks          = 0
+2020-12-03 07:22:13,759 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3587)) - Number of under-replicated blocks = 0
+2020-12-03 07:22:13,759 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3588)) - Number of  over-replicated blocks = 0
+2020-12-03 07:22:13,759 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3590)) - Number of blocks being written    = 0
+2020-12-03 07:22:13,759 [Reconstruction Queue Initializer] INFO  hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3593)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 12 msec
+2020-12-03 07:22:13,793 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:22:13,793 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:22:13,796 [Listener at localhost/40872] INFO  namenode.NameNode (NameNode.java:startCommonServices(828)) - NameNode RPC up at: localhost/127.0.0.1:40872
+2020-12-03 07:22:13,802 [Listener at localhost/40872] INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1222)) - Starting services required for active state
+2020-12-03 07:22:13,803 [Listener at localhost/40872] INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(777)) - Initializing quota with 4 thread(s)
+2020-12-03 07:22:13,817 [Listener at localhost/40872] INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(786)) - Quota initialization completed in 13 milliseconds
+name space=1
+storage space=0
+storage types=RAM_DISK=0, SSD=0, DISK=0, ARCHIVE=0, PROVIDED=0
+2020-12-03 07:22:13,819 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:run(326)) - Starting up re-encrypt thread with interval=60000 millisecond.
+2020-12-03 07:22:13,827 [CacheReplicationMonitor(633936139)] INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
+2020-12-03 07:22:13,832 [Warm Up EDEK Cache Thread #0] INFO  namenode.NameNode (FSDirEncryptionZoneOp.java:run(571)) - Warming up 0 EDEKs... (initialDelay=3000, retryInterval=1000)
+2020-12-03 07:22:13,843 [Listener at localhost/40872] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:startDataNodes(1659)) - Starting DataNode 0 with dfs.datanode.data.dir: [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1,[DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2
+2020-12-03 07:22:13,872 [Listener at localhost/40872] INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1
+2020-12-03 07:22:13,894 [Listener at localhost/40872] INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2
+2020-12-03 07:22:13,916 [Listener at localhost/40872] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - DataNode metrics system started (again)
+2020-12-03 07:22:13,923 [Listener at localhost/40872] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:22:13,928 [Listener at localhost/40872] INFO  datanode.BlockScanner (BlockScanner.java:<init>(184)) - Initialized block scanner with targetBytesPerSec 1048576
+2020-12-03 07:22:13,933 [Listener at localhost/40872] INFO  datanode.DataNode (DataNode.java:<init>(500)) - Configured hostname is 127.0.0.1
+2020-12-03 07:22:13,935 [Listener at localhost/40872] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:22:13,941 [Listener at localhost/40872] INFO  datanode.DataNode (DataNode.java:startDataNode(1400)) - Starting DataNode with maxLockedMemory = 0
+2020-12-03 07:22:13,952 [Listener at localhost/40872] INFO  datanode.DataNode (DataNode.java:initDataXceiver(1148)) - Opened streaming server at /127.0.0.1:46424
+2020-12-03 07:22:13,954 [Listener at localhost/40872] INFO  datanode.DataNode (DataXceiverServer.java:<init>(78)) - Balancing bandwidth is 10485760 bytes/s
+2020-12-03 07:22:13,955 [Listener at localhost/40872] INFO  datanode.DataNode (DataXceiverServer.java:<init>(79)) - Number threads for balancing is 50
+2020-12-03 07:22:13,977 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:22:13,981 [Listener at localhost/40872] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:22:13,982 [Listener at localhost/40872] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.datanode is not defined
+2020-12-03 07:22:13,982 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:22:13,985 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:22:13,987 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
+2020-12-03 07:22:13,987 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:22:13,987 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:22:13,996 [Listener at localhost/40872] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 45718
+2020-12-03 07:22:13,996 [Listener at localhost/40872] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:22:13,999 [Listener at localhost/40872] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@2cef5a23{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:22:14,000 [Listener at localhost/40872] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@7daf53ac{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:22:14,008 [Listener at localhost/40872] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@33e4359c{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/datanode/,AVAILABLE}{/datanode}
+2020-12-03 07:22:14,010 [Listener at localhost/40872] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@c2ce994{HTTP/1.1,[http/1.1]}{localhost:45718}
+2020-12-03 07:22:14,010 [Listener at localhost/40872] INFO  server.Server (Server.java:doStart(419)) - Started @5729ms
+2020-12-03 07:22:14,344 [Listener at localhost/40872] INFO  web.DatanodeHttpServer (DatanodeHttpServer.java:start(255)) - Listening HTTP traffic on /127.0.0.1:33351
+2020-12-03 07:22:14,345 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@7296d702] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:22:14,346 [Listener at localhost/40872] INFO  datanode.DataNode (DataNode.java:startDataNode(1428)) - dnUserName = root
+2020-12-03 07:22:14,347 [Listener at localhost/40872] INFO  datanode.DataNode (DataNode.java:startDataNode(1429)) - supergroup = supergroup
+2020-12-03 07:22:14,365 [Listener at localhost/40872] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:22:14,367 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:22:14,377 [Listener at localhost/40809] INFO  datanode.DataNode (DataNode.java:initIpcServer(1034)) - Opened IPC server at /127.0.0.1:40809
+2020-12-03 07:22:14,394 [Listener at localhost/40809] INFO  datanode.DataNode (BlockPoolManager.java:refreshNamenodes(149)) - Refresh request received for nameservices: null
+2020-12-03 07:22:14,396 [Listener at localhost/40809] INFO  datanode.DataNode (BlockPoolManager.java:doRefreshNamenodes(210)) - Starting BPOfferServices for nameservices: <default>
+2020-12-03 07:22:14,408 [Thread-77] INFO  datanode.DataNode (BPServiceActor.java:run(817)) - Block pool <registering> (Datanode Uuid unassigned) service to localhost/127.0.0.1:40872 starting to offer service
+2020-12-03 07:22:14,415 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:22:14,415 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:22:14,687 [Thread-77] INFO  datanode.DataNode (BPOfferService.java:verifyAndSetNamespaceInfo(378)) - Acknowledging ACTIVE Namenode during handshakeBlock pool <registering> (Datanode Uuid unassigned) service to localhost/127.0.0.1:40872
+2020-12-03 07:22:14,692 [Thread-77] INFO  common.Storage (DataStorage.java:getParallelVolumeLoadThreadsNum(354)) - Using 2 threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=2, dataDirs=2)
+2020-12-03 07:22:14,736 [Thread-77] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1/in_use.lock acquired by nodename 6442@4b46bc0786e9
+2020-12-03 07:22:14,737 [Thread-77] INFO  common.Storage (DataStorage.java:loadStorageDirectory(282)) - Storage directory with location [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1 is not formatted for namespace 1699010429. Formatting...
+2020-12-03 07:22:14,738 [Thread-77] INFO  common.Storage (DataStorage.java:createStorageID(160)) - Generated new storageID DS-fc83a469-07c0-4516-a056-7f53017bc3dd for directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1 
+2020-12-03 07:22:14,854 [Thread-77] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2/in_use.lock acquired by nodename 6442@4b46bc0786e9
+2020-12-03 07:22:14,855 [Thread-77] INFO  common.Storage (DataStorage.java:loadStorageDirectory(282)) - Storage directory with location [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2 is not formatted for namespace 1699010429. Formatting...
+2020-12-03 07:22:14,856 [Thread-77] INFO  common.Storage (DataStorage.java:createStorageID(160)) - Generated new storageID DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86 for directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2 
+2020-12-03 07:22:14,937 [Thread-77] INFO  common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(251)) - Analyzing storage directories for bpid BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:14,937 [Thread-77] INFO  common.Storage (Storage.java:lock(882)) - Locking is disabled for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1/current/BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:14,938 [Thread-77] INFO  common.Storage (BlockPoolSliceStorage.java:loadStorageDirectory(168)) - Block pool storage directory for location [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1 and block pool id BP-1595264304-172.17.0.8-1606980132422 is not formatted. Formatting ...
+2020-12-03 07:22:14,938 [Thread-77] INFO  common.Storage (BlockPoolSliceStorage.java:format(280)) - Formatting block pool BP-1595264304-172.17.0.8-1606980132422 directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1/current/BP-1595264304-172.17.0.8-1606980132422/current
+2020-12-03 07:22:14,950 [IPC Server handler 0 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:14,959 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2782)) - dnInfo.length != numDataNodes
+2020-12-03 07:22:14,960 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2703)) - Waiting for cluster to become active
+2020-12-03 07:22:15,028 [Thread-77] INFO  common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(251)) - Analyzing storage directories for bpid BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:15,028 [Thread-77] INFO  common.Storage (Storage.java:lock(882)) - Locking is disabled for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2/current/BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:15,028 [Thread-77] INFO  common.Storage (BlockPoolSliceStorage.java:loadStorageDirectory(168)) - Block pool storage directory for location [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2 and block pool id BP-1595264304-172.17.0.8-1606980132422 is not formatted. Formatting ...
+2020-12-03 07:22:15,029 [Thread-77] INFO  common.Storage (BlockPoolSliceStorage.java:format(280)) - Formatting block pool BP-1595264304-172.17.0.8-1606980132422 directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2/current/BP-1595264304-172.17.0.8-1606980132422/current
+2020-12-03 07:22:15,062 [IPC Server handler 1 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:15,063 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2782)) - dnInfo.length != numDataNodes
+2020-12-03 07:22:15,064 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2703)) - Waiting for cluster to become active
+2020-12-03 07:22:15,108 [Thread-77] INFO  datanode.DataNode (DataNode.java:initStorage(1746)) - Setting up storage: nsid=1699010429;bpid=BP-1595264304-172.17.0.8-1606980132422;lv=-57;nsInfo=lv=-65;cid=testClusterID;nsid=1699010429;c=1606980132422;bpid=BP-1595264304-172.17.0.8-1606980132422;dnuuid=null
+2020-12-03 07:22:15,166 [IPC Server handler 2 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:15,166 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2782)) - dnInfo.length != numDataNodes
+2020-12-03 07:22:15,166 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2703)) - Waiting for cluster to become active
+2020-12-03 07:22:15,183 [Thread-77] INFO  datanode.DataNode (DataNode.java:checkDatanodeUuid(1546)) - Generated and persisted new Datanode UUID b7254a41-8c38-457f-9b99-8e4bdb692bbb
+2020-12-03 07:22:15,270 [IPC Server handler 3 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:15,271 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2782)) - dnInfo.length != numDataNodes
+2020-12-03 07:22:15,271 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2703)) - Waiting for cluster to become active
+2020-12-03 07:22:15,316 [Thread-77] INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(304)) - Added new volume: DS-fc83a469-07c0-4516-a056-7f53017bc3dd
+2020-12-03 07:22:15,317 [Thread-77] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(450)) - Added volume - [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1, StorageType: DISK
+2020-12-03 07:22:15,319 [Thread-77] INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(304)) - Added new volume: DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86
+2020-12-03 07:22:15,320 [Thread-77] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(450)) - Added volume - [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2, StorageType: DISK
+2020-12-03 07:22:15,323 [Thread-77] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:registerMBean(2280)) - Registered FSDatasetState MBean
+2020-12-03 07:22:15,329 [Thread-77] INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1
+2020-12-03 07:22:15,336 [Thread-77] INFO  checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(222)) - Scheduled health check for volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1
+2020-12-03 07:22:15,337 [Thread-77] INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2
+2020-12-03 07:22:15,338 [Thread-77] INFO  checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(222)) - Scheduled health check for volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2
+2020-12-03 07:22:15,338 [Thread-77] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2791)) - Adding block pool BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:15,339 [Thread-95] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1...
+2020-12-03 07:22:15,339 [Thread-96] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2...
+2020-12-03 07:22:15,373 [Thread-96] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool BP-1595264304-172.17.0.8-1606980132422 on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2: 34ms
+2020-12-03 07:22:15,375 [Thread-95] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool BP-1595264304-172.17.0.8-1606980132422 on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1: 35ms
+2020-12-03 07:22:15,375 [Thread-77] INFO  impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(431)) - Total time to scan all replicas for block pool BP-1595264304-172.17.0.8-1606980132422: 37ms
+2020-12-03 07:22:15,375 [IPC Server handler 4 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:15,379 [Thread-100] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2...
+2020-12-03 07:22:15,379 [Thread-100] INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(876)) - Replica Cache file: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2/current/BP-1595264304-172.17.0.8-1606980132422/current/replicas doesn't exist 
+2020-12-03 07:22:15,379 [Thread-99] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1...
+2020-12-03 07:22:15,407 [Thread-100] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2: 29ms
+2020-12-03 07:22:15,400 [Thread-99] INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(876)) - Replica Cache file: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1/current/BP-1595264304-172.17.0.8-1606980132422/current/replicas doesn't exist 
+2020-12-03 07:22:15,408 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2782)) - dnInfo.length != numDataNodes
+2020-12-03 07:22:15,408 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2703)) - Waiting for cluster to become active
+2020-12-03 07:22:15,408 [Thread-99] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1: 8ms
+2020-12-03 07:22:15,418 [Thread-77] INFO  impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(225)) - Total time to add all replicas to map for block pool BP-1595264304-172.17.0.8-1606980132422: 40ms
+2020-12-03 07:22:15,421 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2)] INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(381)) - Now scanning bpid BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2
+2020-12-03 07:22:15,421 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1)] INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(381)) - Now scanning bpid BP-1595264304-172.17.0.8-1606980132422 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1
+2020-12-03 07:22:15,426 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2)] INFO  datanode.VolumeScanner (VolumeScanner.java:runLoop(539)) - VolumeScanner(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2, DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86): finished scanning block pool BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:15,426 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1)] INFO  datanode.VolumeScanner (VolumeScanner.java:runLoop(539)) - VolumeScanner(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1, DS-fc83a469-07c0-4516-a056-7f53017bc3dd): finished scanning block pool BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:15,450 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2)] INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(398)) - VolumeScanner(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2, DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86): no suitable block pools found to scan.  Waiting 1814399971 ms.
+2020-12-03 07:22:15,450 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1)] INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(398)) - VolumeScanner(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1, DS-fc83a469-07c0-4516-a056-7f53017bc3dd): no suitable block pools found to scan.  Waiting 1814399971 ms.
+2020-12-03 07:22:15,451 [Thread-77] INFO  datanode.DirectoryScanner (DirectoryScanner.java:start(284)) - Periodic Directory Tree Verification scan starting at 12/3/20 12:41 PM with interval of 21600000ms
+2020-12-03 07:22:15,458 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  datanode.DataNode (BPServiceActor.java:register(767)) - Block pool BP-1595264304-172.17.0.8-1606980132422 (Datanode Uuid b7254a41-8c38-457f-9b99-8e4bdb692bbb) service to localhost/127.0.0.1:40872 beginning handshake with NN
+2020-12-03 07:22:15,469 [IPC Server handler 5 on default port 40872] INFO  hdfs.StateChange (DatanodeManager.java:registerDatanode(1042)) - BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1:46424, datanodeUuid=b7254a41-8c38-457f-9b99-8e4bdb692bbb, infoPort=33351, infoSecurePort=0, ipcPort=40809, storageInfo=lv=-57;cid=testClusterID;nsid=1699010429;c=1606980132422) storage b7254a41-8c38-457f-9b99-8e4bdb692bbb
+2020-12-03 07:22:15,472 [IPC Server handler 5 on default port 40872] INFO  net.NetworkTopology (NetworkTopology.java:add(145)) - Adding a new node: /default-rack/127.0.0.1:46424
+2020-12-03 07:22:15,473 [IPC Server handler 5 on default port 40872] INFO  blockmanagement.BlockReportLeaseManager (BlockReportLeaseManager.java:registerNode(204)) - Registered DN b7254a41-8c38-457f-9b99-8e4bdb692bbb (127.0.0.1:46424).
+2020-12-03 07:22:15,480 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  datanode.DataNode (BPServiceActor.java:register(786)) - Block pool Block pool BP-1595264304-172.17.0.8-1606980132422 (Datanode Uuid b7254a41-8c38-457f-9b99-8e4bdb692bbb) service to localhost/127.0.0.1:40872 successfully registered with NN
+2020-12-03 07:22:15,480 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  datanode.DataNode (BPServiceActor.java:offerService(616)) - For namenode localhost/127.0.0.1:40872 using BLOCKREPORT_INTERVAL of 21600000msec CACHEREPORT_INTERVAL of 10000msec Initial delay: 0msec; heartBeatInterval=3000
+2020-12-03 07:22:15,510 [IPC Server handler 6 on default port 40872] INFO  blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(987)) - Adding new storage ID DS-fc83a469-07c0-4516-a056-7f53017bc3dd for DN 127.0.0.1:46424
+2020-12-03 07:22:15,511 [IPC Server handler 6 on default port 40872] INFO  blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(987)) - Adding new storage ID DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86 for DN 127.0.0.1:46424
+2020-12-03 07:22:15,513 [IPC Server handler 7 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:15,520 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2758)) - Cluster is active
+2020-12-03 07:22:15,526 [IPC Server handler 8 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:15,528 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2758)) - Cluster is active
+2020-12-03 07:22:15,540 [Block report processor] INFO  BlockStateChange (BlockManager.java:processReport(2648)) - BLOCK* processReport 0x91fcaacbdb93ce3d: Processing first storage report for DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86 from datanode b7254a41-8c38-457f-9b99-8e4bdb692bbb
+2020-12-03 07:22:15,542 [Block report processor] INFO  BlockStateChange (BlockManager.java:processReport(2677)) - BLOCK* processReport 0x91fcaacbdb93ce3d: from storage DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86 node DatanodeRegistration(127.0.0.1:46424, datanodeUuid=b7254a41-8c38-457f-9b99-8e4bdb692bbb, infoPort=33351, infoSecurePort=0, ipcPort=40809, storageInfo=lv=-57;cid=testClusterID;nsid=1699010429;c=1606980132422), blocks: 0, hasStaleStorage: true, processing time: 2 msecs, invalidatedBlocks: 0
+2020-12-03 07:22:15,542 [Block report processor] INFO  BlockStateChange (BlockManager.java:processReport(2648)) - BLOCK* processReport 0x91fcaacbdb93ce3d: Processing first storage report for DS-fc83a469-07c0-4516-a056-7f53017bc3dd from datanode b7254a41-8c38-457f-9b99-8e4bdb692bbb
+2020-12-03 07:22:15,543 [Block report processor] INFO  BlockStateChange (BlockManager.java:processReport(2677)) - BLOCK* processReport 0x91fcaacbdb93ce3d: from storage DS-fc83a469-07c0-4516-a056-7f53017bc3dd node DatanodeRegistration(127.0.0.1:46424, datanodeUuid=b7254a41-8c38-457f-9b99-8e4bdb692bbb, infoPort=33351, infoSecurePort=0, ipcPort=40809, storageInfo=lv=-57;cid=testClusterID;nsid=1699010429;c=1606980132422), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:22:15,569 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  datanode.DataNode (BPServiceActor.java:blockReport(424)) - Successfully sent block report 0x91fcaacbdb93ce3d,  containing 2 storage report(s), of which we sent 2. The reports had 0 total blocks and used 1 RPC(s). This took 4 msec to generate and 41 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2020-12-03 07:22:15,569 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  datanode.DataNode (BPOfferService.java:processCommandFromActive(759)) - Got finalize command for block pool BP-1595264304-172.17.0.8-1606980132422
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.WadlGeneratorJAXBGrammarGenerator buildModelAndSchemas
+SEVERE: Failed to generate the schema for the JAX-B elements
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+java.util.Map is an interface, and JAXB can't handle interfaces.
+	this problem is related to the following location:
+		at java.util.Map
+java.util.Map does not have a no-arg default constructor.
+	this problem is related to the following location:
+		at java.util.Map
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:489)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:319)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1170)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:247)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:234)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:441)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:641)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:584)
+	at com.sun.jersey.server.wadl.generators.WadlGeneratorJAXBGrammarGenerator.buildModelAndSchemas(WadlGeneratorJAXBGrammarGenerator.java:169)
+	at com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator.createExternalGrammar(AbstractWadlGeneratorGrammarGenerator.java:405)
+	at com.sun.jersey.server.wadl.WadlBuilder.generate(WadlBuilder.java:149)
+	at com.sun.jersey.server.impl.wadl.WadlApplicationContextImpl.getApplication(WadlApplicationContextImpl.java:119)
+	at com.sun.jersey.server.impl.wadl.WadlApplicationContextImpl.getApplication(WadlApplicationContextImpl.java:138)
+	at com.sun.jersey.server.impl.wadl.WadlMethodFactory$WadlOptionsMethodDispatcher.dispatch(WadlMethodFactory.java:110)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:733)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:848)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1772)
+	at org.apache.hadoop.crypto.key.kms.server.KMSMDCFilter.doFilter(KMSMDCFilter.java:84)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1759)
+	at org.apache.hadoop.security.authentication.server.AuthenticationFilter.doFilter(AuthenticationFilter.java:644)
+	at org.apache.hadoop.security.token.delegation.web.DelegationTokenAuthenticationFilter.doFilter(DelegationTokenAuthenticationFilter.java:304)
+	at org.apache.hadoop.security.authentication.server.AuthenticationFilter.doFilter(AuthenticationFilter.java:592)
+	at org.apache.hadoop.crypto.key.kms.server.KMSAuthenticationFilter.doFilter(KMSAuthenticationFilter.java:142)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.apache.hadoop.http.HttpServer2$QuotingInputFilter.doFilter(HttpServer2.java:1624)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1759)
+	at org.apache.hadoop.http.NoCacheFilter.doFilter(NoCacheFilter.java:45)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1759)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:536)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:333)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class javax.ws.rs.core.Response
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class javax.ws.rs.core.Response
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class javax.ws.rs.core.Response
+Dec 03, 2020 7:22:15 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+2020-12-03 07:22:16,339 [qtp1881356117-46] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=CREATE_KEY, key=test_key, user=root] UserProvidedMaterial:false Description:test_key
+2020-12-03 07:22:16,368 [IPC Server handler 4 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:16,401 [qtp1881356117-327] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=GET_METADATA, key=test_key, user=root] 
+2020-12-03 07:22:16,832 [Warm Up EDEK Cache Thread #0] INFO  namenode.NameNode (FSDirEncryptionZoneOp.java:run(589)) - Successfully warmed up 0 EDEKs.
+2020-12-03 07:22:16,939 [qtp1881356117-29] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditEvent(59)) - OK[op=GENERATE_EEK, key=test_key, user=root, accessCount=1, interval=0ms] 
+2020-12-03 07:22:17,005 [IPC Server handler 5 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=createEncryptionZone	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:17,012 [IPC Server handler 1 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:17,071 [IPC Server handler 2 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/0	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.WadlGeneratorJAXBGrammarGenerator buildModelAndSchemas
+SEVERE: Failed to generate the schema for the JAX-B elements
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+java.util.Map is an interface, and JAXB can't handle interfaces.
+	this problem is related to the following location:
+		at java.util.Map
+java.util.Map does not have a no-arg default constructor.
+	this problem is related to the following location:
+		at java.util.Map
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:489)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:319)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1170)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:247)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:234)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:441)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:641)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:584)
+	at com.sun.jersey.server.wadl.generators.WadlGeneratorJAXBGrammarGenerator.buildModelAndSchemas(WadlGeneratorJAXBGrammarGenerator.java:169)
+	at com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator.createExternalGrammar(AbstractWadlGeneratorGrammarGenerator.java:405)
+	at com.sun.jersey.server.wadl.WadlBuilder.generate(WadlBuilder.java:149)
+	at com.sun.jersey.server.impl.wadl.WadlApplicationContextImpl.getApplication(WadlApplicationContextImpl.java:119)
+	at com.sun.jersey.server.impl.wadl.WadlApplicationContextImpl.getApplication(WadlApplicationContextImpl.java:138)
+	at com.sun.jersey.server.impl.wadl.WadlMethodFactory$WadlOptionsMethodDispatcher.dispatch(WadlMethodFactory.java:110)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:733)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:848)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1772)
+	at org.apache.hadoop.crypto.key.kms.server.KMSMDCFilter.doFilter(KMSMDCFilter.java:84)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1759)
+	at org.apache.hadoop.security.authentication.server.AuthenticationFilter.doFilter(AuthenticationFilter.java:644)
+	at org.apache.hadoop.security.token.delegation.web.DelegationTokenAuthenticationFilter.doFilter(DelegationTokenAuthenticationFilter.java:304)
+	at org.apache.hadoop.security.authentication.server.AuthenticationFilter.doFilter(AuthenticationFilter.java:592)
+	at org.apache.hadoop.crypto.key.kms.server.KMSAuthenticationFilter.doFilter(KMSAuthenticationFilter.java:142)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.apache.hadoop.http.HttpServer2$QuotingInputFilter.doFilter(HttpServer2.java:1624)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1759)
+	at org.apache.hadoop.http.NoCacheFilter.doFilter(NoCacheFilter.java:45)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1759)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:536)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:333)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class javax.ws.rs.core.Response
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class javax.ws.rs.core.Response
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class javax.ws.rs.core.Response
+Dec 03, 2020 7:22:17 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.util.Map
+2020-12-03 07:22:17,323 [qtp1881356117-327] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditEvent(59)) - OK[op=DECRYPT_EEK, key=test_key, user=root, accessCount=1, interval=0ms] 
+2020-12-03 07:22:17,349 [IPC Server handler 4 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741825_1001, replicas=127.0.0.1:46424 for /zones/zone/0
+2020-12-03 07:22:17,368 [Thread-105] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:17,946 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55924 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741825_1001]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741825_1001 src: /127.0.0.1:55924 dest: /127.0.0.1:46424
+2020-12-03 07:22:17,998 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741825_1001, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55924, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741825_1001, duration(ns): 13236518
+2020-12-03 07:22:17,998 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741825_1001, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741825_1001, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:18,008 [IPC Server handler 5 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:checkBlocksComplete(2995)) - BLOCK* blk_1073741825_1001 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /zones/zone/0
+2020-12-03 07:22:18,422 [IPC Server handler 9 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/0 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:18,438 [IPC Server handler 8 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:18,442 [IPC Server handler 6 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/1	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:18,460 [IPC Server handler 7 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741826_1002, replicas=127.0.0.1:46424 for /zones/zone/1
+2020-12-03 07:22:18,463 [Thread-110] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:18,465 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55928 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741826_1002]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741826_1002 src: /127.0.0.1:55928 dest: /127.0.0.1:46424
+2020-12-03 07:22:18,470 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741826_1002, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55928, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741826_1002, duration(ns): 2857225
+2020-12-03 07:22:18,471 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741826_1002, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741826_1002, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:18,474 [IPC Server handler 1 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:checkBlocksComplete(2995)) - BLOCK* blk_1073741826_1002 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /zones/zone/1
+2020-12-03 07:22:18,877 [IPC Server handler 2 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/1 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:18,880 [IPC Server handler 3 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:18,885 [IPC Server handler 4 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/2	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:18,904 [IPC Server handler 9 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741827_1003, replicas=127.0.0.1:46424 for /zones/zone/2
+2020-12-03 07:22:18,907 [Thread-114] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:18,912 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55930 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741827_1003]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741827_1003 src: /127.0.0.1:55930 dest: /127.0.0.1:46424
+2020-12-03 07:22:18,935 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741827_1003, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55930, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741827_1003, duration(ns): 17442144
+2020-12-03 07:22:18,936 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741827_1003, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741827_1003, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:18,944 [IPC Server handler 6 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/2 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:18,947 [IPC Server handler 7 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:18,957 [IPC Server handler 0 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/3	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:18,990 [IPC Server handler 1 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741828_1004, replicas=127.0.0.1:46424 for /zones/zone/3
+2020-12-03 07:22:18,992 [Thread-118] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:18,994 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55932 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741828_1004]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741828_1004 src: /127.0.0.1:55932 dest: /127.0.0.1:46424
+2020-12-03 07:22:18,999 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741828_1004, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55932, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741828_1004, duration(ns): 3147674
+2020-12-03 07:22:19,000 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741828_1004, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741828_1004, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:19,007 [IPC Server handler 2 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/3 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:19,015 [IPC Server handler 3 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:19,020 [IPC Server handler 4 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/4	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:19,040 [IPC Server handler 9 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741829_1005, replicas=127.0.0.1:46424 for /zones/zone/4
+2020-12-03 07:22:19,042 [Thread-122] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:19,044 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55934 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741829_1005]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741829_1005 src: /127.0.0.1:55934 dest: /127.0.0.1:46424
+2020-12-03 07:22:19,057 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741829_1005, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55934, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741829_1005, duration(ns): 3215879
+2020-12-03 07:22:19,058 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741829_1005, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741829_1005, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:19,063 [IPC Server handler 6 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/4 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:19,066 [IPC Server handler 7 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:19,071 [IPC Server handler 0 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/5	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:19,091 [IPC Server handler 1 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741830_1006, replicas=127.0.0.1:46424 for /zones/zone/5
+2020-12-03 07:22:19,094 [Thread-126] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:19,096 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55936 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741830_1006]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741830_1006 src: /127.0.0.1:55936 dest: /127.0.0.1:46424
+2020-12-03 07:22:19,103 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741830_1006, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55936, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741830_1006, duration(ns): 4447240
+2020-12-03 07:22:19,103 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741830_1006, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741830_1006, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:19,107 [IPC Server handler 2 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:checkBlocksComplete(2995)) - BLOCK* blk_1073741830_1006 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /zones/zone/5
+2020-12-03 07:22:19,510 [IPC Server handler 3 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/5 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:19,517 [IPC Server handler 4 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:19,520 [IPC Server handler 9 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/6	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:19,535 [IPC Server handler 8 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741831_1007, replicas=127.0.0.1:46424 for /zones/zone/6
+2020-12-03 07:22:19,538 [Thread-130] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:19,544 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55938 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741831_1007]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741831_1007 src: /127.0.0.1:55938 dest: /127.0.0.1:46424
+2020-12-03 07:22:19,556 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741831_1007, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55938, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741831_1007, duration(ns): 5373663
+2020-12-03 07:22:19,557 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741831_1007, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741831_1007, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:19,561 [IPC Server handler 6 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:checkBlocksComplete(2995)) - BLOCK* blk_1073741831_1007 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /zones/zone/6
+2020-12-03 07:22:19,964 [IPC Server handler 0 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/6 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:19,966 [IPC Server handler 1 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:19,970 [IPC Server handler 5 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/7	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:19,992 [IPC Server handler 2 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741832_1008, replicas=127.0.0.1:46424 for /zones/zone/7
+2020-12-03 07:22:19,994 [Thread-134] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:19,999 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55940 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741832_1008]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741832_1008 src: /127.0.0.1:55940 dest: /127.0.0.1:46424
+2020-12-03 07:22:20,011 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741832_1008, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55940, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741832_1008, duration(ns): 8961459
+2020-12-03 07:22:20,012 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741832_1008, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741832_1008, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:20,015 [IPC Server handler 4 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/7 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:20,020 [IPC Server handler 9 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:20,024 [IPC Server handler 8 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/8	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:20,043 [IPC Server handler 6 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741833_1009, replicas=127.0.0.1:46424 for /zones/zone/8
+2020-12-03 07:22:20,046 [Thread-138] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:20,048 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55942 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741833_1009]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741833_1009 src: /127.0.0.1:55942 dest: /127.0.0.1:46424
+2020-12-03 07:22:20,081 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741833_1009, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55942, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741833_1009, duration(ns): 30518670
+2020-12-03 07:22:20,081 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741833_1009, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741833_1009, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:20,091 [IPC Server handler 1 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/8 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:20,100 [IPC Server handler 5 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/zones/zone	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:20,103 [IPC Server handler 2 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/zones/zone/9	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:20,129 [IPC Server handler 3 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741834_1010, replicas=127.0.0.1:46424 for /zones/zone/9
+2020-12-03 07:22:20,137 [Thread-142] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:20,140 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55944 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741834_1010]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741834_1010 src: /127.0.0.1:55944 dest: /127.0.0.1:46424
+2020-12-03 07:22:20,150 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741834_1010, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55944, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741834_1010, duration(ns): 7074008
+2020-12-03 07:22:20,150 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741834_1010, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741834_1010, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:20,152 [IPC Server handler 4 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /zones/zone/9 is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:20,156 [IPC Server handler 9 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/dir	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:20,162 [IPC Server handler 6 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/dir	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:20,165 [IPC Server handler 7 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/dir/f	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:20,170 [IPC Server handler 0 on default port 40872] INFO  hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741835_1011, replicas=127.0.0.1:46424 for /dir/f
+2020-12-03 07:22:20,172 [Thread-146] INFO  sasl.SaslDataTransferClient (SaslDataTransferClient.java:checkTrustAndSend(239)) - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:20,174 [DataXceiver for client DFSClient_NONMAPREDUCE_1619132141_24 at /127.0.0.1:55946 [Receiving block BP-1595264304-172.17.0.8-1606980132422:blk_1073741835_1011]] INFO  datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-1595264304-172.17.0.8-1606980132422:blk_1073741835_1011 src: /127.0.0.1:55946 dest: /127.0.0.1:46424
+2020-12-03 07:22:20,199 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741835_1011, type=LAST_IN_PIPELINE] INFO  DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:55946, dest: /127.0.0.1:46424, bytes: 8196, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1619132141_24, offset: 0, srvID: b7254a41-8c38-457f-9b99-8e4bdb692bbb, blockid: BP-1595264304-172.17.0.8-1606980132422:blk_1073741835_1011, duration(ns): 21539789
+2020-12-03 07:22:20,199 [PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741835_1011, type=LAST_IN_PIPELINE] INFO  datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-1595264304-172.17.0.8-1606980132422:blk_1073741835_1011, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:20,201 [IPC Server handler 5 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:checkBlocksComplete(2995)) - BLOCK* blk_1073741835_1011 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /dir/f
+2020-12-03 07:22:20,604 [IPC Server handler 2 on default port 40872] INFO  hdfs.StateChange (FSNamesystem.java:completeFile(2948)) - DIR* completeFile: /dir/f is closed by DFSClient_NONMAPREDUCE_1619132141_24
+2020-12-03 07:22:20,940 [qtp1881356117-31] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=ROLL_NEW_VERSION, key=test_key, user=root] UserProvidedMaterial:false NewVersion:test_key@1
+2020-12-03 07:22:20,953 [qtp1881356117-46] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=INVALIDATE_CACHE, key=test_key, user=root] 
+2020-12-03 07:22:21,414 [qtp1881356117-31] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=INVALIDATE_CACHE, key=test_key, user=root] 
+2020-12-03 07:22:21,415 [Listener at localhost/40809] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:pauseForTesting(157)) - Pausing re-encrypt handler for testing.
+2020-12-03 07:22:21,416 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:checkPauseForTesting(618)) - Sleeping in the re-encrypt handler for unit test.
+2020-12-03 07:22:21,597 [IPC Server handler 2 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:reencryptEncryptionZoneInt(7495)) - Re-encryption using key version test_key@1 for zone /zones/zone
+2020-12-03 07:22:21,598 [IPC Server handler 2 on default port 40872] INFO  namenode.EncryptionZoneManager (EncryptionZoneManager.java:reencryptEncryptionZone(664)) - Zone /zones/zone(16387) is submitted for re-encryption.
+2020-12-03 07:22:21,603 [IPC Server handler 2 on default port 40872] DEBUG protocol.ReencryptionStatus (ReencryptionStatus.java:addZoneIfNecessary(129)) - Adding zone 16387 for re-encryption status
+2020-12-03 07:22:21,605 [IPC Server handler 2 on default port 40872] DEBUG namenode.ReencryptionHandler (ReencryptionHandler.java:notifyNewSubmission(590)) - Notifying handler for new re-encryption command.
+2020-12-03 07:22:21,605 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:checkPauseForTesting(624)) - Continuing re-encrypt handler after pausing.
+2020-12-03 07:22:21,605 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:checkPauseForTesting(618)) - Sleeping in the re-encrypt handler for unit test.
+2020-12-03 07:22:21,606 [IPC Server handler 2 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=STARTreencryption	src=/zones/zone	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:21,612 [Listener at localhost/40809] INFO  namenode.TestReencryption (TestReencryption.java:waitForQueuedZones(1316)) - Waiting for queued zones for re-encryption to be 1
+2020-12-03 07:22:21,613 [Listener at localhost/40809] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:pauseForTesting(195)) - Pausing re-encrypt updater for testing.
+2020-12-03 07:22:21,613 [Listener at localhost/40809] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:resumeForTesting(164)) - Resuming re-encrypt handler for testing.
+2020-12-03 07:22:21,613 [Listener at localhost/40809] INFO  namenode.TestReencryption (TestReencryption.java:cancelFutureDuringReencryption(1532)) - Waiting for re-encrypt callables to run
+2020-12-03 07:22:21,613 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:checkPauseForTesting(624)) - Continuing re-encrypt handler after pausing.
+2020-12-03 07:22:21,614 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:run(348)) - Executing re-encrypt commands on zone 16387. Current zones:[zone:16387 state:Submitted lastProcessed:null filesReencrypted:0 fileReencryptionFailures:0]
+2020-12-03 07:22:21,614 [reencryptionHandlerThread #0] INFO  protocol.ReencryptionStatus (ReencryptionStatus.java:markZoneStarted(95)) - Zone 16387 starts re-encryption processing
+2020-12-03 07:22:21,618 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:reencryptEncryptionZone(409)) - Re-encrypting zone /zones/zone(id=16387)
+2020-12-03 07:22:21,622 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:submitCurrentBatch(721)) - Submitted batch (start:/zones/zone/0, size:5) of zone 16387 to re-encrypt.
+2020-12-03 07:22:21,622 [reencryption edek Thread-0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(539)) - Processing batched re-encryption for zone 16387, batch size 5, start:/zones/zone/0
+2020-12-03 07:22:21,624 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:submitCurrentBatch(721)) - Submitted batch (start:/zones/zone/5, size:5) of zone 16387 to re-encrypt.
+2020-12-03 07:22:21,624 [reencryption edek Thread-1] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(539)) - Processing batched re-encryption for zone 16387, batch size 5, start:/zones/zone/5
+2020-12-03 07:22:21,631 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:reencryptEncryptionZone(422)) - Submission completed of zone 16387 for re-encryption.
+2020-12-03 07:22:21,819 [qtp1881356117-30] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=REENCRYPT_EEK_BATCH, key=test_key, user=root] reencrypted 5 keys
+2020-12-03 07:22:21,820 [qtp1881356117-30] INFO  server.KMS (KMS.java:reencryptEncryptedKeys(593)) - reencryptEncryptedKeys 5 keys for key test_key took 182047946
+2020-12-03 07:22:21,820 [qtp1881356117-29] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=REENCRYPT_EEK_BATCH, key=test_key, user=root] reencrypted 5 keys
+2020-12-03 07:22:21,821 [qtp1881356117-29] INFO  server.KMS (KMS.java:reencryptEncryptedKeys(593)) - reencryptEncryptedKeys 5 keys for key test_key took 183479302
+2020-12-03 07:22:21,917 [IPC Server handler 3 on default port 40872] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:cancelAllTasks(109)) - Cancelling 2 re-encryption tasks
+2020-12-03 07:22:21,919 [IPC Server handler 3 on default port 40872] INFO  namenode.EncryptionZoneManager (EncryptionZoneManager.java:cancelReencryptEncryptionZone(689)) - Cancelled zone /zones/zone(16387) for re-encryption.
+2020-12-03 07:22:21,919 [IPC Server handler 3 on default port 40872] INFO  protocol.ReencryptionStatus (ReencryptionStatus.java:markZoneCompleted(102)) - Zone 16387 completed re-encryption.
+2020-12-03 07:22:21,920 [reencryption edek Thread-0] INFO  namenode.TestReencryption (TestReencryption.java:reencryptEncryptedKeys(1499)) - Fault injector interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.TestReencryption$1MyInjector.reencryptEncryptedKeys(TestReencryption.java:1497)
+	at org.apache.hadoop.hdfs.server.namenode.ReencryptionHandler$EDEKReencryptCallable.reencryptEdeks(ReencryptionHandler.java:568)
+	at org.apache.hadoop.hdfs.server.namenode.ReencryptionHandler$EDEKReencryptCallable.call(ReencryptionHandler.java:548)
+	at org.apache.hadoop.hdfs.server.namenode.ReencryptionHandler$EDEKReencryptCallable.call(ReencryptionHandler.java:524)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:22:21,920 [IPC Server handler 3 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=CANCELreencryption	src=/zones/zone	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:21,922 [reencryption edek Thread-0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(552)) - Completed re-encrypting one batch of 5 edeks from KMS, time consumed: 299864906, start: /zones/zone/0.
+2020-12-03 07:22:21,922 [reencryption edek Thread-1] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(552)) - Completed re-encrypting one batch of 5 edeks from KMS, time consumed: 291808191, start: /zones/zone/5.
+2020-12-03 07:22:21,923 [Listener at localhost/40809] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:resumeForTesting(202)) - Resuming re-encrypt updater for testing.
+2020-12-03 07:22:21,923 [Listener at localhost/40809] INFO  namenode.TestReencryption (TestReencryption.java:waitForZoneCompletes(1338)) - Waiting for re-encryption zone /zones/zone to complete.
+2020-12-03 07:22:21,929 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:takeAndProcessTasks(429)) - Skipped a canceled re-encryption task
+2020-12-03 07:22:21,931 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:takeAndProcessTasks(429)) - Skipped a canceled re-encryption task
+2020-12-03 07:22:21,933 [IPC Server handler 4 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listReencryptionStatus	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:21,948 [Listener at localhost/40809] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:resumeForTesting(164)) - Resuming re-encrypt handler for testing.
+2020-12-03 07:22:22,236 [IPC Server handler 9 on default port 40872] INFO  namenode.FSNamesystem (FSNamesystem.java:reencryptEncryptionZoneInt(7495)) - Re-encryption using key version test_key@1 for zone /zones/zone
+2020-12-03 07:22:22,236 [IPC Server handler 9 on default port 40872] INFO  namenode.EncryptionZoneManager (EncryptionZoneManager.java:reencryptEncryptionZone(664)) - Zone /zones/zone(16387) is submitted for re-encryption.
+2020-12-03 07:22:22,237 [IPC Server handler 9 on default port 40872] DEBUG namenode.ReencryptionHandler (ReencryptionHandler.java:notifyNewSubmission(590)) - Notifying handler for new re-encryption command.
+2020-12-03 07:22:22,237 [IPC Server handler 9 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=STARTreencryption	src=/zones/zone	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:22,238 [Listener at localhost/40809] INFO  namenode.TestReencryption (TestReencryption.java:waitForZoneCompletes(1338)) - Waiting for re-encryption zone /zones/zone to complete.
+2020-12-03 07:22:22,239 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:run(348)) - Executing re-encrypt commands on zone 16387. Current zones:[zone:16387 state:Submitted lastProcessed:null filesReencrypted:0 fileReencryptionFailures:0]
+2020-12-03 07:22:22,239 [reencryptionHandlerThread #0] INFO  protocol.ReencryptionStatus (ReencryptionStatus.java:markZoneStarted(95)) - Zone 16387 starts re-encryption processing
+2020-12-03 07:22:22,239 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:reencryptEncryptionZone(409)) - Re-encrypting zone /zones/zone(id=16387)
+2020-12-03 07:22:22,247 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:submitCurrentBatch(721)) - Submitted batch (start:/zones/zone/0, size:5) of zone 16387 to re-encrypt.
+2020-12-03 07:22:22,247 [reencryption edek Thread-2] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(539)) - Processing batched re-encryption for zone 16387, batch size 5, start:/zones/zone/0
+2020-12-03 07:22:22,265 [reencryptionHandlerThread #0] INFO  namenode.FSTreeTraverser (ReencryptionHandler.java:submitCurrentBatch(721)) - Submitted batch (start:/zones/zone/5, size:5) of zone 16387 to re-encrypt.
+2020-12-03 07:22:22,265 [reencryption edek Thread-3] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(539)) - Processing batched re-encryption for zone 16387, batch size 5, start:/zones/zone/5
+2020-12-03 07:22:22,266 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:reencryptEncryptionZone(422)) - Submission completed of zone 16387 for re-encryption.
+2020-12-03 07:22:22,276 [qtp1881356117-46] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=REENCRYPT_EEK_BATCH, key=test_key, user=root] reencrypted 5 keys
+2020-12-03 07:22:22,276 [qtp1881356117-46] INFO  server.KMS (KMS.java:reencryptEncryptedKeys(593)) - reencryptEncryptedKeys 5 keys for key test_key took 2188923
+2020-12-03 07:22:22,301 [reencryption edek Thread-2] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(552)) - Completed re-encrypting one batch of 5 edeks from KMS, time consumed: 53671185, start: /zones/zone/0.
+2020-12-03 07:22:22,302 [reencryptionUpdaterThread #0] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTask(476)) - Processing returned re-encryption task for zone /zones/zone(16387), batch size 5, start:/zones/zone/0
+2020-12-03 07:22:22,302 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(296)) - Updating file xattrs for re-encrypting zone /zones/zone, starting at /zones/zone/0
+2020-12-03 07:22:22,302 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16388 for re-encryption.
+2020-12-03 07:22:22,303 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16389 for re-encryption.
+2020-12-03 07:22:22,303 [qtp1881356117-383] INFO  kms-audit (SimpleKMSAuditLogger.java:logAuditSimpleFormat(93)) - OK[op=REENCRYPT_EEK_BATCH, key=test_key, user=root] reencrypted 5 keys
+2020-12-03 07:22:22,304 [qtp1881356117-383] INFO  server.KMS (KMS.java:reencryptEncryptedKeys(593)) - reencryptEncryptedKeys 5 keys for key test_key took 1504607
+2020-12-03 07:22:22,304 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16390 for re-encryption.
+2020-12-03 07:22:22,306 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16391 for re-encryption.
+2020-12-03 07:22:22,309 [reencryption edek Thread-3] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:call(552)) - Completed re-encrypting one batch of 5 edeks from KMS, time consumed: 43076342, start: /zones/zone/5.
+2020-12-03 07:22:22,325 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16392 for re-encryption.
+2020-12-03 07:22:22,326 [reencryptionUpdaterThread #0] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(352)) - Updated xattrs on 5(5) files in zone /zones/zone for re-encryption, starting:/zones/zone/0.
+2020-12-03 07:22:22,326 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:processCheckpoints(397)) - Updating re-encryption checkpoint with completed task. last: /zones/zone/4 size:5.
+2020-12-03 07:22:22,330 [reencryptionUpdaterThread #0] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTask(476)) - Processing returned re-encryption task for zone /zones/zone(16387), batch size 5, start:/zones/zone/5
+2020-12-03 07:22:22,330 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(296)) - Updating file xattrs for re-encrypting zone /zones/zone, starting at /zones/zone/5
+2020-12-03 07:22:22,330 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16393 for re-encryption.
+2020-12-03 07:22:22,331 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16394 for re-encryption.
+2020-12-03 07:22:22,335 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16395 for re-encryption.
+2020-12-03 07:22:22,336 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16396 for re-encryption.
+2020-12-03 07:22:22,336 [reencryptionUpdaterThread #0] TRACE namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(304)) - Updating 16397 for re-encryption.
+2020-12-03 07:22:22,336 [reencryptionUpdaterThread #0] INFO  namenode.ReencryptionUpdater (ReencryptionUpdater.java:processTaskEntries(352)) - Updated xattrs on 5(5) files in zone /zones/zone for re-encryption, starting:/zones/zone/5.
+2020-12-03 07:22:22,337 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:processCheckpoints(397)) - Updating re-encryption checkpoint with completed task. last: /zones/zone/9 size:5.
+2020-12-03 07:22:22,337 [reencryptionUpdaterThread #0] DEBUG namenode.ReencryptionUpdater (ReencryptionUpdater.java:processCheckpoints(416)) - Removed re-encryption tracker for zone /zones/zone because it completed with 2 tasks.
+2020-12-03 07:22:22,337 [reencryptionUpdaterThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:completeReencryption(449)) - Re-encryption completed on zone /zones/zone. Re-encrypted 10 files, failures encountered: 0.
+2020-12-03 07:22:22,337 [reencryptionUpdaterThread #0] INFO  protocol.ReencryptionStatus (ReencryptionStatus.java:markZoneCompleted(102)) - Zone 16387 completed re-encryption.
+2020-12-03 07:22:22,341 [IPC Server handler 8 on default port 40872] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listReencryptionStatus	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:22,342 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shutdown(2049)) - Shutting down the Mini HDFS Cluster
+2020-12-03 07:22:22,343 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shutdownDataNode(2097)) - Shutting down DataNode 0
+2020-12-03 07:22:22,344 [org.apache.hadoop.hdfs.server.datanode.DataXceiverServer@3368f549] INFO  datanode.DataNode (DataXceiverServer.java:closeAllPeers(281)) - Closing all peers.
+2020-12-03 07:22:22,344 [Listener at localhost/40809] WARN  datanode.DirectoryScanner (DirectoryScanner.java:shutdown(343)) - DirectoryScanner: shutdown has been called
+2020-12-03 07:22:22,349 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1)] INFO  datanode.VolumeScanner (VolumeScanner.java:run(637)) - VolumeScanner(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1, DS-fc83a469-07c0-4516-a056-7f53017bc3dd) exiting.
+2020-12-03 07:22:22,351 [VolumeScannerThread(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2)] INFO  datanode.VolumeScanner (VolumeScanner.java:run(637)) - VolumeScanner(/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2, DS-1c1f7e3e-6dbc-49bb-a6a0-301871b76b86) exiting.
+2020-12-03 07:22:22,481 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@33e4359c{/,null,UNAVAILABLE}{/datanode}
+2020-12-03 07:22:22,487 [Listener at localhost/40809] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@c2ce994{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:22:22,488 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@7daf53ac{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:22:22,489 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@2cef5a23{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:22:22,493 [Listener at localhost/40809] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 40809
+2020-12-03 07:22:22,515 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:22:22,517 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:22:22,517 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] WARN  datanode.IncrementalBlockReportManager (IncrementalBlockReportManager.java:waitTillNextIBR(160)) - IncrementalBlockReportManager interrupted
+2020-12-03 07:22:22,517 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] WARN  datanode.DataNode (BPServiceActor.java:run(860)) - Ending block pool service for: Block pool BP-1595264304-172.17.0.8-1606980132422 (Datanode Uuid b7254a41-8c38-457f-9b99-8e4bdb692bbb) service to localhost/127.0.0.1:40872
+2020-12-03 07:22:22,524 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  datanode.DataNode (BlockPoolManager.java:remove(102)) - Removed Block pool BP-1595264304-172.17.0.8-1606980132422 (Datanode Uuid b7254a41-8c38-457f-9b99-8e4bdb692bbb)
+2020-12-03 07:22:22,524 [BP-1595264304-172.17.0.8-1606980132422 heartbeating to localhost/127.0.0.1:40872] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:shutdownBlockPool(2814)) - Removing block pool BP-1595264304-172.17.0.8-1606980132422
+2020-12-03 07:22:22,545 [refreshUsed-/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data1/current/BP-1595264304-172.17.0.8-1606980132422] WARN  fs.CachingGetSpaceUsed (CachingGetSpaceUsed.java:run(183)) - Thread Interrupted waiting to refresh disk information: sleep interrupted
+2020-12-03 07:22:22,546 [refreshUsed-/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/data/data2/current/BP-1595264304-172.17.0.8-1606980132422] WARN  fs.CachingGetSpaceUsed (CachingGetSpaceUsed.java:run(183)) - Thread Interrupted waiting to refresh disk information: sleep interrupted
+2020-12-03 07:22:22,556 [Listener at localhost/40809] INFO  impl.FsDatasetAsyncDiskService (FsDatasetAsyncDiskService.java:shutdown(193)) - Shutting down all async disk service threads
+2020-12-03 07:22:22,557 [Listener at localhost/40809] INFO  impl.FsDatasetAsyncDiskService (FsDatasetAsyncDiskService.java:shutdown(201)) - All async disk service threads have been shut down
+2020-12-03 07:22:22,557 [Listener at localhost/40809] INFO  impl.RamDiskAsyncLazyPersistService (RamDiskAsyncLazyPersistService.java:shutdown(177)) - Shutting down all async lazy persist service threads
+2020-12-03 07:22:22,557 [Listener at localhost/40809] INFO  impl.RamDiskAsyncLazyPersistService (RamDiskAsyncLazyPersistService.java:shutdown(184)) - All async lazy persist service threads have been shut down
+2020-12-03 07:22:22,560 [Listener at localhost/40809] INFO  datanode.DataNode (DataNode.java:shutdown(2164)) - Shutdown complete.
+2020-12-03 07:22:22,560 [Listener at localhost/40809] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:stopAndJoinNameNode(2130)) - Shutting down the namenode
+2020-12-03 07:22:22,560 [Listener at localhost/40809] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:22:22,560 [Thread[Thread-48,5,main]] ERROR delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(700)) - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:22:22,561 [Listener at localhost/40809] INFO  namenode.FSEditLog (FSEditLog.java:endCurrentLogSegment(1410)) - Ending log segment 1, 77
+2020-12-03 07:22:22,561 [org.apache.hadoop.hdfs.server.namenode.FSNamesystem$LazyPersistFileScrubber@2d9b23b0] INFO  namenode.FSNamesystem (FSNamesystem.java:run(4198)) - LazyPersistFileScrubber was interrupted, exiting
+2020-12-03 07:22:22,562 [org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNodeEditLogRoller@4c0b13d9] INFO  namenode.FSNamesystem (FSNamesystem.java:run(4107)) - NameNodeEditLogRoller was interrupted, exiting
+2020-12-03 07:22:22,562 [Listener at localhost/40809] INFO  namenode.FSEditLog (FSEditLog.java:printStatistics(778)) - Number of transactions: 78 Total time for transactions(ms): 42 Number of transactions batched in Syncs: 21 Number of syncs: 58 SyncTimes(ms): 3 1 
+2020-12-03 07:22:22,564 [Listener at localhost/40809] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/edits_0000000000000000001-0000000000000000078
+2020-12-03 07:22:22,565 [Listener at localhost/40809] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current/edits_0000000000000000001-0000000000000000078
+2020-12-03 07:22:22,566 [FSEditLogAsync] INFO  namenode.FSEditLog (FSEditLogAsync.java:run(253)) - FSEditLogAsync was interrupted, exiting
+2020-12-03 07:22:22,567 [reencryptionUpdaterThread #0] WARN  namenode.ReencryptionUpdater (ReencryptionUpdater.java:run(266)) - Re-encryption updater thread interrupted. Exiting.
+2020-12-03 07:22:22,567 [reencryptionHandlerThread #0] INFO  namenode.ReencryptionHandler (ReencryptionHandler.java:run(335)) - Re-encrypt handler interrupted. Exiting
+2020-12-03 07:22:22,567 [CacheReplicationMonitor(633936139)] INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(169)) - Shutting down CacheReplicationMonitor
+2020-12-03 07:22:22,568 [Listener at localhost/40809] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 40872
+2020-12-03 07:22:22,577 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:22:22,582 [RedundancyMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4687)) - Stopping RedundancyMonitor.
+2020-12-03 07:22:22,582 [StorageInfoMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4722)) - Stopping thread.
+2020-12-03 07:22:22,592 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:22:22,703 [Listener at localhost/40809] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:22:22,703 [Listener at localhost/40809] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:22:22,705 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@37d89d31{/,null,UNAVAILABLE}{/hdfs}
+2020-12-03 07:22:22,709 [Listener at localhost/40809] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@5dd51950{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:22:22,709 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@ab1b42d{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:22:22,710 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@6c0fa323{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:22:22,740 [Thread[Thread-13,5,main]] ERROR delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(700)) - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:22:22,741 [Listener at localhost/40809] INFO  server.KMSWebApp (KMSWebApp.java:contextDestroyed(191)) - KMS Stopped
+2020-12-03 07:22:22,742 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@22bbbffe{/,null,UNAVAILABLE}{/kms}
+Exception in thread "org.apache.hadoop.crypto.key.kms.ValueQueue_thread" java.lang.RuntimeException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.apache.hadoop.crypto.key.kms.ValueQueue$2.run(ValueQueue.java:433)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:840)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1593)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.crypto.key.kms.KMSClientProvider.call(KMSClientProvider.java:564)
+	at org.apache.hadoop.crypto.key.kms.KMSClientProvider.call(KMSClientProvider.java:540)
+	at org.apache.hadoop.crypto.key.kms.KMSClientProvider.access$200(KMSClientProvider.java:97)
+	at org.apache.hadoop.crypto.key.kms.KMSClientProvider$EncryptedQueueRefiller.fillQueueForKey(KMSClientProvider.java:155)
+	at org.apache.hadoop.crypto.key.kms.ValueQueue$2.run(ValueQueue.java:423)
+	... 3 more
+2020-12-03 07:22:22,763 [Listener at localhost/40809] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@7a250cb6{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:22:22,763 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@4d9ebd49{/static,jar:file:/root/.m2/repository/org/apache/hadoop/hadoop-kms/3.2.1/hadoop-kms-3.2.1.jar!/webapps/static,UNAVAILABLE}
+2020-12-03 07:22:22,764 [Listener at localhost/40809] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@1480e28e{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:22:23,037 [Listener at localhost/40809] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping DataNode metrics system...
+2020-12-03 07:22:23,040 [Listener at localhost/40809] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - DataNode metrics system stopped.
+2020-12-03 07:22:23,040 [Listener at localhost/40809] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(607)) - DataNode metrics system shutdown complete.
+msx-rc 0

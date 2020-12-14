@@ -1,0 +1,43 @@
+2020-12-03 07:21:26,783 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(436)) - Running: DFSHAAdmin -failover nn1 nn2 --forcefence
+2020-12-03 07:21:26,929 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(92)) - ====== Beginning Service Fencing Process... ======
+2020-12-03 07:21:26,930 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(95)) - Trying method 1/1: org.apache.hadoop.ha.ShellCommandFencer(true)
+2020-12-03 07:21:27,032 [main] INFO  ha.ShellCommandFencer (ShellCommandFencer.java:tryFence(98)) - Launched fencing command 'true' with pid 4123
+2020-12-03 07:21:27,038 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(99)) - ====== Fencing successful by method org.apache.hadoop.ha.ShellCommandFencer(true) ======
+2020-12-03 07:21:27,040 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(440)) - Err_output:
+
+Output:
+Failover from nn1 to nn2 successful
+
+2020-12-03 07:21:27,041 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(436)) - Running: DFSHAAdmin -failover nn1 nn2 --forcefence
+2020-12-03 07:21:27,050 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(92)) - ====== Beginning Service Fencing Process... ======
+2020-12-03 07:21:27,050 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(95)) - Trying method 1/1: org.apache.hadoop.ha.ShellCommandFencer(false)
+2020-12-03 07:21:27,058 [main] INFO  ha.ShellCommandFencer (ShellCommandFencer.java:tryFence(98)) - Launched fencing command 'false' with pid 4126
+2020-12-03 07:21:27,065 [main] WARN  ha.NodeFencer (NodeFencer.java:fence(109)) - Fencing method org.apache.hadoop.ha.ShellCommandFencer(false) was unsuccessful.
+2020-12-03 07:21:27,066 [main] ERROR ha.NodeFencer (NodeFencer.java:fence(112)) - Unable to fence service by any configured method.
+2020-12-03 07:21:27,067 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(440)) - Err_output:
+Failover failed: Unable to fence NameNode at 1.2.3.1/1.2.3.1:12345. Fencing failed.
+
+Output:
+
+2020-12-03 07:21:27,069 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(436)) - Running: DFSHAAdmin -failover nn1 nn2 --forcefence
+2020-12-03 07:21:27,083 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(92)) - ====== Beginning Service Fencing Process... ======
+2020-12-03 07:21:27,083 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(95)) - Trying method 1/1: org.apache.hadoop.ha.ShellCommandFencer(false)
+2020-12-03 07:21:27,092 [main] INFO  ha.ShellCommandFencer (ShellCommandFencer.java:tryFence(98)) - Launched fencing command 'false' with pid 4129
+2020-12-03 07:21:27,099 [main] WARN  ha.NodeFencer (NodeFencer.java:fence(109)) - Fencing method org.apache.hadoop.ha.ShellCommandFencer(false) was unsuccessful.
+2020-12-03 07:21:27,099 [main] ERROR ha.NodeFencer (NodeFencer.java:fence(112)) - Unable to fence service by any configured method.
+2020-12-03 07:21:27,100 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(440)) - Err_output:
+Failover failed: Unable to fence NameNode at 1.2.3.1/1.2.3.1:12345. Fencing failed.
+
+Output:
+
+2020-12-03 07:21:27,101 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(436)) - Running: DFSHAAdmin -failover nn1 nn2 --forcefence
+2020-12-03 07:21:27,110 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(92)) - ====== Beginning Service Fencing Process... ======
+2020-12-03 07:21:27,110 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(95)) - Trying method 1/1: org.apache.hadoop.ha.ShellCommandFencer(true)
+2020-12-03 07:21:27,116 [main] INFO  ha.ShellCommandFencer (ShellCommandFencer.java:tryFence(98)) - Launched fencing command 'true' with pid 4132
+2020-12-03 07:21:27,122 [main] INFO  ha.NodeFencer (NodeFencer.java:fence(99)) - ====== Fencing successful by method org.apache.hadoop.ha.ShellCommandFencer(true) ======
+2020-12-03 07:21:27,123 [main] INFO  tools.TestDFSHAAdmin (TestDFSHAAdmin.java:runTool(440)) - Err_output:
+
+Output:
+Failover from nn1 to nn2 successful
+
+msx-rc 0

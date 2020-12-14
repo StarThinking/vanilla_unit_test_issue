@@ -1,0 +1,82 @@
+2020-12-03 07:19:52,534 [main] DEBUG ipc.Server (Server.java:registerProtocolEngine(292)) - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@198b6731
+2020-12-03 07:19:52,549 [main] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:19:52,550 [main] DEBUG ipc.Server (Server.java:getAuthMethods(3145)) - TOKEN authentication enabled for secret manager
+2020-12-03 07:19:52,551 [main] DEBUG ipc.Server (Server.java:getAuthMethods(3152)) - Server accepts auth methods:[TOKEN, KERBEROS]
+2020-12-03 07:19:52,558 [main] DEBUG security.SaslRpcServer (SaslRpcServer.java:<init>(111)) - Kerberos principal name is root
+2020-12-03 07:19:52,572 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:19:52,630 [Listener at 0.0.0.0/42531] DEBUG ipc.Server (RPC.java:registerProtocolAndImpl(974)) - RpcKind = RPC_PROTOCOL_BUFFER Protocol Name = org.apache.hadoop.ipc.ProtocolMetaInfoPB version=1 ProtocolImpl=org.apache.hadoop.ipc.protobuf.ProtocolInfoProtos$ProtocolInfoService$2 protocolClass=org.apache.hadoop.ipc.ProtocolMetaInfoPB
+2020-12-03 07:19:52,637 [Listener at 0.0.0.0/42531] DEBUG ipc.Server (RPC.java:registerProtocolAndImpl(974)) - RpcKind = RPC_PROTOCOL_BUFFER Protocol Name = org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol version=1 ProtocolImpl=org.apache.hadoop.hdfs.protocol.proto.ClientDatanodeProtocolProtos$ClientDatanodeProtocolService$2 protocolClass=org.apache.hadoop.hdfs.protocolPB.ClientDatanodeProtocolPB
+2020-12-03 07:19:52,638 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:19:52,638 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:19:52,640 [IPC Server handler 0 on default port 42531] DEBUG ipc.Server (Server.java:run(2869)) - IPC Server handler 0 on default port 42531: starting
+2020-12-03 07:19:52,640 [IPC Server handler 2 on default port 42531] DEBUG ipc.Server (Server.java:run(2869)) - IPC Server handler 2 on default port 42531: starting
+2020-12-03 07:19:52,640 [IPC Server handler 1 on default port 42531] DEBUG ipc.Server (Server.java:run(2869)) - IPC Server handler 1 on default port 42531: starting
+2020-12-03 07:19:52,641 [IPC Server handler 4 on default port 42531] DEBUG ipc.Server (Server.java:run(2869)) - IPC Server handler 4 on default port 42531: starting
+2020-12-03 07:19:52,640 [IPC Server handler 3 on default port 42531] DEBUG ipc.Server (Server.java:run(2869)) - IPC Server handler 3 on default port 42531: starting
+2020-12-03 07:19:52,696 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (ClientCache.java:getClient(63)) - getting client out of cache: org.apache.hadoop.ipc.Client@4ef37659
+2020-12-03 07:19:52,781 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (Client.java:<init>(497)) - The ping interval is 60000 ms.
+2020-12-03 07:19:52,782 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (Client.java:setupIOstreams(795)) - Connecting to 533329efb28f/172.17.0.8:42531
+2020-12-03 07:19:52,799 [IPC Server listener on 0] DEBUG ipc.Server (Server.java:register(3727)) - Server connection from 172.17.0.8:47430; # active connections: 1; # queued calls: 0
+2020-12-03 07:19:52,880 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:sendSaslMessage(451)) - Sending sasl message state: NEGOTIATE
+
+2020-12-03 07:19:52,885 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processOneRpc(2521)) -  got #-33
+2020-12-03 07:19:52,890 [Socket Reader #1 for port 0] DEBUG security.SaslRpcServer (SaslRpcServer.java:create(175)) - Created SASL server with mechanism = DIGEST-MD5
+2020-12-03 07:19:52,901 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processResponse(1615)) - Socket Reader #1 for port 0: responding to Call#-33 Retry#-1 null from 172.17.0.8:47430
+2020-12-03 07:19:52,902 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processResponse(1634)) - Socket Reader #1 for port 0: responding to Call#-33 Retry#-1 null from 172.17.0.8:47430 Wrote 194 bytes.
+2020-12-03 07:19:52,907 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:getServerToken(268)) - Get token info proto:interface org.apache.hadoop.hdfs.protocolPB.ClientDatanodeProtocolPB info:@org.apache.hadoop.security.token.TokenInfo(value=class org.apache.hadoop.hdfs.security.token.block.BlockTokenSelector)
+2020-12-03 07:19:52,926 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:createSaslClient(251)) - Creating SASL DIGEST-MD5(TOKEN)  client to authenticate to service at default
+2020-12-03 07:19:52,929 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:selectSaslClient(177)) - Use TOKEN authentication for protocol ClientDatanodeProtocolPB
+2020-12-03 07:19:52,931 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:handle(678)) - SASL client callback: setting username: igF2J3qPiowCMPcfAAAABHJvb3QAAAADLTEwlAQEUkVBRAVXUklURQRDT1BZB1JFUExBQ0UBBERJU0sA
+2020-12-03 07:19:52,931 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:handle(683)) - SASL client callback: setting userPassword
+2020-12-03 07:19:52,932 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:handle(688)) - SASL client callback: setting realm: default
+2020-12-03 07:19:52,936 [Listener at 0.0.0.0/42531] DEBUG security.SaslRpcClient (SaslRpcClient.java:sendSaslMessage(451)) - Sending sasl message state: INITIATE
+token: "charset=utf-8,username=\"igF2J3qPiowCMPcfAAAABHJvb3QAAAADLTEwlAQEUkVBRAVXUklURQRDT1BZB1JFUExBQ0UBBERJU0sA\",realm=\"default\",nonce=\"zMNZndIHK7I8ZcN086pYdGMoxj811TeRvN51K14G\",nc=00000001,cnonce=\"NSbAJr0j3GeLKzLx9TibpG03ohf+H4qJDuPZJikV\",digest-uri=\"/default\",maxbuf=65536,response=baa19757cf854b3a2583d47a47ee52bb,qop=auth"
+auths {
+  method: "TOKEN"
+  mechanism: "DIGEST-MD5"
+  protocol: ""
+  serverId: "default"
+}
+
+2020-12-03 07:19:52,937 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processOneRpc(2521)) -  got #-33
+2020-12-03 07:19:52,937 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processSaslToken(2112)) - Have read input token of size 318 for processing by saslServer.evaluateResponse()
+2020-12-03 07:19:52,940 [Socket Reader #1 for port 0] DEBUG security.SaslRpcServer (SaslRpcServer.java:handle(310)) - SASL server DIGEST-MD5 callback: setting password for client: root (auth:SIMPLE)
+2020-12-03 07:19:52,941 [Socket Reader #1 for port 0] DEBUG security.SaslRpcServer (SaslRpcServer.java:handle(328)) - SASL server DIGEST-MD5 callback: setting canonicalized client ID: root
+2020-12-03 07:19:52,942 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:buildSaslResponse(2129)) - Will send SUCCESS token of size 40 from saslServer.
+2020-12-03 07:19:52,943 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:saslProcess(2000)) - SASL server context established. Negotiated QoP is auth
+2020-12-03 07:19:52,946 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:saslProcess(2005)) - SASL server successfully authenticated client: root (auth:SIMPLE)
+2020-12-03 07:19:52,947 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:saslProcess(2008)) - Auth successful for root (auth:SIMPLE)
+2020-12-03 07:19:52,947 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processResponse(1615)) - Socket Reader #1 for port 0: responding to Call#-33 Retry#-1 null from 172.17.0.8:47430
+2020-12-03 07:19:52,948 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processResponse(1634)) - Socket Reader #1 for port 0: responding to Call#-33 Retry#-1 null from 172.17.0.8:47430 Wrote 64 bytes.
+2020-12-03 07:19:52,949 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (Client.java:setupIOstreams(837)) - Negotiated QOP is :auth
+2020-12-03 07:19:52,959 [IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0] DEBUG ipc.Client (Client.java:run(1074)) - IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0: starting, having connections 1
+2020-12-03 07:19:52,960 [IPC Parameter Sending Thread #0] DEBUG ipc.Client (Client.java:run(1137)) - IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0 sending #0 org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol.getReplicaVisibleLength
+2020-12-03 07:19:52,962 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processOneRpc(2521)) -  got #-3
+2020-12-03 07:19:52,968 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:authorizeConnection(2750)) - Successfully authorized userInfo {
+}
+protocol: "org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol"
+
+2020-12-03 07:19:52,968 [Socket Reader #1 for port 0] DEBUG ipc.Server (Server.java:processOneRpc(2521)) -  got #0
+2020-12-03 07:19:52,970 [IPC Server handler 0 on default port 42531] DEBUG ipc.Server (Server.java:run(2902)) - IPC Server handler 0 on default port 42531: Call#0 Retry#0 org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol.getReplicaVisibleLength from 172.17.0.8:47430 for RpcKind RPC_PROTOCOL_BUFFER
+2020-12-03 07:19:52,971 [IPC Server handler 0 on default port 42531] INFO  ipc.Server (ProtobufRpcEngine.java:call(505)) - Call: connectionProtocolName=org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol, method=getReplicaVisibleLength
+2020-12-03 07:19:53,070 [IPC Server handler 0 on default port 42531] INFO  block.TestBlockToken (TestBlockToken.java:answer(151)) - Got: block_token_identifier (expiryDate=1606980112266, keyId=36763423, userId=root, blockPoolId=-10, blockId=-108, access modes=[READ, WRITE, COPY, REPLACE], storageTypes= [DISK], storageIds= [])
+2020-12-03 07:19:53,091 [IPC Server handler 0 on default port 42531] DEBUG ipc.Server (Server.java:processResponse(1615)) - IPC Server handler 0 on default port 42531: responding to Call#0 Retry#0 org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol.getReplicaVisibleLength from 172.17.0.8:47430
+2020-12-03 07:19:53,092 [IPC Server handler 0 on default port 42531] DEBUG ipc.Server (Server.java:processResponse(1634)) - IPC Server handler 0 on default port 42531: responding to Call#0 Retry#0 org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol.getReplicaVisibleLength from 172.17.0.8:47430 Wrote 43 bytes.
+2020-12-03 07:19:53,096 [IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0] DEBUG ipc.Client (Client.java:receiveRpcResponse(1191)) - IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0 got value #0
+2020-12-03 07:19:53,100 [Listener at 0.0.0.0/42531] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 42531
+2020-12-03 07:19:53,101 [IPC Server handler 0 on default port 42531] DEBUG ipc.Server (Server.java:run(2946)) - IPC Server handler 0 on default port 42531: exiting
+2020-12-03 07:19:53,104 [IPC Server handler 1 on default port 42531] DEBUG ipc.Server (Server.java:run(2946)) - IPC Server handler 1 on default port 42531: exiting
+2020-12-03 07:19:53,105 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (ClientCache.java:stopClient(97)) - stopping client from cache: org.apache.hadoop.ipc.Client@4ef37659
+2020-12-03 07:19:53,104 [IPC Server Responder] DEBUG ipc.Server (Server.java:doRunLoop(1513)) - Checking for old call responses.
+2020-12-03 07:19:53,104 [IPC Server handler 4 on default port 42531] DEBUG ipc.Server (Server.java:run(2946)) - IPC Server handler 4 on default port 42531: exiting
+2020-12-03 07:19:53,104 [IPC Server handler 3 on default port 42531] DEBUG ipc.Server (Server.java:run(2946)) - IPC Server handler 3 on default port 42531: exiting
+2020-12-03 07:19:53,105 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:19:53,105 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (ClientCache.java:stopClient(103)) - removing client from cache: org.apache.hadoop.ipc.Client@4ef37659
+2020-12-03 07:19:53,105 [IPC Server handler 2 on default port 42531] DEBUG ipc.Server (Server.java:run(2946)) - IPC Server handler 2 on default port 42531: exiting
+2020-12-03 07:19:53,107 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (ClientCache.java:stopClient(110)) - stopping actual client because no more references remain: org.apache.hadoop.ipc.Client@4ef37659
+2020-12-03 07:19:53,107 [Listener at 0.0.0.0/42531] DEBUG ipc.Client (Client.java:stop(1340)) - Stopping client
+2020-12-03 07:19:53,107 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:19:53,108 [IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0] DEBUG ipc.Client (Client.java:close(1283)) - IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0: closed
+2020-12-03 07:19:53,108 [IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0] DEBUG ipc.Client (Client.java:run(1092)) - IPC Client (555273695) connection to 533329efb28f/172.17.0.8:42531 from -10:blk_-108_0: stopped, remaining connections 0
+2020-12-03 07:19:53,109 [IPC Server listener on 0] DEBUG ipc.Server (Server.java:close(3738)) - IPC Server listener on 0: disconnecting client 172.17.0.8:47430. Number of active connections: 0
+msx-rc 0

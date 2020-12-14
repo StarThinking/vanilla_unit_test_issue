@@ -1,0 +1,13 @@
+2020-12-03 07:20:54,561 [Thread-0] INFO  checker.TestDatasetVolumeCheckerTimeout (TestDatasetVolumeCheckerTimeout.java:testDiskCheckTimeout(99)) - Executing testDiskCheckTimeout
+2020-12-03 07:20:54,789 [Thread-0] INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for Mock for FsVolumeSpi, hashCode: 2092715652
+2020-12-03 07:20:54,828 [VolumeCheck ResultHandler thread 0] WARN  checker.DatasetVolumeChecker (DatasetVolumeChecker.java:onFailure(380)) - Exception running disk checks against volume Mock for FsVolumeSpi, hashCode: 2092715652
+java.util.concurrent.TimeoutException: Future timed out: com.google.common.util.concurrent.TrustedListenableFutureTask@254c3e2e[status=PENDING, info=[task=[running=[RUNNING ON DataNode DiskChecker thread 0], org.apache.hadoop.hdfs.server.datanode.checker.ThrottledAsyncChecker$1@2b8bc4f7]]]
+	at org.apache.hadoop.hdfs.server.datanode.checker.TimeoutFuture$Fire.run(TimeoutFuture.java:137)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+msx-rc 0

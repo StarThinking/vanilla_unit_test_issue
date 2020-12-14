@@ -1,0 +1,890 @@
+2020-12-03 07:20:48,045 [Thread-0] INFO  qjournal.MiniQJMHACluster (MiniQJMHACluster.java:<init>(113)) - Set MiniQJMHACluster basePort to 12688
+2020-12-03 07:20:48,055 [Thread-0] INFO  qjournal.MiniJournalCluster (MiniJournalCluster.java:<init>(101)) - Starting MiniJournalCluster with 3 journal nodes
+2020-12-03 07:20:48,364 [Thread-0] INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(118)) - Loaded properties from hadoop-metrics2.properties
+2020-12-03 07:20:48,511 [Thread-0] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(374)) - Scheduled Metric snapshot period at 0 second(s).
+2020-12-03 07:20:48,512 [Thread-0] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JournalNode metrics system started
+2020-12-03 07:20:48,664 [Thread-0] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:0
+2020-12-03 07:20:48,681 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:48,697 [Thread-0] INFO  util.log (Log.java:initialized(192)) - Logging initialized @1786ms
+2020-12-03 07:20:48,850 [Thread-0] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:48,890 [Thread-0] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:20:48,891 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:48,906 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:48,910 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:20:48,910 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:48,911 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:48,951 [Thread-0] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 39472
+2020-12-03 07:20:48,956 [Thread-0] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:49,009 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@597d5e5a{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:49,010 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@2203f1f9{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:49,108 [Thread-0] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@3553e61c{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:20:49,120 [Thread-0] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@45b1ba0a{HTTP/1.1,[http/1.1]}{localhost:39472}
+2020-12-03 07:20:49,121 [Thread-0] INFO  server.Server (Server.java:doStart(419)) - Started @2210ms
+2020-12-03 07:20:49,123 [Thread-0] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:0
+2020-12-03 07:20:49,167 [Thread-0] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:49,180 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:20:49,483 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:49,483 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:20:49,488 [Listener at localhost/41001] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JournalNode metrics system started (again)
+2020-12-03 07:20:49,492 [Listener at localhost/41001] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:0
+2020-12-03 07:20:49,493 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:49,495 [Listener at localhost/41001] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:49,497 [Listener at localhost/41001] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:20:49,498 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:49,502 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:49,503 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:20:49,504 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:49,504 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:49,507 [Listener at localhost/41001] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 39655
+2020-12-03 07:20:49,507 [Listener at localhost/41001] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:49,510 [Listener at localhost/41001] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@186b69b5{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:49,511 [Listener at localhost/41001] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@6f30673f{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:49,520 [Listener at localhost/41001] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@7c1d690f{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:20:49,521 [Listener at localhost/41001] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@2abc51a0{HTTP/1.1,[http/1.1]}{localhost:39655}
+2020-12-03 07:20:49,522 [Listener at localhost/41001] INFO  server.Server (Server.java:doStart(419)) - Started @2611ms
+2020-12-03 07:20:49,523 [Listener at localhost/41001] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:0
+2020-12-03 07:20:49,523 [Listener at localhost/41001] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:49,524 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:20:49,530 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:49,530 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:20:49,566 [Listener at localhost/38144] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JournalNode metrics system started (again)
+2020-12-03 07:20:49,577 [Listener at localhost/38144] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:0
+2020-12-03 07:20:49,577 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:49,589 [Listener at localhost/38144] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:49,590 [Listener at localhost/38144] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:20:49,591 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:49,594 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:49,596 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:20:49,596 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:49,596 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:49,598 [Listener at localhost/38144] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 45573
+2020-12-03 07:20:49,598 [Listener at localhost/38144] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:49,602 [Listener at localhost/38144] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@612f1ae{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:49,603 [Listener at localhost/38144] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@49b30ed6{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:49,626 [Listener at localhost/38144] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@2d339600{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:20:49,630 [Listener at localhost/38144] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@14cbf7e1{HTTP/1.1,[http/1.1]}{localhost:45573}
+2020-12-03 07:20:49,630 [Listener at localhost/38144] INFO  server.Server (Server.java:doStart(419)) - Started @2719ms
+2020-12-03 07:20:49,636 [Listener at localhost/38144] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:0
+2020-12-03 07:20:49,636 [Listener at localhost/38144] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:49,640 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:20:49,645 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:49,646 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:20:50,569 [IPC Server handler 0 on default port 41001] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/waitactive
+2020-12-03 07:20:50,569 [IPC Server handler 0 on default port 38144] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/waitactive
+2020-12-03 07:20:50,569 [IPC Server handler 0 on default port 42316] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/waitactive
+2020-12-03 07:20:50,591 [IPC Server handler 0 on default port 41001] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/waitactive does not exist
+2020-12-03 07:20:50,591 [IPC Server handler 0 on default port 42316] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/waitactive does not exist
+2020-12-03 07:20:50,591 [IPC Server handler 0 on default port 38144] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/waitactive does not exist
+2020-12-03 07:20:50,627 [IPC Server handler 0 on default port 38144] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:20:50,628 [IPC Server handler 0 on default port 38144] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:20:50,628 [IPC Server handler 0 on default port 41001] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:20:50,628 [IPC Server handler 0 on default port 41001] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:20:50,631 [IPC Server handler 0 on default port 42316] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:20:50,631 [IPC Server handler 0 on default port 42316] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:20:50,879 [Listener at localhost/42316] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:<init>(493)) - starting cluster: numNameNodes=2, numDataNodes=0
+Formatting using clusterid: testClusterID
+2020-12-03 07:20:51,137 [Listener at localhost/42316] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:20:51,148 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: null
+2020-12-03 07:20:51,149 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:20:51,150 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:20:51,150 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:20:51,150 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:20:51,151 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:20:51,151 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(791)) - Determined nameservice ID: ns1
+2020-12-03 07:20:51,152 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: true
+2020-12-03 07:20:51,188 [Listener at localhost/42316] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:20:51,193 [Listener at localhost/42316] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - hadoop.configured.node.mapping is deprecated. Instead, use net.topology.configured.node.mapping
+2020-12-03 07:20:51,194 [Listener at localhost/42316] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:20:51,194 [Listener at localhost/42316] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:20:51,199 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:20:51,199 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:20:51
+2020-12-03 07:20:51,202 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:20:51,203 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:51,205 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:20:51,206 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:20:51,224 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:20:51,225 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:20:51,232 [Listener at localhost/42316] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:20:51,233 [Listener at localhost/42316] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:20:51,233 [Listener at localhost/42316] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:20:51,233 [Listener at localhost/42316] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:20:51,234 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 0
+2020-12-03 07:20:51,235 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:20:51,235 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:20:51,235 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:20:51,236 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:20:51,236 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:20:51,236 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:20:51,276 [Listener at localhost/42316] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
+2020-12-03 07:20:51,276 [Listener at localhost/42316] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
+2020-12-03 07:20:51,276 [Listener at localhost/42316] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
+2020-12-03 07:20:51,277 [Listener at localhost/42316] INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
+2020-12-03 07:20:51,294 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:20:51,295 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:51,295 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:20:51,295 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:20:51,309 [Listener at localhost/42316] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:20:51,309 [Listener at localhost/42316] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:20:51,310 [Listener at localhost/42316] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:20:51,310 [Listener at localhost/42316] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:20:51,317 [Listener at localhost/42316] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:20:51,320 [Listener at localhost/42316] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:20:51,326 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:20:51,327 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:51,327 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:20:51,327 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:20:51,337 [Listener at localhost/42316] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:20:51,337 [Listener at localhost/42316] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:20:51,337 [Listener at localhost/42316] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:20:51,341 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:20:51,341 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:20:51,344 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:20:51,344 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:51,345 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:20:51,345 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:20:51,397 [IPC Server handler 4 on default port 38144] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1
+2020-12-03 07:20:51,398 [IPC Server handler 4 on default port 38144] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1 does not exist
+2020-12-03 07:20:51,402 [IPC Server handler 2 on default port 42316] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1
+2020-12-03 07:20:51,403 [IPC Server handler 2 on default port 42316] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1 does not exist
+2020-12-03 07:20:51,412 [IPC Server handler 3 on default port 41001] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1
+2020-12-03 07:20:51,413 [IPC Server handler 3 on default port 41001] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1 does not exist
+2020-12-03 07:20:51,425 [IPC Server handler 3 on default port 41001] INFO  server.JournalNodeSyncer (JournalNodeSyncer.java:start(122)) - Starting SyncJournal daemon for journal ns1
+2020-12-03 07:20:51,426 [IPC Server handler 2 on default port 42316] INFO  server.JournalNodeSyncer (JournalNodeSyncer.java:start(122)) - Starting SyncJournal daemon for journal ns1
+2020-12-03 07:20:51,426 [IPC Server handler 4 on default port 38144] INFO  server.JournalNodeSyncer (JournalNodeSyncer.java:start(122)) - Starting SyncJournal daemon for journal ns1
+2020-12-03 07:20:51,433 [Listener at localhost/42316] INFO  namenode.FSImage (FSImage.java:format(185)) - Allocated new BlockPoolId: BP-520461265-172.17.0.7-1606980051433
+2020-12-03 07:20:51,539 [Listener at localhost/42316] INFO  common.Storage (NNStorage.java:format(595)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 has been successfully formatted.
+2020-12-03 07:20:51,616 [Listener at localhost/42316] INFO  common.Storage (NNStorage.java:format(595)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2 has been successfully formatted.
+2020-12-03 07:20:51,659 [IPC Server handler 3 on default port 42316] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : ns1 with namespace info: lv=-65;cid=testClusterID;nsid=1743329699;c=1606980051433;bpid=BP-520461265-172.17.0.7-1606980051433 and force: true
+2020-12-03 07:20:51,659 [IPC Server handler 1 on default port 41001] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : ns1 with namespace info: lv=-65;cid=testClusterID;nsid=1743329699;c=1606980051433;bpid=BP-520461265-172.17.0.7-1606980051433 and force: true
+2020-12-03 07:20:51,659 [IPC Server handler 1 on default port 38144] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : ns1 with namespace info: lv=-65;cid=testClusterID;nsid=1743329699;c=1606980051433;bpid=BP-520461265-172.17.0.7-1606980051433 and force: true
+2020-12-03 07:20:51,660 [IPC Server handler 1 on default port 38144] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1 does not exist. Creating ...
+2020-12-03 07:20:51,660 [IPC Server handler 3 on default port 42316] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1 does not exist. Creating ...
+2020-12-03 07:20:51,661 [IPC Server handler 1 on default port 41001] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1 does not exist. Creating ...
+2020-12-03 07:20:51,727 [IPC Server handler 1 on default port 38144] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:51,727 [IPC Server handler 3 on default port 42316] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:51,728 [IPC Server handler 3 on default port 42316] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1; location= null with nsid: 1743329699
+2020-12-03 07:20:51,728 [IPC Server handler 1 on default port 41001] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:51,728 [IPC Server handler 1 on default port 38144] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1; location= null with nsid: 1743329699
+2020-12-03 07:20:51,729 [IPC Server handler 1 on default port 41001] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1; location= null with nsid: 1743329699
+2020-12-03 07:20:51,761 [IPC Server handler 1 on default port 41001] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/paxos
+2020-12-03 07:20:51,761 [IPC Server handler 3 on default port 42316] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/paxos
+2020-12-03 07:20:51,761 [IPC Server handler 1 on default port 38144] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/paxos
+2020-12-03 07:20:51,829 [IPC Server handler 1 on default port 41001] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:51,863 [IPC Server handler 3 on default port 42316] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:51,863 [IPC Server handler 1 on default port 38144] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:51,915 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(512)) - Saving image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current/fsimage.ckpt_0000000000000000000 using no compression
+2020-12-03 07:20:51,915 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(512)) - Saving image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage.ckpt_0000000000000000000 using no compression
+2020-12-03 07:20:52,048 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(516)) - Image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage.ckpt_0000000000000000000 of size 399 bytes saved in 0 seconds .
+2020-12-03 07:20:52,048 [FSImageSaver for /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2 of type IMAGE_AND_EDITS] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(516)) - Image file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current/fsimage.ckpt_0000000000000000000 of size 399 bytes saved in 0 seconds .
+2020-12-03 07:20:52,089 [Listener at localhost/42316] INFO  namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(203)) - Going to retain 1 images with txid >= 0
+2020-12-03 07:20:52,174 [Listener at localhost/42316] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:copyNameDirs(1264)) - Copying namedir from primary node dir file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 to file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3
+2020-12-03 07:20:52,199 [Listener at localhost/42316] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:copyNameDirs(1264)) - Copying namedir from primary node dir file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1 to file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-4
+2020-12-03 07:20:52,207 [Listener at localhost/42316] INFO  namenode.NameNode (NameNode.java:createNameNode(1632)) - createNameNode []
+2020-12-03 07:20:52,219 [Listener at localhost/42316] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - NameNode metrics system started (again)
+2020-12-03 07:20:52,224 [Listener at localhost/42316] INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://ns1
+2020-12-03 07:20:52,225 [Listener at localhost/42316] INFO  namenode.NameNode (NameNode.java:<init>(944)) - Clients should use ns1 to access this namenode/service.
+2020-12-03 07:20:52,274 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@3448c4c2] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:20:52,274 [Listener at localhost/42316] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for hdfs at: http://localhost:12689
+2020-12-03 07:20:52,275 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:52,278 [Listener at localhost/42316] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:52,279 [Listener at localhost/42316] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.namenode is not defined
+2020-12-03 07:20:52,279 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:52,283 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:52,284 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2020-12-03 07:20:52,285 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:52,285 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:52,299 [Listener at localhost/42316] INFO  http.HttpServer2 (NameNodeHttpServer.java:initWebHdfs(102)) - Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2020-12-03 07:20:52,300 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(806)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2020-12-03 07:20:52,306 [Listener at localhost/42316] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 12689
+2020-12-03 07:20:52,307 [Listener at localhost/42316] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:52,315 [Listener at localhost/42316] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@2ccd099f{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:52,316 [Listener at localhost/42316] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@3b58a086{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:52,334 [Listener at localhost/42316] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@184a30a9{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/hdfs/,AVAILABLE}{/hdfs}
+2020-12-03 07:20:52,336 [Listener at localhost/42316] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@5bc7d4bb{HTTP/1.1,[http/1.1]}{localhost:12689}
+2020-12-03 07:20:52,336 [Listener at localhost/42316] INFO  server.Server (Server.java:doStart(419)) - Started @5425ms
+2020-12-03 07:20:52,437 [Listener at localhost/42316] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:20:52,438 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: null
+2020-12-03 07:20:52,438 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:20:52,438 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:20:52,439 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:20:52,439 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:20:52,439 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:20:52,439 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(791)) - Determined nameservice ID: ns1
+2020-12-03 07:20:52,439 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: true
+2020-12-03 07:20:52,440 [Listener at localhost/42316] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:20:52,440 [Listener at localhost/42316] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:20:52,441 [Listener at localhost/42316] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:20:52,441 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:20:52,441 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:20:52
+2020-12-03 07:20:52,442 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:20:52,442 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:52,442 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:20:52,442 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:20:52,455 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:20:52,455 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:20:52,456 [Listener at localhost/42316] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:20:52,456 [Listener at localhost/42316] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:20:52,456 [Listener at localhost/42316] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:20:52,456 [Listener at localhost/42316] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 0
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:20:52,457 [Listener at localhost/42316] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:20:52,458 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:20:52,458 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:52,458 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:20:52,459 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:20:52,465 [Listener at localhost/42316] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:20:52,465 [Listener at localhost/42316] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:20:52,465 [Listener at localhost/42316] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:20:52,466 [Listener at localhost/42316] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:20:52,466 [Listener at localhost/42316] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:20:52,466 [Listener at localhost/42316] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:20:52,466 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:20:52,466 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:52,467 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:20:52,467 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:20:52,469 [Listener at localhost/42316] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:20:52,469 [Listener at localhost/42316] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:20:52,469 [Listener at localhost/42316] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:20:52,470 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:20:52,470 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:20:52,470 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:20:52,470 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:52,470 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:20:52,471 [Listener at localhost/42316] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:20:52,546 [Listener at localhost/42316] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:52,581 [Listener at localhost/42316] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:52,592 [Listener at localhost/42316] INFO  namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2020-12-03 07:20:52,592 [Listener at localhost/42316] INFO  namenode.FSImage (FSImage.java:loadFSImageFile(797)) - Planning to load image: FSImageFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2020-12-03 07:20:52,623 [Listener at localhost/42316] INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2020-12-03 07:20:52,630 [Listener at localhost/42316] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2020-12-03 07:20:52,630 [Listener at localhost/42316] INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000
+2020-12-03 07:20:52,635 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1110)) - Need to save fs image? false (staleImage=false, haEnabled=true, isRollingUpgrade=false)
+2020-12-03 07:20:52,636 [Listener at localhost/42316] INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2020-12-03 07:20:52,636 [Listener at localhost/42316] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(727)) - Finished loading FSImage in 164 msecs
+2020-12-03 07:20:53,324 [Listener at localhost/42316] INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(448)) - RPC server is binding to localhost:12688
+2020-12-03 07:20:53,372 [Listener at localhost/42316] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:53,386 [Socket Reader #1 for port 12688] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 12688
+2020-12-03 07:20:53,415 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5090)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2020-12-03 07:20:53,436 [Listener at localhost/12688] INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(171)) - Number of blocks under construction: 0
+2020-12-03 07:20:53,452 [Listener at localhost/12688] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(400)) - STATE* Leaving safe mode after 0 secs
+2020-12-03 07:20:53,453 [Listener at localhost/12688] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(406)) - STATE* Network topology has 0 racks and 0 datanodes
+2020-12-03 07:20:53,453 [Listener at localhost/12688] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(408)) - STATE* UnderReplicatedBlocks has 0 blocks
+2020-12-03 07:20:53,494 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:53,495 [IPC Server listener on 12688] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 12688: starting
+2020-12-03 07:20:53,507 [Listener at localhost/12688] INFO  namenode.NameNode (NameNode.java:startCommonServices(828)) - NameNode RPC up at: localhost/127.0.0.1:12688
+2020-12-03 07:20:53,512 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:startStandbyServices(1391)) - Starting services required for standby state
+2020-12-03 07:20:53,519 [Listener at localhost/12688] INFO  ha.EditLogTailer (EditLogTailer.java:<init>(205)) - Will roll logs on active node every 120 seconds.
+2020-12-03 07:20:53,519 [Listener at localhost/12688] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.period.backoff-max(0) assuming SECONDS
+2020-12-03 07:20:53,519 [Listener at localhost/12688] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.rolledits.timeout(60) assuming SECONDS
+2020-12-03 07:20:53,527 [Listener at localhost/12688] INFO  ha.StandbyCheckpointer (StandbyCheckpointer.java:start(139)) - Starting standby checkpoint thread...
+Checkpointing active NN to possible NNs: [http://127.0.0.1:12691]
+Serving checkpoints at http://localhost:12689
+2020-12-03 07:20:53,532 [Listener at localhost/12688] INFO  namenode.NameNode (NameNode.java:createNameNode(1632)) - createNameNode []
+2020-12-03 07:20:53,533 [Listener at localhost/12688] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - NameNode metrics system started (again)
+2020-12-03 07:20:53,534 [Listener at localhost/12688] INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://ns1
+2020-12-03 07:20:53,535 [Listener at localhost/12688] INFO  namenode.NameNode (NameNode.java:<init>(944)) - Clients should use ns1 to access this namenode/service.
+2020-12-03 07:20:53,542 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@7115761f] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:20:53,543 [Listener at localhost/12688] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for hdfs at: http://localhost:12691
+2020-12-03 07:20:53,543 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:53,546 [Listener at localhost/12688] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:53,547 [Listener at localhost/12688] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.namenode is not defined
+2020-12-03 07:20:53,547 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:53,550 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:53,551 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2020-12-03 07:20:53,551 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:53,552 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:53,554 [Listener at localhost/12688] INFO  http.HttpServer2 (NameNodeHttpServer.java:initWebHdfs(102)) - Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2020-12-03 07:20:53,554 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(806)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2020-12-03 07:20:53,555 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 12691
+2020-12-03 07:20:53,555 [Listener at localhost/12688] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:53,560 [Listener at localhost/12688] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@7a6ef547{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:53,561 [Listener at localhost/12688] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@59447d85{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:53,569 [Listener at localhost/12688] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@4ea017da{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/hdfs/,AVAILABLE}{/hdfs}
+2020-12-03 07:20:53,570 [Listener at localhost/12688] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@226cd89d{HTTP/1.1,[http/1.1]}{localhost:12691}
+2020-12-03 07:20:53,570 [Listener at localhost/12688] INFO  server.Server (Server.java:doStart(419)) - Started @6659ms
+2020-12-03 07:20:53,575 [Listener at localhost/12688] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:20:53,575 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: null
+2020-12-03 07:20:53,576 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:20:53,576 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:20:53,576 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:20:53,576 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:20:53,576 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:20:53,577 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(791)) - Determined nameservice ID: ns1
+2020-12-03 07:20:53,577 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: true
+2020-12-03 07:20:53,577 [Listener at localhost/12688] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:20:53,578 [Listener at localhost/12688] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:20:53,578 [Listener at localhost/12688] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:20:53,578 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:20:53,578 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:20:53
+2020-12-03 07:20:53,579 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:20:53,579 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:53,579 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:20:53,579 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:20:53,586 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:20:53,587 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:20:53,587 [Listener at localhost/12688] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 0
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:20:53,588 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:20:53,589 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:20:53,589 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:20:53,589 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:20:53,589 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:20:53,590 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:53,590 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:20:53,590 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:20:53,597 [Listener at localhost/12688] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:20:53,597 [Listener at localhost/12688] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:20:53,598 [Listener at localhost/12688] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:20:53,598 [Listener at localhost/12688] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:20:53,598 [Listener at localhost/12688] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:20:53,598 [Listener at localhost/12688] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:20:53,598 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:20:53,598 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:53,599 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:20:53,599 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:20:53,600 [Listener at localhost/12688] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:20:53,600 [Listener at localhost/12688] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:20:53,600 [Listener at localhost/12688] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:20:53,601 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:20:53,601 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:20:53,601 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:20:53,601 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:53,601 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:20:53,601 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:20:53,645 [Listener at localhost/12688] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:53,679 [Listener at localhost/12688] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-4/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:53,712 [Listener at localhost/12688] INFO  namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2020-12-03 07:20:53,713 [Listener at localhost/12688] INFO  namenode.FSImage (FSImage.java:loadFSImageFile(797)) - Planning to load image: FSImageFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2020-12-03 07:20:53,715 [Listener at localhost/12688] INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2020-12-03 07:20:53,717 [Listener at localhost/12688] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2020-12-03 07:20:53,717 [Listener at localhost/12688] INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current/fsimage_0000000000000000000
+2020-12-03 07:20:53,718 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1110)) - Need to save fs image? false (staleImage=false, haEnabled=true, isRollingUpgrade=false)
+2020-12-03 07:20:53,718 [Listener at localhost/12688] INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2020-12-03 07:20:53,718 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(727)) - Finished loading FSImage in 115 msecs
+2020-12-03 07:20:53,719 [Listener at localhost/12688] INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(448)) - RPC server is binding to localhost:12690
+2020-12-03 07:20:53,720 [Listener at localhost/12688] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:53,721 [Socket Reader #1 for port 12690] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 12690
+2020-12-03 07:20:53,725 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5090)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2020-12-03 07:20:53,741 [Listener at localhost/12690] INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(171)) - Number of blocks under construction: 0
+2020-12-03 07:20:53,745 [Listener at localhost/12690] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(400)) - STATE* Leaving safe mode after 0 secs
+2020-12-03 07:20:53,746 [Listener at localhost/12690] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(406)) - STATE* Network topology has 0 racks and 0 datanodes
+2020-12-03 07:20:53,746 [Listener at localhost/12690] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(408)) - STATE* UnderReplicatedBlocks has 0 blocks
+2020-12-03 07:20:53,751 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:53,751 [IPC Server listener on 12690] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 12690: starting
+2020-12-03 07:20:53,754 [Listener at localhost/12690] INFO  namenode.NameNode (NameNode.java:startCommonServices(828)) - NameNode RPC up at: localhost/127.0.0.1:12690
+2020-12-03 07:20:53,754 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:startStandbyServices(1391)) - Starting services required for standby state
+2020-12-03 07:20:53,756 [Listener at localhost/12690] INFO  ha.EditLogTailer (EditLogTailer.java:<init>(205)) - Will roll logs on active node every 120 seconds.
+2020-12-03 07:20:53,756 [Listener at localhost/12690] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.period.backoff-max(0) assuming SECONDS
+2020-12-03 07:20:53,762 [Listener at localhost/12690] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.rolledits.timeout(60) assuming SECONDS
+2020-12-03 07:20:53,767 [Listener at localhost/12690] INFO  ha.StandbyCheckpointer (StandbyCheckpointer.java:start(139)) - Starting standby checkpoint thread...
+Checkpointing active NN to possible NNs: [http://localhost:12689]
+Serving checkpoints at http://localhost:12691
+2020-12-03 07:20:54,284 [IPC Server handler 1 on default port 12688] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:54,308 [IPC Server handler 0 on default port 12690] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:54,311 [Listener at localhost/12690] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2758)) - Cluster is active
+2020-12-03 07:20:54,323 [IPC Server handler 3 on default port 12688] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:54,329 [IPC Server handler 1 on default port 12690] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:54,330 [Listener at localhost/12690] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2758)) - Cluster is active
+2020-12-03 07:20:54,331 [Listener at localhost/12690] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:stopAndJoinNameNode(2130)) - Shutting down the namenode
+2020-12-03 07:20:54,331 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:54,333 [Edit log tailer] WARN  ha.EditLogTailer (EditLogTailer.java:doWork(528)) - Edit log tailer interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.sleep(EditLogTailer.java:433)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.doWork(EditLogTailer.java:526)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.access$300(EditLogTailer.java:440)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread$1.run(EditLogTailer.java:457)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:484)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.run(EditLogTailer.java:453)
+2020-12-03 07:20:54,337 [Listener at localhost/12690] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 12688
+2020-12-03 07:20:54,344 [IPC Server listener on 12688] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 12688
+2020-12-03 07:20:54,344 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:54,345 [RedundancyMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4687)) - Stopping RedundancyMonitor.
+2020-12-03 07:20:54,345 [StorageInfoMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4722)) - Stopping thread.
+2020-12-03 07:20:54,395 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:20:54,397 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:54,402 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@184a30a9{/,null,UNAVAILABLE}{/hdfs}
+2020-12-03 07:20:54,416 [Listener at localhost/12690] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@5bc7d4bb{HTTP/1.1,[http/1.1]}{localhost:12689}
+2020-12-03 07:20:54,417 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@3b58a086{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:54,418 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@2ccd099f{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:54,438 [Listener at localhost/12690] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:stopAndJoinNameNode(2130)) - Shutting down the namenode
+2020-12-03 07:20:54,438 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:54,439 [Edit log tailer] WARN  ha.EditLogTailer (EditLogTailer.java:doWork(528)) - Edit log tailer interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.sleep(EditLogTailer.java:433)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.doWork(EditLogTailer.java:526)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.access$300(EditLogTailer.java:440)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread$1.run(EditLogTailer.java:457)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:484)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.run(EditLogTailer.java:453)
+2020-12-03 07:20:54,441 [Listener at localhost/12690] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 12690
+2020-12-03 07:20:54,444 [IPC Server listener on 12690] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 12690
+2020-12-03 07:20:54,445 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:54,447 [StorageInfoMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4722)) - Stopping thread.
+2020-12-03 07:20:54,447 [RedundancyMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4687)) - Stopping RedundancyMonitor.
+2020-12-03 07:20:54,459 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:20:54,460 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:54,462 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@4ea017da{/,null,UNAVAILABLE}{/hdfs}
+2020-12-03 07:20:54,467 [Listener at localhost/12690] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@226cd89d{HTTP/1.1,[http/1.1]}{localhost:12691}
+2020-12-03 07:20:54,468 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@59447d85{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:54,469 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@7a6ef547{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:54,480 [Listener at localhost/12690] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:20:54,480 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: null
+2020-12-03 07:20:54,480 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:20:54,481 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:20:54,481 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:20:54,481 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:20:54,481 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:20:54,482 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(791)) - Determined nameservice ID: ns1
+2020-12-03 07:20:54,482 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: true
+2020-12-03 07:20:54,482 [Listener at localhost/12690] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:20:54,483 [Listener at localhost/12690] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:20:54,483 [Listener at localhost/12690] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:20:54,484 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:20:54,484 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:20:54
+2020-12-03 07:20:54,484 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:20:54,484 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:54,485 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:20:54,485 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:20:54,494 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:20:54,494 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:20:54,494 [Listener at localhost/12690] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:20:54,495 [Listener at localhost/12690] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:20:54,495 [Listener at localhost/12690] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:20:54,495 [Listener at localhost/12690] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:20:54,495 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 0
+2020-12-03 07:20:54,495 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:20:54,496 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:20:54,496 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:20:54,496 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:20:54,496 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:20:54,496 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:20:54,497 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:20:54,497 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:54,497 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:20:54,497 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:20:54,500 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:20:54,500 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:20:54,500 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:20:54,500 [Listener at localhost/12690] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:20:54,501 [Listener at localhost/12690] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:20:54,501 [Listener at localhost/12690] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:20:54,501 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:20:54,501 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:54,502 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:20:54,502 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:20:54,503 [Listener at localhost/12690] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:20:54,503 [Listener at localhost/12690] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:20:54,503 [Listener at localhost/12690] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:20:54,503 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:20:54,503 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:20:54,509 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:20:54,510 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:54,512 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:20:54,512 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:20:54,583 [Listener at localhost/12690] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,666 [Listener at localhost/12690] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,671 [Listener at localhost/12690] INFO  namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2020-12-03 07:20:54,672 [Listener at localhost/12690] INFO  namenode.FSImage (FSImage.java:loadFSImageFile(797)) - Planning to load image: FSImageFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2020-12-03 07:20:54,676 [Listener at localhost/12690] INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2020-12-03 07:20:54,677 [Listener at localhost/12690] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2020-12-03 07:20:54,677 [Listener at localhost/12690] INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000
+2020-12-03 07:20:54,677 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1110)) - Need to save fs image? false (staleImage=false, haEnabled=true, isRollingUpgrade=false)
+2020-12-03 07:20:54,678 [Listener at localhost/12690] INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2020-12-03 07:20:54,678 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(727)) - Finished loading FSImage in 162 msecs
+2020-12-03 07:20:54,679 [Listener at localhost/12690] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+Data exists in QJM to [127.0.0.1:41001, 127.0.0.1:38144, 127.0.0.1:42316]. Formatting anyway.
+2020-12-03 07:20:54,706 [IPC Server handler 1 on default port 42316] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : ns1 with namespace info: lv=-65;cid=testClusterID;nsid=1743329699;c=1606980051433;bpid=BP-520461265-172.17.0.7-1606980051433 and force: true
+2020-12-03 07:20:54,708 [IPC Server handler 4 on default port 38144] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : ns1 with namespace info: lv=-65;cid=testClusterID;nsid=1743329699;c=1606980051433;bpid=BP-520461265-172.17.0.7-1606980051433 and force: true
+2020-12-03 07:20:54,711 [IPC Server handler 3 on default port 41001] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : ns1 with namespace info: lv=-65;cid=testClusterID;nsid=1743329699;c=1606980051433;bpid=BP-520461265-172.17.0.7-1606980051433 and force: true
+2020-12-03 07:20:54,765 [IPC Server handler 1 on default port 42316] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,765 [IPC Server handler 3 on default port 41001] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,765 [IPC Server handler 4 on default port 38144] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,766 [IPC Server handler 3 on default port 41001] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1; location= null with nsid: 1743329699
+2020-12-03 07:20:54,766 [IPC Server handler 1 on default port 42316] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1; location= null with nsid: 1743329699
+2020-12-03 07:20:54,766 [IPC Server handler 4 on default port 38144] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1; location= null with nsid: 1743329699
+2020-12-03 07:20:54,766 [IPC Server handler 1 on default port 42316] INFO  common.Storage (Storage.java:clearDirectory(442)) - Will remove files: [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/VERSION, /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/paxos, /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/committed-txid]
+2020-12-03 07:20:54,767 [IPC Server handler 4 on default port 38144] INFO  common.Storage (Storage.java:clearDirectory(442)) - Will remove files: [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/VERSION, /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/paxos, /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/committed-txid]
+2020-12-03 07:20:54,766 [IPC Server handler 3 on default port 41001] INFO  common.Storage (Storage.java:clearDirectory(442)) - Will remove files: [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/VERSION, /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/paxos, /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/committed-txid]
+2020-12-03 07:20:54,842 [IPC Server handler 3 on default port 41001] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/paxos
+2020-12-03 07:20:54,842 [IPC Server handler 1 on default port 42316] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/paxos
+2020-12-03 07:20:54,842 [IPC Server handler 4 on default port 38144] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/paxos
+2020-12-03 07:20:54,926 [IPC Server handler 4 on default port 38144] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,926 [IPC Server handler 1 on default port 42316] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,926 [IPC Server handler 3 on default port 41001] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:54,931 [Listener at localhost/12690] INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current
+2020-12-03 07:20:54,931 [Listener at localhost/12690] INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/current
+2020-12-03 07:20:54,942 [Listener at localhost/12690] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(477)) - Starting recovery process for unclosed journal segments...
+2020-12-03 07:20:54,958 [IPC Server handler 4 on default port 41001] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:54,958 [IPC Server handler 4 on default port 42316] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:54,958 [IPC Server handler 3 on default port 38144] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,008 [IPC Server handler 4 on default port 42316] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1)
+2020-12-03 07:20:55,008 [IPC Server handler 3 on default port 38144] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1)
+2020-12-03 07:20:55,008 [IPC Server handler 4 on default port 41001] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1)
+2020-12-03 07:20:55,012 [IPC Server handler 3 on default port 38144] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1)
+2020-12-03 07:20:55,012 [IPC Server handler 4 on default port 41001] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1)
+2020-12-03 07:20:55,012 [IPC Server handler 4 on default port 42316] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1)
+2020-12-03 07:20:55,013 [Listener at localhost/12690] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(479)) - Successfully started new epoch 1
+2020-12-03 07:20:55,015 [Listener at localhost/12690] INFO  namenode.NameNode (NameNode.java:createNameNode(1632)) - createNameNode []
+2020-12-03 07:20:55,015 [Listener at localhost/12690] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - NameNode metrics system started (again)
+2020-12-03 07:20:55,016 [Listener at localhost/12690] INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://localhost:12688
+2020-12-03 07:20:55,016 [Listener at localhost/12690] INFO  namenode.NameNode (NameNode.java:<init>(944)) - Clients should use ns1 to access this namenode/service.
+2020-12-03 07:20:55,031 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@3774a52d] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:20:55,031 [Listener at localhost/12690] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for hdfs at: http://localhost:12689
+2020-12-03 07:20:55,031 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:55,033 [Listener at localhost/12690] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:55,034 [Listener at localhost/12690] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.namenode is not defined
+2020-12-03 07:20:55,034 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:55,036 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:55,037 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2020-12-03 07:20:55,037 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:55,037 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:55,040 [Listener at localhost/12690] INFO  http.HttpServer2 (NameNodeHttpServer.java:initWebHdfs(102)) - Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2020-12-03 07:20:55,040 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(806)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2020-12-03 07:20:55,040 [Listener at localhost/12690] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 12689
+2020-12-03 07:20:55,041 [Listener at localhost/12690] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:55,046 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@6c5cfd9{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:55,046 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@68235769{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:55,054 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@1580e13a{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/hdfs/,AVAILABLE}{/hdfs}
+2020-12-03 07:20:55,055 [Listener at localhost/12690] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@552c8e16{HTTP/1.1,[http/1.1]}{localhost:12689}
+2020-12-03 07:20:55,055 [Listener at localhost/12690] INFO  server.Server (Server.java:doStart(419)) - Started @8144ms
+2020-12-03 07:20:55,058 [Listener at localhost/12690] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:20:55,058 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: null
+2020-12-03 07:20:55,059 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:20:55,059 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:20:55,059 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:20:55,059 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:20:55,059 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:20:55,060 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(791)) - Determined nameservice ID: ns1
+2020-12-03 07:20:55,060 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: true
+2020-12-03 07:20:55,060 [Listener at localhost/12690] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:20:55,061 [Listener at localhost/12690] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:20:55,061 [Listener at localhost/12690] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:20:55,062 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:20:55,063 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:20:55
+2020-12-03 07:20:55,063 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:20:55,063 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,064 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:20:55,064 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:20:55,070 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:20:55,070 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:20:55,071 [Listener at localhost/12690] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:20:55,071 [Listener at localhost/12690] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:20:55,071 [Listener at localhost/12690] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:20:55,071 [Listener at localhost/12690] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 0
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:20:55,072 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:20:55,073 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:20:55,073 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,073 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:20:55,073 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:20:55,077 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:20:55,077 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:20:55,077 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:20:55,077 [Listener at localhost/12690] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:20:55,077 [Listener at localhost/12690] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:20:55,077 [Listener at localhost/12690] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:20:55,078 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:20:55,078 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,078 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:20:55,078 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:20:55,079 [Listener at localhost/12690] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:20:55,079 [Listener at localhost/12690] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:20:55,079 [Listener at localhost/12690] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:20:55,079 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:20:55,080 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:20:55,080 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:20:55,080 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,080 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:20:55,080 [Listener at localhost/12690] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:20:55,133 [Listener at localhost/12690] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:55,158 [Listener at localhost/12690] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-2/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:55,170 [Listener at localhost/12690] INFO  namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2020-12-03 07:20:55,170 [Listener at localhost/12690] INFO  namenode.FSImage (FSImage.java:loadFSImageFile(797)) - Planning to load image: FSImageFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2020-12-03 07:20:55,172 [Listener at localhost/12690] INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2020-12-03 07:20:55,173 [Listener at localhost/12690] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2020-12-03 07:20:55,173 [Listener at localhost/12690] INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-1/current/fsimage_0000000000000000000
+2020-12-03 07:20:55,173 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1110)) - Need to save fs image? false (staleImage=false, haEnabled=true, isRollingUpgrade=false)
+2020-12-03 07:20:55,173 [Listener at localhost/12690] INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2020-12-03 07:20:55,174 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(727)) - Finished loading FSImage in 92 msecs
+2020-12-03 07:20:55,174 [Listener at localhost/12690] INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(448)) - RPC server is binding to localhost:12688
+2020-12-03 07:20:55,175 [Listener at localhost/12690] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:55,176 [Socket Reader #1 for port 12688] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 12688
+2020-12-03 07:20:55,183 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5090)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2020-12-03 07:20:55,197 [Listener at localhost/12688] INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(171)) - Number of blocks under construction: 0
+2020-12-03 07:20:55,198 [Listener at localhost/12688] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(400)) - STATE* Leaving safe mode after 0 secs
+2020-12-03 07:20:55,199 [Listener at localhost/12688] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(406)) - STATE* Network topology has 0 racks and 0 datanodes
+2020-12-03 07:20:55,199 [Listener at localhost/12688] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(408)) - STATE* UnderReplicatedBlocks has 0 blocks
+2020-12-03 07:20:55,206 [IPC Server listener on 12688] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 12688: starting
+2020-12-03 07:20:55,206 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:55,209 [Listener at localhost/12688] INFO  namenode.NameNode (NameNode.java:startCommonServices(828)) - NameNode RPC up at: localhost/127.0.0.1:12688
+2020-12-03 07:20:55,209 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:startStandbyServices(1391)) - Starting services required for standby state
+2020-12-03 07:20:55,211 [Listener at localhost/12688] INFO  ha.EditLogTailer (EditLogTailer.java:<init>(205)) - Will roll logs on active node every 120 seconds.
+2020-12-03 07:20:55,211 [Listener at localhost/12688] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.period.backoff-max(0) assuming SECONDS
+2020-12-03 07:20:55,212 [Listener at localhost/12688] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.rolledits.timeout(60) assuming SECONDS
+2020-12-03 07:20:55,217 [Listener at localhost/12688] INFO  ha.StandbyCheckpointer (StandbyCheckpointer.java:start(139)) - Starting standby checkpoint thread...
+Checkpointing active NN to possible NNs: [http://localhost:12691]
+Serving checkpoints at http://localhost:12689
+2020-12-03 07:20:55,218 [Listener at localhost/12688] INFO  namenode.NameNode (NameNode.java:createNameNode(1632)) - createNameNode []
+2020-12-03 07:20:55,218 [Listener at localhost/12688] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - NameNode metrics system started (again)
+2020-12-03 07:20:55,220 [Listener at localhost/12688] INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://localhost:12690
+2020-12-03 07:20:55,221 [Listener at localhost/12688] INFO  namenode.NameNode (NameNode.java:<init>(944)) - Clients should use ns1 to access this namenode/service.
+2020-12-03 07:20:55,230 [org.apache.hadoop.util.JvmPauseMonitor$Monitor@21c3894a] INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2020-12-03 07:20:55,230 [Listener at localhost/12688] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for hdfs at: http://localhost:12691
+2020-12-03 07:20:55,230 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:55,232 [Listener at localhost/12688] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:20:55,233 [Listener at localhost/12688] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.namenode is not defined
+2020-12-03 07:20:55,233 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:20:55,235 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:20:55,236 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2020-12-03 07:20:55,236 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:20:55,236 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:20:55,237 [Listener at localhost/12688] INFO  http.HttpServer2 (NameNodeHttpServer.java:initWebHdfs(102)) - Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2020-12-03 07:20:55,238 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(806)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2020-12-03 07:20:55,238 [Listener at localhost/12688] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 12691
+2020-12-03 07:20:55,238 [Listener at localhost/12688] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:20:55,241 [Listener at localhost/12688] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@bee7649{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:20:55,242 [Listener at localhost/12688] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@14c28a7c{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:20:55,250 [Listener at localhost/12688] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@1017d9ab{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/hdfs/,AVAILABLE}{/hdfs}
+2020-12-03 07:20:55,251 [Listener at localhost/12688] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@134e2299{HTTP/1.1,[http/1.1]}{localhost:12691}
+2020-12-03 07:20:55,252 [Listener at localhost/12688] INFO  server.Server (Server.java:doStart(419)) - Started @8341ms
+2020-12-03 07:20:55,254 [Listener at localhost/12688] INFO  namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2020-12-03 07:20:55,254 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(755)) - KeyProvider: null
+2020-12-03 07:20:55,254 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2020-12-03 07:20:55,254 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2020-12-03 07:20:55,255 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(780)) - fsOwner             = root (auth:SIMPLE)
+2020-12-03 07:20:55,255 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(781)) - supergroup          = supergroup
+2020-12-03 07:20:55,255 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(782)) - isPermissionEnabled = true
+2020-12-03 07:20:55,255 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(791)) - Determined nameservice ID: ns1
+2020-12-03 07:20:55,255 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(793)) - HA Enabled: true
+2020-12-03 07:20:55,255 [Listener at localhost/12688] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:20:55,256 [Listener at localhost/12688] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2020-12-03 07:20:55,256 [Listener at localhost/12688] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2020-12-03 07:20:55,256 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2020-12-03 07:20:55,257 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2020 Dec 03 07:20:55
+2020-12-03 07:20:55,257 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2020-12-03 07:20:55,257 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,257 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 1.8 GB = 36.4 MB
+2020-12-03 07:20:55,257 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2020-12-03 07:20:55,267 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5183)) - Storage policy satisfier is disabled
+2020-12-03 07:20:55,267 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(595)) - dfs.block.access.token.enable = false
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(581)) - defaultReplication         = 0
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(582)) - maxReplication             = 512
+2020-12-03 07:20:55,268 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(583)) - minReplication             = 1
+2020-12-03 07:20:55,269 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(584)) - maxReplicationStreams      = 2
+2020-12-03 07:20:55,269 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(585)) - redundancyRecheckInterval  = 3000ms
+2020-12-03 07:20:55,269 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(586)) - encryptDataTransfer        = false
+2020-12-03 07:20:55,269 [Listener at localhost/12688] INFO  blockmanagement.BlockManager (BlockManager.java:<init>(587)) - maxNumBlocksToLog          = 1000
+2020-12-03 07:20:55,269 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2020-12-03 07:20:55,269 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,270 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 1.8 GB = 18.2 MB
+2020-12-03 07:20:55,270 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^21 = 2097152 entries
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  namenode.FSDirectory (FSDirectory.java:<init>(290)) - ACLs enabled? false
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  namenode.FSDirectory (FSDirectory.java:<init>(294)) - POSIX ACL inheritance enabled? true
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  namenode.FSDirectory (FSDirectory.java:<init>(298)) - XAttrs enabled? true
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  namenode.NameNode (FSDirectory.java:<init>(362)) - Caching file names occurring more than 10 times
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2020-12-03 07:20:55,277 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,278 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 1.8 GB = 4.6 MB
+2020-12-03 07:20:55,278 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^19 = 524288 entries
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  metrics.TopMetrics (TopMetrics.java:logConf(76)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  metrics.TopMetrics (TopMetrics.java:logConf(78)) - NNTop conf: dfs.namenode.top.num.users = 10
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  metrics.TopMetrics (TopMetrics.java:logConf(80)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(996)) - Retry cache on namenode is enabled
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1004)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2020-12-03 07:20:55,280 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2020-12-03 07:20:55,281 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 1.8 GB = 559.3 KB
+2020-12-03 07:20:55,281 [Listener at localhost/12688] INFO  util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^16 = 65536 entries
+2020-12-03 07:20:55,327 [Listener at localhost/12688] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:55,379 [Listener at localhost/12688] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-4/in_use.lock acquired by nodename 3707@7ef34b6f83a2
+2020-12-03 07:20:55,386 [Listener at localhost/12688] INFO  namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2020-12-03 07:20:55,387 [Listener at localhost/12688] INFO  namenode.FSImage (FSImage.java:loadFSImageFile(797)) - Planning to load image: FSImageFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2020-12-03 07:20:55,389 [Listener at localhost/12688] INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2020-12-03 07:20:55,390 [Listener at localhost/12688] INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2020-12-03 07:20:55,390 [Listener at localhost/12688] INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current/fsimage_0000000000000000000
+2020-12-03 07:20:55,391 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1110)) - Need to save fs image? false (staleImage=false, haEnabled=true, isRollingUpgrade=false)
+2020-12-03 07:20:55,391 [Listener at localhost/12688] INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2020-12-03 07:20:55,391 [Listener at localhost/12688] INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(727)) - Finished loading FSImage in 109 msecs
+2020-12-03 07:20:55,392 [Listener at localhost/12688] INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(448)) - RPC server is binding to localhost:12690
+2020-12-03 07:20:55,393 [Listener at localhost/12688] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:20:55,394 [Socket Reader #1 for port 12690] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 12690
+2020-12-03 07:20:55,400 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5090)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2020-12-03 07:20:55,418 [Listener at localhost/12690] INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(171)) - Number of blocks under construction: 0
+2020-12-03 07:20:55,420 [Listener at localhost/12690] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(400)) - STATE* Leaving safe mode after 0 secs
+2020-12-03 07:20:55,420 [Listener at localhost/12690] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(406)) - STATE* Network topology has 0 racks and 0 datanodes
+2020-12-03 07:20:55,420 [Listener at localhost/12690] INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(408)) - STATE* UnderReplicatedBlocks has 0 blocks
+2020-12-03 07:20:55,425 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:20:55,426 [IPC Server listener on 12690] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 12690: starting
+2020-12-03 07:20:55,427 [Listener at localhost/12690] INFO  namenode.NameNode (NameNode.java:startCommonServices(828)) - NameNode RPC up at: localhost/127.0.0.1:12690
+2020-12-03 07:20:55,428 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:startStandbyServices(1391)) - Starting services required for standby state
+2020-12-03 07:20:55,430 [Listener at localhost/12690] INFO  ha.EditLogTailer (EditLogTailer.java:<init>(205)) - Will roll logs on active node every 120 seconds.
+2020-12-03 07:20:55,430 [Listener at localhost/12690] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.period.backoff-max(0) assuming SECONDS
+2020-12-03 07:20:55,430 [Listener at localhost/12690] INFO  Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.ha.tail-edits.rolledits.timeout(60) assuming SECONDS
+2020-12-03 07:20:55,434 [Listener at localhost/12690] INFO  ha.StandbyCheckpointer (StandbyCheckpointer.java:start(139)) - Starting standby checkpoint thread...
+Checkpointing active NN to possible NNs: [http://localhost:12689]
+Serving checkpoints at http://localhost:12691
+2020-12-03 07:20:55,448 [IPC Server handler 0 on default port 12688] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:55,459 [IPC Server handler 0 on default port 12690] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:55,463 [Listener at localhost/12690] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2758)) - Cluster is active
+2020-12-03 07:20:55,473 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:55,474 [Edit log tailer] WARN  ha.EditLogTailer (EditLogTailer.java:doWork(528)) - Edit log tailer interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.sleep(EditLogTailer.java:433)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.doWork(EditLogTailer.java:526)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.access$300(EditLogTailer.java:440)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread$1.run(EditLogTailer.java:457)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:484)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.run(EditLogTailer.java:453)
+2020-12-03 07:20:55,475 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1222)) - Starting services required for active state
+2020-12-03 07:20:55,478 [Listener at localhost/12690] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(477)) - Starting recovery process for unclosed journal segments...
+2020-12-03 07:20:55,488 [IPC Server handler 0 on default port 38144] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 1 to 2 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,488 [IPC Server handler 0 on default port 41001] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 1 to 2 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,488 [IPC Server handler 0 on default port 42316] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 1 to 2 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,539 [IPC Server handler 0 on default port 38144] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1)
+2020-12-03 07:20:55,540 [IPC Server handler 0 on default port 38144] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1)
+2020-12-03 07:20:55,556 [IPC Server handler 0 on default port 41001] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1)
+2020-12-03 07:20:55,556 [IPC Server handler 0 on default port 42316] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1)
+2020-12-03 07:20:55,558 [IPC Server handler 0 on default port 41001] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1)
+2020-12-03 07:20:55,558 [IPC Server handler 0 on default port 42316] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1)
+2020-12-03 07:20:55,559 [Listener at localhost/12690] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(479)) - Successfully started new epoch 2
+2020-12-03 07:20:55,559 [Listener at localhost/12690] INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current
+2020-12-03 07:20:55,559 [Listener at localhost/12690] INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-4/current
+2020-12-03 07:20:55,559 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1233)) - Catching up to latest edits from old active before taking over writer role in edits logs
+2020-12-03 07:20:55,565 [Listener at localhost/12690] INFO  blockmanagement.DatanodeManager (DatanodeManager.java:markAllDatanodesStale(1840)) - Marking all datanodes as stale
+2020-12-03 07:20:55,566 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1244)) - Reprocessing replication and invalidation queues
+2020-12-03 07:20:55,566 [Listener at localhost/12690] INFO  blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(4922)) - initializing replication queues
+2020-12-03 07:20:55,567 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1255)) - Will take over writing edit logs at txnid 1
+2020-12-03 07:20:55,569 [Listener at localhost/12690] INFO  namenode.FSEditLog (FSEditLog.java:startLogSegment(1365)) - Starting log segment at 1
+2020-12-03 07:20:55,580 [IPC Server handler 1 on default port 38144] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 2 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,580 [IPC Server handler 2 on default port 42316] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 2 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,581 [IPC Server handler 1 on default port 41001] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 2 for client /127.0.0.1 ; journal id: ns1
+2020-12-03 07:20:55,722 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(777)) - Initializing quota with 4 thread(s)
+2020-12-03 07:20:55,740 [Listener at localhost/12690] INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(786)) - Quota initialization completed in 10 milliseconds
+name space=1
+storage space=0
+storage types=RAM_DISK=0, SSD=0, DISK=0, ARCHIVE=0, PROVIDED=0
+2020-12-03 07:20:55,747 [CacheReplicationMonitor(1863661886)] INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
+2020-12-03 07:20:55,747 [Listener at localhost/12690] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:stopAndJoinNameNode(2130)) - Shutting down the namenode
+2020-12-03 07:20:55,748 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:55,747 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3585)) - Total number of blocks            = 0
+2020-12-03 07:20:55,748 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3586)) - Number of invalid blocks          = 0
+2020-12-03 07:20:55,748 [Edit log tailer] WARN  ha.EditLogTailer (EditLogTailer.java:doWork(528)) - Edit log tailer interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.sleep(EditLogTailer.java:433)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.doWork(EditLogTailer.java:526)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.access$300(EditLogTailer.java:440)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread$1.run(EditLogTailer.java:457)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:484)
+	at org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer$EditLogTailerThread.run(EditLogTailer.java:453)
+2020-12-03 07:20:55,749 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3587)) - Number of under-replicated blocks = 0
+2020-12-03 07:20:55,749 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3588)) - Number of  over-replicated blocks = 0
+2020-12-03 07:20:55,749 [Listener at localhost/12690] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 12688
+2020-12-03 07:20:55,749 [Reconstruction Queue Initializer] INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3590)) - Number of blocks being written    = 0
+2020-12-03 07:20:55,755 [IPC Server listener on 12688] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 12688
+2020-12-03 07:20:55,752 [Reconstruction Queue Initializer] INFO  hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3593)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 186 msec
+2020-12-03 07:20:55,756 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:55,758 [RedundancyMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4687)) - Stopping RedundancyMonitor.
+2020-12-03 07:20:55,758 [StorageInfoMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4722)) - Stopping thread.
+2020-12-03 07:20:55,767 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:20:55,768 [Listener at localhost/12690] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:55,769 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@1580e13a{/,null,UNAVAILABLE}{/hdfs}
+2020-12-03 07:20:55,776 [Listener at localhost/12690] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@552c8e16{HTTP/1.1,[http/1.1]}{localhost:12689}
+2020-12-03 07:20:55,777 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@68235769{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:55,777 [Listener at localhost/12690] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@6c5cfd9{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:55,802 [IPC Server handler 1 on default port 12690] INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8074)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=metaSave	src=null	dst=null	perm=null	proto=rpc
+2020-12-03 07:20:55,808 [main] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:shutdown(2049)) - Shutting down the Mini HDFS Cluster
+2020-12-03 07:20:55,809 [main] INFO  hdfs.MiniDFSCluster (MiniDFSCluster.java:stopAndJoinNameNode(2130)) - Shutting down the namenode
+2020-12-03 07:20:55,809 [main] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:20:55,820 [org.apache.hadoop.hdfs.server.namenode.FSNamesystem$LazyPersistFileScrubber@3b846b03] INFO  namenode.FSNamesystem (FSNamesystem.java:run(4198)) - LazyPersistFileScrubber was interrupted, exiting
+2020-12-03 07:20:55,820 [main] INFO  namenode.FSEditLog (FSEditLog.java:endCurrentLogSegment(1410)) - Ending log segment 1, 1
+2020-12-03 07:20:55,832 [org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNodeEditLogRoller@55c324d5] INFO  namenode.FSNamesystem (FSNamesystem.java:run(4107)) - NameNodeEditLogRoller was interrupted, exiting
+2020-12-03 07:20:55,848 [main] INFO  namenode.FSEditLog (FSEditLog.java:printStatistics(778)) - Number of transactions: 2 Total time for transactions(ms): 7 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 60 3 3 
+2020-12-03 07:20:55,855 [IPC Server handler 2 on default port 38144] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1/current/edits_0000000000000000001-0000000000000000002
+2020-12-03 07:20:55,855 [IPC Server handler 3 on default port 42316] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1/current/edits_0000000000000000001-0000000000000000002
+2020-12-03 07:20:55,855 [IPC Server handler 2 on default port 41001] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1/current/edits_0000000000000000001-0000000000000000002
+2020-12-03 07:20:55,860 [main] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-3/current/edits_0000000000000000001-0000000000000000002
+2020-12-03 07:20:55,861 [main] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-4/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/name-0-4/current/edits_0000000000000000001-0000000000000000002
+2020-12-03 07:20:55,862 [FSEditLogAsync] INFO  namenode.FSEditLog (FSEditLogAsync.java:run(253)) - FSEditLogAsync was interrupted, exiting
+2020-12-03 07:20:55,869 [main] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 12690
+2020-12-03 07:20:55,870 [CacheReplicationMonitor(1863661886)] INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(169)) - Shutting down CacheReplicationMonitor
+2020-12-03 07:20:55,885 [IPC Server listener on 12690] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 12690
+2020-12-03 07:20:55,886 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:55,896 [RedundancyMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4687)) - Stopping RedundancyMonitor.
+2020-12-03 07:20:55,896 [StorageInfoMonitor] INFO  blockmanagement.BlockManager (BlockManager.java:run(4722)) - Stopping thread.
+2020-12-03 07:20:55,916 [main] INFO  namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1334)) - Stopping services started for active state
+2020-12-03 07:20:55,917 [main] INFO  namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1434)) - Stopping services started for standby state
+2020-12-03 07:20:55,922 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@1017d9ab{/,null,UNAVAILABLE}{/hdfs}
+2020-12-03 07:20:55,924 [main] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@134e2299{HTTP/1.1,[http/1.1]}{localhost:12691}
+2020-12-03 07:20:55,925 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@14c28a7c{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:55,926 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@bee7649{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:55,935 [main] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 41001
+2020-12-03 07:20:55,935 [org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer$$Lambda$29/479650163@44a80fe3] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:lambda$startSyncJournalsDaemon$0(171)) - JournalNodeSyncer daemon received Runtime exception.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.lambda$startSyncJournalsDaemon$0(JournalNodeSyncer.java:169)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:20:55,936 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:55,936 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:20:55,959 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@3553e61c{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:20:55,985 [main] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@45b1ba0a{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:20:55,986 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@2203f1f9{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:55,987 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@597d5e5a{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:55,989 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/waitactive; location= null
+2020-12-03 07:20:55,991 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-0/ns1; location= null
+2020-12-03 07:20:55,995 [main] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 38144
+2020-12-03 07:20:55,995 [org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer$$Lambda$29/479650163@65d73533] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:lambda$startSyncJournalsDaemon$0(171)) - JournalNodeSyncer daemon received Runtime exception.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.lambda$startSyncJournalsDaemon$0(JournalNodeSyncer.java:169)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:20:55,999 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:20:56,000 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:56,001 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@7c1d690f{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:20:56,089 [main] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@2abc51a0{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:20:56,093 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@6f30673f{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:56,095 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@186b69b5{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:56,096 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/waitactive; location= null
+2020-12-03 07:20:56,097 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-1/ns1; location= null
+2020-12-03 07:20:56,099 [main] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 42316
+2020-12-03 07:20:56,099 [org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer$$Lambda$29/479650163@2f33d303] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:lambda$startSyncJournalsDaemon$0(171)) - JournalNodeSyncer daemon received Runtime exception.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.lambda$startSyncJournalsDaemon$0(JournalNodeSyncer.java:169)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:20:56,100 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:20:56,100 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:20:56,101 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@2d339600{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:20:56,104 [main] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@14cbf7e1{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:20:56,104 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@49b30ed6{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:20:56,104 [main] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@612f1ae{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:20:56,105 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/waitactive; location= null
+2020-12-03 07:20:56,105 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/592BHYvXLs/journalnode-2/ns1; location= null
+2020-12-03 07:20:56,107 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping NameNode metrics system...
+2020-12-03 07:20:56,116 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - NameNode metrics system stopped.
+2020-12-03 07:20:56,117 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(607)) - NameNode metrics system shutdown complete.
+msx-rc 0

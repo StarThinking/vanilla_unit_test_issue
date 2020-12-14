@@ -1,0 +1,24 @@
+2020-12-03 07:19:27,322 [main] INFO  store.StateStoreService (StateStoreService.java:serviceInit(185)) - Registered StateStoreMBean: Hadoop:service=Router,name=StateStore
+2020-12-03 07:19:27,343 [main] WARN  impl.StateStoreFileImpl (StateStoreFileImpl.java:getRootDir(93)) - The root directory is not available, using /tmp/1606979967343-0
+2020-12-03 07:19:27,345 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979967343-0/MembershipState data directory doesn't exist, creating it
+2020-12-03 07:19:27,346 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979967343-0/RouterState data directory doesn't exist, creating it
+2020-12-03 07:19:27,346 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979967343-0/DisabledNameservice data directory doesn't exist, creating it
+2020-12-03 07:19:27,347 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979967343-0/MountTable data directory doesn't exist, creating it
+2020-12-03 07:19:27,348 [main] INFO  store.StateStoreService (StateStoreService.java:loadDriver(275)) - Connection to the State Store driver StateStoreFileImpl is open and ready
+2020-12-03 07:19:27,359 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStart(141)) - Starting periodic service StateStoreConnectionMonitorService
+2020-12-03 07:19:27,363 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStart(141)) - Starting periodic service StateStoreCacheUpdateService
+2020-12-03 07:19:27,722 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(176)) - Inserting new NN registration: router0->ns0:nn0:localhost:4807-ACTIVE
+2020-12-03 07:19:27,847 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(176)) - Inserting new NN registration: router0->ns0:nn1:localhost:8811-STANDBY
+2020-12-03 07:19:33,876 [main] INFO  store.CachedRecordStore (CachedRecordStore.java:overrideExpiredRecords(183)) - Override State Store record MembershipState: router0->ns0:nn0:localhost:150-EXPIRED
+2020-12-03 07:19:33,882 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(176)) - Inserting new NN registration: router0->ns0:nn0:localhost:5489-ACTIVE
+2020-12-03 07:19:33,984 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(170)) - NN registration state has changed: router0->ns0:nn1:localhost:5607-STANDBY -> router0->ns0:nn1:localhost:36-UNAVAILABLE
+2020-12-03 07:19:33,989 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(170)) - NN registration state has changed: router0->ns0:nn1:localhost:36-UNAVAILABLE -> router0->ns0:nn1:localhost:9402-STANDBY
+2020-12-03 07:19:34,991 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(170)) - NN registration state has changed: router0->ns0:nn0:localhost:5489-ACTIVE -> router0->ns0:nn0:localhost:4456-UNAVAILABLE
+2020-12-03 07:19:35,202 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(176)) - Inserting new NN registration: router0->ns0:nn2:localhost:6388-ACTIVE
+2020-12-03 07:19:35,208 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(170)) - NN registration state has changed: router0->ns0:nn0:localhost:1435-UNAVAILABLE -> router0->ns0:nn0:localhost:7635-STANDBY
+2020-12-03 07:19:35,210 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(170)) - NN registration state has changed: router0->ns0:nn2:localhost:6388-ACTIVE -> router0->ns0:nn2:localhost:7714-STANDBY
+2020-12-03 07:19:36,719 [main] INFO  router.PeriodicService (PeriodicService.java:stopPeriodic(157)) - StateStoreCacheUpdateService is shutting down
+2020-12-03 07:19:36,720 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStop(148)) - Stopping periodic service StateStoreCacheUpdateService
+2020-12-03 07:19:36,720 [main] INFO  router.PeriodicService (PeriodicService.java:stopPeriodic(157)) - StateStoreConnectionMonitorService is shutting down
+2020-12-03 07:19:36,720 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStop(148)) - Stopping periodic service StateStoreConnectionMonitorService
+msx-rc 0

@@ -1,0 +1,65 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:21:51,133 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:21:51,134 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:21:51,134 INFO  Server - Server [httpfs] starting
+2020-12-03 07:21:51,134 INFO  Server -   Built information:
+2020-12-03 07:21:51,134 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:21:51,134 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:21:51,134 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:21:51,134 INFO  Server -     Built by          : root
+2020-12-03 07:21:51,134 INFO  Server -     Built timestamp   : 2020-12-03T07:21:29+0000
+2020-12-03 07:21:51,134 INFO  Server -   Runtime information:
+2020-12-03 07:21:51,134 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1
+2020-12-03 07:21:51,134 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf
+2020-12-03 07:21:51,134 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/log
+2020-12-03 07:21:51,135 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/temp
+2020-12-03 07:21:51,167 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:21:51,180 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:21:51,188 INFO  Server - Services initialized
+2020-12-03 07:21:51,188 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:21:51,201 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:41794]
+2020-12-03 07:21:51,216 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:21:51,218 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:21:51,221 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:21:51 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:21:51 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:21:51 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+Dec 03, 2020 7:21:51 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:21:52,286 INFO  ContextHandler - Started o.e.j.w.WebAppContext@4eed2acf{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:21:52,287 INFO  AbstractConnector - Started ServerConnector@5702b3b1{HTTP/1.1,[http/1.1]}{localhost:33352}
+2020-12-03 07:21:52,287 INFO  Server - Started @15211ms
+2020-12-03 07:21:52,295 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/testOperation-0	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:52,520 INFO  httpfsaudit - [/]
+2020-12-03 07:21:52,570 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/testOperation-0	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:52,572 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/policy.txt	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:52,574 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/policy.txt is closed by DFSClient_NONMAPREDUCE_-2102003923_1
+2020-12-03 07:21:52,615 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=setStoragePolicy	src=/tmp/testOperation-0/policy.txt	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:52,621 INFO  httpfsaudit - [/tmp/testOperation-0/policy.txt] to policy [COLD]
+2020-12-03 07:21:52,679 INFO  httpfsaudit - [/tmp/testOperation-0/policy.txt]
+Dec 03, 2020 7:21:52 AM com.sun.jersey.spi.container.servlet.WebComponent filterFormParameters
+WARNING: A servlet request, to the URI http://localhost:33352/webhdfs/v1/tmp/testOperation-0/policy.txt?op=UNSETSTORAGEPOLICY&user.name=root, contains form parameters in the request body but the request body has been consumed by the servlet or a servlet filter accessing the request parameters. Only resource methods using @FormParam will work as expected. Resource methods consuming the request body by other means will not work as expected.
+2020-12-03 07:21:52,728 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=unsetStoragePolicy	src=/tmp/testOperation-0/policy.txt	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:52,729 INFO  httpfsaudit - Unset storage policy [/tmp/testOperation-0/policy.txt]
+2020-12-03 07:21:52,742 INFO  httpfsaudit - [/tmp/testOperation-0/policy.txt]
+2020-12-03 07:21:52,751 INFO  AbstractConnector - Stopped ServerConnector@5702b3b1{HTTP/1.1,[http/1.1]}{localhost:33352}
+2020-12-03 07:21:52,752 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:21:52,754 INFO  Server - Services destroyed
+2020-12-03 07:21:52,755 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:21:52,755 INFO  Server - ======================================================
+msx-rc 0

@@ -1,0 +1,36 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.m2/repository/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2020-12-03 07:21:57,992 [pool-1-thread-1] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=1, belowThreshold, return byte[1024]
+2020-12-03 07:21:57,992 [pool-1-thread-4] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=4, belowThreshold, return byte[1024]
+2020-12-03 07:21:57,992 [pool-1-thread-3] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=3, belowThreshold, return byte[1024]
+2020-12-03 07:21:57,992 [pool-1-thread-2] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=2, belowThreshold, return byte[1024]
+2020-12-03 07:21:58,004 [pool-2-thread-1] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, freeQueueSize=-1
+2020-12-03 07:21:58,004 [pool-2-thread-2] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, freeQueueSize=-1
+2020-12-03 07:21:58,006 [pool-1-thread-5] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=5, aboveThreshold, [1024: 0/8, free=0], recycled? false, return byte[1024]
+2020-12-03 07:21:58,006 [pool-2-thread-3] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 1/8, free=0], freeQueue.offer, freeQueueSize=1
+2020-12-03 07:21:58,007 [pool-2-thread-5] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 0/8, free=2], freeQueue.offer, freeQueueSize=3
+2020-12-03 07:21:58,006 [pool-2-thread-4] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 0/8, free=1], freeQueue.offer, freeQueueSize=2
+2020-12-03 07:21:58,008 [pool-1-thread-6] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=6, aboveThreshold, [1024: 0/8, free=3], recycled? true, return byte[1024]
+2020-12-03 07:21:58,008 [pool-1-thread-6] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=8, aboveThreshold, [1024: 2/8, free=1], recycled? true, return byte[1024]
+2020-12-03 07:21:58,009 [pool-1-thread-6] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=11, aboveThreshold, [1024: 5/8, free=0], recycled? false, return byte[1024]
+2020-12-03 07:21:58,008 [pool-1-thread-7] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=7, aboveThreshold, [1024: 1/8, free=2], recycled? true, return byte[1024]
+2020-12-03 07:21:58,009 [pool-1-thread-4] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=13, aboveThreshold, [1024: 7/8, free=0], recycled? false, return byte[1024]
+2020-12-03 07:21:58,009 [pool-1-thread-3] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=12, aboveThreshold, [1024: 6/8, free=0], recycled? false, return byte[1024]
+2020-12-03 07:21:58,008 [pool-1-thread-8] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=10, aboveThreshold, [1024: 4/8, free=0], recycled? false, return byte[1024]
+2020-12-03 07:21:58,008 [pool-1-thread-1] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=9, aboveThreshold, [1024: 3/8, free=0], recycled? false, return byte[1024]
+2020-12-03 07:21:58,022 [Thread-0] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - allocate(1024): count=14, aboveThreshold, [1024: 8/8, free=0]: wait ...
+2020-12-03 07:21:58,524 [pool-2-thread-6] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 8/8, free=0], freeQueue.offer, freeQueueSize=1
+2020-12-03 07:21:58,527 [Thread-0] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - wake up: [1024: 7/8, free=1], recycled? true, return byte[1024]
+2020-12-03 07:21:58,632 [pool-2-thread-7] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 8/8, free=0], freeQueue.offer, freeQueueSize=1
+2020-12-03 07:21:58,632 [pool-2-thread-5] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 3/8, free=5], freeQueue.offer, freeQueueSize=6
+2020-12-03 07:21:58,632 [pool-2-thread-3] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 4/8, free=4], freeQueue.offer, freeQueueSize=5
+2020-12-03 07:21:58,632 [pool-2-thread-2] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 5/8, free=3], freeQueue.offer, freeQueueSize=4
+2020-12-03 07:21:58,632 [pool-2-thread-8] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 6/8, free=2], freeQueue.offer, freeQueueSize=3
+2020-12-03 07:21:58,632 [pool-2-thread-1] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 7/8, free=1], freeQueue.offer, freeQueueSize=2
+2020-12-03 07:21:58,632 [pool-2-thread-5] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 1/8, free=7], freeQueue.offer, freeQueueSize=8
+2020-12-03 07:21:58,632 [pool-2-thread-7] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 2/8, free=6], freeQueue.offer, freeQueueSize=7
+2020-12-03 07:21:58,640 [main] DEBUG util.ByteArrayManager (ByteArrayManager.java:logDebugMessage(48)) - recycle: array.length=1024, [1024: 0/8, free=8], freeQueueSize=8
+msx-rc 0

@@ -1,0 +1,61 @@
+2020-12-03 07:21:50,865 [main] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:21:50,886 [main] INFO  datanode.BlockScanner (BlockScanner.java:<init>(184)) - Initialized block scanner with targetBytesPerSec 1048576
+2020-12-03 07:21:50,932 [main] INFO  common.Storage (DataStorage.java:createStorageID(160)) - Generated new storageID DS-ed0876bb-77b7-4ee5-bc3a-81c7ebb124e1 for directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0 
+2020-12-03 07:21:51,349 [main] INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(304)) - Added new volume: DS-ed0876bb-77b7-4ee5-bc3a-81c7ebb124e1
+2020-12-03 07:21:51,350 [main] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(450)) - Added volume - [DISK]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0, StorageType: DISK
+2020-12-03 07:21:51,632 [main] WARN  impl.FsVolumeImpl (FsVolumeImpl.java:<init>(172)) - Setting reserved to null as usage is null
+2020-12-03 07:21:51,725 [main] INFO  impl.FsVolumeImpl (ProvidedVolumeImpl.java:getVolumeMap(535)) - Creating volumemap for provided volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1
+2020-12-03 07:21:51,726 [main] INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(304)) - Added new volume: DS-PROVIDED
+2020-12-03 07:21:51,726 [main] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(450)) - Added volume - [PROVIDED]file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1, StorageType: PROVIDED
+2020-12-03 07:21:51,814 [main] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:registerMBean(2280)) - Registered FSDatasetState MBean
+2020-12-03 07:21:51,821 [main] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2791)) - Adding block pool bpid-0
+2020-12-03 07:21:51,822 [Thread-7] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool bpid-0 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0...
+2020-12-03 07:21:51,822 [Thread-8] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool bpid-0 on volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1...
+2020-12-03 07:21:51,822 [Thread-8] INFO  impl.FsVolumeImpl (ProvidedVolumeImpl.java:addBlockPool(576)) - Adding block pool bpid-0 to volume with id DS-PROVIDED
+2020-12-03 07:21:51,826 [Thread-8] INFO  impl.FsVolumeImpl (ProvidedVolumeImpl.java:<init>(148)) - Created alias map using class: class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.TestProvidedImpl$TestFileRegionBlockAliasMap
+2020-12-03 07:21:51,826 [Thread-8] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool bpid-0 on file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1: 5ms
+2020-12-03 07:21:51,848 [Thread-7] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool bpid-0 on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0: 26ms
+2020-12-03 07:21:51,848 [main] INFO  impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(431)) - Total time to scan all replicas for block pool bpid-0: 27ms
+2020-12-03 07:21:51,850 [Thread-10] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool bpid-0 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0...
+2020-12-03 07:21:51,850 [Thread-11] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool bpid-0 on volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1...
+2020-12-03 07:21:51,850 [Thread-10] INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(876)) - Replica Cache file: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0/current/bpid-0/current/replicas doesn't exist 
+2020-12-03 07:21:51,851 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 0
+2020-12-03 07:21:51,852 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 0 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file0
+2020-12-03 07:21:51,858 [Thread-10] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool bpid-0 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0: 8ms
+2020-12-03 07:21:51,899 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 1
+2020-12-03 07:21:51,899 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 1 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file1
+2020-12-03 07:21:51,907 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 2
+2020-12-03 07:21:51,907 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 2 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file2
+2020-12-03 07:21:51,912 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 3
+2020-12-03 07:21:51,912 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 3 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file3
+2020-12-03 07:21:51,916 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 4
+2020-12-03 07:21:51,916 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 4 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file4
+2020-12-03 07:21:51,920 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 5
+2020-12-03 07:21:51,921 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 5 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file5
+2020-12-03 07:21:51,939 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 6
+2020-12-03 07:21:51,939 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 6 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file6
+2020-12-03 07:21:51,943 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 7
+2020-12-03 07:21:51,943 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 7 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file7
+2020-12-03 07:21:51,947 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 8
+2020-12-03 07:21:51,947 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 8 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file8
+2020-12-03 07:21:51,950 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(141)) - Creating file for blkid 9
+2020-12-03 07:21:51,951 [Thread-11] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:next(143)) - Block id 9 corresponds to file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1/file9
+2020-12-03 07:21:51,954 [Thread-11] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool bpid-0 on volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1: 104ms
+2020-12-03 07:21:51,955 [main] INFO  impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(225)) - Total time to add all replicas to map for block pool bpid-0: 106ms
+2020-12-03 07:21:51,955 [main] INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2791)) - Adding block pool bpid-1
+2020-12-03 07:21:51,955 [Thread-12] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool bpid-1 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0...
+2020-12-03 07:21:51,955 [Thread-13] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool bpid-1 on volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1...
+2020-12-03 07:21:51,956 [Thread-13] INFO  impl.FsVolumeImpl (ProvidedVolumeImpl.java:addBlockPool(576)) - Adding block pool bpid-1 to volume with id DS-PROVIDED
+2020-12-03 07:21:51,956 [Thread-13] INFO  impl.FsVolumeImpl (ProvidedVolumeImpl.java:<init>(148)) - Created alias map using class: class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.TestProvidedImpl$TestFileRegionBlockAliasMap
+2020-12-03 07:21:51,956 [Thread-13] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool bpid-1 on file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1: 0ms
+2020-12-03 07:21:51,971 [Thread-12] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool bpid-1 on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0: 15ms
+2020-12-03 07:21:51,971 [main] INFO  impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(431)) - Total time to scan all replicas for block pool bpid-1: 17ms
+2020-12-03 07:21:51,972 [Thread-15] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool bpid-1 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0...
+2020-12-03 07:21:51,972 [Thread-16] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool bpid-1 on volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1...
+2020-12-03 07:21:51,972 [Thread-15] INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(876)) - Replica Cache file: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0/current/bpid-1/current/replicas doesn't exist 
+2020-12-03 07:21:51,973 [Thread-16] ERROR impl.FsVolumeImpl (ProvidedVolumeImpl.java:fetchVolumeMap(176)) - Got null reader from BlockAliasMap org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.TestProvidedImpl$TestFileRegionBlockAliasMap@279d1677; no blocks will be populated
+2020-12-03 07:21:51,973 [Thread-15] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool bpid-1 on volume /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data0: 1ms
+2020-12-03 07:21:51,973 [Thread-16] INFO  impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool bpid-1 on volume file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/IQMpbRQD8L/data1: 0ms
+2020-12-03 07:21:51,973 [main] INFO  impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(225)) - Total time to add all replicas to map for block pool bpid-1: 2ms
+2020-12-03 07:21:51,975 [main] INFO  impl.TestFsDatasetImpl (TestProvidedImpl.java:testProvidedVolumeImpl(392)) - Expected exception: java.io.IOException: block pool bpid-1 is not found
+msx-rc 0

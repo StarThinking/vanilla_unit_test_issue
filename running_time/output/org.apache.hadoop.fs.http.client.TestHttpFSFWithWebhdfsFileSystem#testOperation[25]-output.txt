@@ -1,0 +1,123 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:21:46,993 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:21:46,994 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:21:46,994 INFO  Server - Server [httpfs] starting
+2020-12-03 07:21:46,995 INFO  Server -   Built information:
+2020-12-03 07:21:46,996 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:21:46,996 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:21:46,996 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:21:46,996 INFO  Server -     Built by          : root
+2020-12-03 07:21:46,996 INFO  Server -     Built timestamp   : 2020-12-03T07:21:27+0000
+2020-12-03 07:21:46,996 INFO  Server -   Runtime information:
+2020-12-03 07:21:46,996 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1
+2020-12-03 07:21:46,996 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf
+2020-12-03 07:21:46,996 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/log
+2020-12-03 07:21:46,996 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/temp
+2020-12-03 07:21:47,044 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:21:47,096 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:21:47,108 INFO  Server - Services initialized
+2020-12-03 07:21:47,108 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:21:47,123 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:36994]
+2020-12-03 07:21:47,145 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:21:47,147 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:21:47,165 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:21:47 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:21:47 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:21:47 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+Dec 03, 2020 7:21:47 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:21:49,039 INFO  ContextHandler - Started o.e.j.w.WebAppContext@2dd8239{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:21:49,041 INFO  AbstractConnector - Started ServerConnector@5702b3b1{HTTP/1.1,[http/1.1]}{localhost:36816}
+2020-12-03 07:21:49,041 INFO  Server - Started @15262ms
+2020-12-03 07:21:49,080 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/testOperation-0/dir	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:49,086 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,355 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,371 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,387 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,450 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file0	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,471 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file0 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,478 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,534 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,538 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,568 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,576 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file1	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,585 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file1 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,587 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,614 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,617 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,618 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,635 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file2	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,642 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file2 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,645 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,674 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,677 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,678 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,686 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file3	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,690 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file3 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,692 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,718 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,721 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,722 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,727 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file4	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,735 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file4 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,737 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,759 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,761 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,762 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,768 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file5	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,774 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file5 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,777 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,796 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,802 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,803 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,808 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file6	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,812 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file6 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,826 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,859 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,870 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,871 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,890 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file7	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,893 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file7 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,900 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,934 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,940 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,941 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,947 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file8	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,952 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file8 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,954 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,977 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,979 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:49,980 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:49,986 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir/file9	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:49,991 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir/file9 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:49,994 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:50,017 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:50,020 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:50,021 INFO  httpfsaudit - [/tmp/testOperation-0/dir] token [[]]
+2020-12-03 07:21:50,025 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/testOperation-0/dir1	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:50,028 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/dir1/file1	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:21:50,035 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/dir1/file1 is closed by DFSClient_NONMAPREDUCE_429986179_1
+2020-12-03 07:21:50,037 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir1	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:50,039 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/testOperation-0/dir1/file1	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:50,041 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/testOperation-0/dir1/file1	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:50,049 INFO  AbstractConnector - Stopped ServerConnector@5702b3b1{HTTP/1.1,[http/1.1]}{localhost:36816}
+2020-12-03 07:21:50,049 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:21:50,053 INFO  Server - Services destroyed
+2020-12-03 07:21:50,053 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:21:50,053 INFO  Server - ======================================================
+msx-rc 0

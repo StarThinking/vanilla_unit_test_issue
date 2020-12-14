@@ -1,0 +1,81 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:22:52,043 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:22:52,047 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:22:52,047 INFO  Server - Server [httpfs] starting
+2020-12-03 07:22:52,047 INFO  Server -   Built information:
+2020-12-03 07:22:52,047 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:22:52,047 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:22:52,048 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:22:52,048 INFO  Server -     Built by          : root
+2020-12-03 07:22:52,048 INFO  Server -     Built timestamp   : 2020-12-03T07:22:31+0000
+2020-12-03 07:22:52,048 INFO  Server -   Runtime information:
+2020-12-03 07:22:52,049 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1
+2020-12-03 07:22:52,049 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf
+2020-12-03 07:22:52,049 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/log
+2020-12-03 07:22:52,049 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/temp
+2020-12-03 07:22:52,103 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:22:52,117 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:22:52,131 INFO  Server - Services initialized
+2020-12-03 07:22:52,131 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:22:52,162 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:37456]
+2020-12-03 07:22:52,180 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:22:52,197 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:22:52,211 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:22:52 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:22:52 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:22:52 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+Dec 03, 2020 7:22:52 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:22:53,757 INFO  ContextHandler - Started o.e.j.w.WebAppContext@67fc2aad{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:22:53,759 INFO  AbstractConnector - Started ServerConnector@25bbe1b6{HTTP/1.1,[http/1.1]}{localhost:36241}
+2020-12-03 07:22:53,759 INFO  Server - Started @15740ms
+2020-12-03 07:22:53,765 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:53,774 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=allowSnapshot	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:53,778 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test/subdir	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+Dec 03, 2020 7:22:54 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+Dec 03, 2020 7:22:54 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+Dec 03, 2020 7:22:54 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+Dec 03, 2020 7:22:54 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+2020-12-03 07:22:54,167 INFO  httpfsaudit - 
+2020-12-03 07:22:54,238 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=createSnapshot	src=/tmp/tmp-snap-test	dst=/tmp/tmp-snap-test/.snapshot/s20201203-072254.230	perm=null	proto=rpc
+2020-12-03 07:22:54,240 INFO  httpfsaudit - [/tmp/tmp-snap-test] snapshot created as [null]
+2020-12-03 07:22:54,271 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/tmp-snap-test/.snapshot	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,280 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test/.snapshot	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,282 INFO  httpfsaudit - [/tmp/tmp-snap-test/.snapshot] filter [-]
+2020-12-03 07:22:54,296 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=deleteSnapshot	src=/tmp/tmp-snap-test/.snapshot/s20201203-072254.230	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,299 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,304 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:54,305 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=allowSnapshot	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,306 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test/subdir	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:54,331 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=createSnapshot	src=/tmp/tmp-snap-test	dst=/tmp/tmp-snap-test/.snapshot/snap-with-name	perm=null	proto=rpc
+2020-12-03 07:22:54,332 INFO  httpfsaudit - [/tmp/tmp-snap-test] snapshot created as [snap-with-name]
+2020-12-03 07:22:54,350 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/tmp-snap-test/.snapshot	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,352 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test/.snapshot	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,352 INFO  httpfsaudit - [/tmp/tmp-snap-test/.snapshot] filter [-]
+2020-12-03 07:22:54,358 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=deleteSnapshot	src=/tmp/tmp-snap-test/.snapshot/snap-with-name	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,360 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:54,367 INFO  AbstractConnector - Stopped ServerConnector@25bbe1b6{HTTP/1.1,[http/1.1]}{localhost:36241}
+2020-12-03 07:22:54,368 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:22:54,371 INFO  Server - Services destroyed
+2020-12-03 07:22:54,371 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:22:54,372 INFO  Server - ======================================================
+msx-rc 0

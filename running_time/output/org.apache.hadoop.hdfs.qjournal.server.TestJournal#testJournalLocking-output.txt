@@ -1,0 +1,65 @@
+2020-12-03 07:19:29,516 [main] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal does not exist
+2020-12-03 07:19:29,545 [main] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:19:29,614 [main] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : test-journal with namespace info: lv=-65;cid=mycluster;nsid=12345;c=0;bpid=my-bp and force: false
+2020-12-03 07:19:29,614 [main] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal does not exist. Creating ...
+2020-12-03 07:19:29,686 [main] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/in_use.lock acquired by nodename 276@a3be22c8fbc1
+2020-12-03 07:19:29,688 [main] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal; location= null with nsid: 12345
+2020-12-03 07:19:29,738 [main] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/current/paxos
+2020-12-03 07:19:29,771 [main] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/in_use.lock acquired by nodename 276@a3be22c8fbc1
+2020-12-03 07:19:29,772 [main] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:19:29,775 [Thread-1] ERROR common.Storage (Storage.java:tryLock(927)) - It appears that another node  276@a3be22c8fbc1 has already locked the storage directory: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1107)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.tryLock(Storage.java:917)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.isLockSupported(Storage.java:984)
+	at org.apache.hadoop.hdfs.qjournal.server.TestJournal.testJournalLocking(TestJournal.java:290)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+2020-12-03 07:19:29,792 [Thread-1] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client null ; journal id: test-journal
+2020-12-03 07:19:29,855 [Thread-1] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:29,857 [Thread-1] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:29,858 [Thread-1] ERROR common.Storage (Storage.java:tryLock(927)) - It appears that another node  276@a3be22c8fbc1 has already locked the storage directory: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1107)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.tryLock(Storage.java:917)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.lock(Storage.java:885)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.analyzeStorage(Storage.java:694)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.analyzeStorage(Storage.java:637)
+	at org.apache.hadoop.hdfs.qjournal.server.JNStorage.analyzeAndRecoverStorage(JNStorage.java:255)
+	at org.apache.hadoop.hdfs.qjournal.server.JNStorage.<init>(JNStorage.java:76)
+	at org.apache.hadoop.hdfs.qjournal.server.Journal.<init>(Journal.java:164)
+	at org.apache.hadoop.hdfs.qjournal.server.TestJournal.testJournalLocking(TestJournal.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+2020-12-03 07:19:29,860 [Thread-1] INFO  common.Storage (Storage.java:lock(889)) - Cannot lock storage /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal. The directory is already locked
+2020-12-03 07:19:29,860 [Thread-1] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal; location= null
+2020-12-03 07:19:29,896 [Thread-1] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/in_use.lock acquired by nodename 276@a3be22c8fbc1
+2020-12-03 07:19:29,897 [Thread-1] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:19:29,902 [Thread-1] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:29,903 [Thread-1] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:29,904 [Thread-1] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 1 to 2 for client null ; journal id: test-journal
+2020-12-03 07:19:29,938 [Thread-1] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:29,939 [Thread-1] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:29,939 [Thread-1] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal; location= null
+2020-12-03 07:19:29,963 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal; location= null
+msx-rc 0

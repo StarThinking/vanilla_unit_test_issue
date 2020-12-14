@@ -1,0 +1,29 @@
+2020-12-03 07:22:27,104 [main] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 100, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:22:27,200 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:22:27,387 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:22:27,388 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:22:28,202 [Listener at 0.0.0.0/45131] INFO  hdfs.TestDFSClientRetries (TestDFSClientRetries.java:testClientDNProtocolTimeout(905)) - Got the expected Exception: SocketTimeoutException
+2020-12-03 07:22:28,204 [Listener at 0.0.0.0/45131] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 45131
+2020-12-03 07:22:28,205 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:22:28,205 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:22:28,205 [IPC Server handler 0 on default port 45131] WARN  ipc.Server (Server.java:processResponse(1670)) - IPC Server handler 0 on default port 45131, call Call#0 Retry#0 5983620787766317669 from 127.0.0.1:33392: output error
+2020-12-03 07:22:28,209 [IPC Server handler 0 on default port 45131] INFO  ipc.Server (Server.java:run(2928)) - IPC Server handler 0 on default port 45131 caught an exception
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:267)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:458)
+	at org.apache.hadoop.ipc.Server.channelWrite(Server.java:3550)
+	at org.apache.hadoop.ipc.Server.access$1700(Server.java:139)
+	at org.apache.hadoop.ipc.Server$Responder.processResponse(Server.java:1620)
+	at org.apache.hadoop.ipc.Server$Responder.doRespond(Server.java:1690)
+	at org.apache.hadoop.ipc.Server$Connection.sendResponse(Server.java:2785)
+	at org.apache.hadoop.ipc.Server$Connection.access$300(Server.java:1762)
+	at org.apache.hadoop.ipc.Server$RpcCall.doResponse(Server.java:1081)
+	at org.apache.hadoop.ipc.Server$Call.doResponse(Server.java:873)
+	at org.apache.hadoop.ipc.Server$Call.sendResponse(Server.java:859)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:1016)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:927)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1730)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2915)
+msx-rc 0

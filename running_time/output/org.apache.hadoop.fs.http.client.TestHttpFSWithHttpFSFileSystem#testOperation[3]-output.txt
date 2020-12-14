@@ -1,0 +1,115 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:22:52,777 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:22:52,778 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:22:52,778 INFO  Server - Server [httpfs] starting
+2020-12-03 07:22:52,778 INFO  Server -   Built information:
+2020-12-03 07:22:52,778 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:22:52,778 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:22:52,778 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:22:52,778 INFO  Server -     Built by          : root
+2020-12-03 07:22:52,778 INFO  Server -     Built timestamp   : 2020-12-03T07:22:33+0000
+2020-12-03 07:22:52,778 INFO  Server -   Runtime information:
+2020-12-03 07:22:52,778 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1
+2020-12-03 07:22:52,778 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf
+2020-12-03 07:22:52,778 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/log
+2020-12-03 07:22:52,779 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/temp
+2020-12-03 07:22:52,820 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:22:52,831 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:22:52,840 INFO  Server - Services initialized
+2020-12-03 07:22:52,841 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:22:52,854 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:36442]
+2020-12-03 07:22:52,872 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:22:52,873 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:22:52,885 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:22:52 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:22:53 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:22:53 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+Dec 03, 2020 7:22:53 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:22:54,391 INFO  ContextHandler - Started o.e.j.w.WebAppContext@3a01773b{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:22:54,392 INFO  AbstractConnector - Started ServerConnector@25bbe1b6{HTTP/1.1,[http/1.1]}{localhost:34357}
+2020-12-03 07:22:54,392 INFO  Server - Started @14631ms
+2020-12-03 07:22:54,402 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/testOperation-0	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:22:54,404 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/testOperation-0/foo.txt	dst=null	perm=root:supergroup:rw-r--r--	proto=rpc
+2020-12-03 07:22:54,427 INFO  StateChange - BLOCK* allocate blk_1073741825_1001, replicas=127.0.0.1:35030, 127.0.0.1:33278, 127.0.0.1:40056 for /tmp/testOperation-0/foo.txt
+2020-12-03 07:22:54,449 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:54,513 INFO  DataNode - Receiving BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001 src: /127.0.0.1:45674 dest: /127.0.0.1:35030
+2020-12-03 07:22:54,539 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:54,542 INFO  DataNode - Receiving BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001 src: /127.0.0.1:33640 dest: /127.0.0.1:33278
+2020-12-03 07:22:54,543 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:54,544 INFO  DataNode - Receiving BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001 src: /127.0.0.1:33034 dest: /127.0.0.1:40056
+2020-12-03 07:22:54,575 INFO  clienttrace - src: /127.0.0.1:33034, dest: /127.0.0.1:40056, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-726078556_1, offset: 0, srvID: 3500c00b-bebe-4511-a319-be69eb502c5c, blockid: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001, duration(ns): 14300476
+2020-12-03 07:22:54,575 INFO  DataNode - PacketResponder: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:54,579 INFO  clienttrace - src: /127.0.0.1:33640, dest: /127.0.0.1:33278, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-726078556_1, offset: 0, srvID: 45270d67-b93d-41f4-b4b4-4ade27ac42f2, blockid: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001, duration(ns): 19839749
+2020-12-03 07:22:54,579 INFO  DataNode - PacketResponder: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001, type=HAS_DOWNSTREAM_IN_PIPELINE, downstreams=1:[127.0.0.1:40056] terminating
+2020-12-03 07:22:54,582 INFO  clienttrace - src: /127.0.0.1:45674, dest: /127.0.0.1:35030, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-726078556_1, offset: 0, srvID: fa63578b-14e2-4a57-8781-e8a192b2ac49, blockid: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001, duration(ns): 23719619
+2020-12-03 07:22:54,583 INFO  DataNode - PacketResponder: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001, type=HAS_DOWNSTREAM_IN_PIPELINE, downstreams=2:[127.0.0.1:33278, 127.0.0.1:40056] terminating
+2020-12-03 07:22:54,592 INFO  FSNamesystem - BLOCK* blk_1073741825_1001 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /tmp/testOperation-0/foo.txt
+2020-12-03 07:22:55,002 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/foo.txt is closed by DFSClient_NONMAPREDUCE_-726078556_1
+Dec 03, 2020 7:22:55 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+Dec 03, 2020 7:22:55 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+Dec 03, 2020 7:22:55 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+Dec 03, 2020 7:22:55 AM com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator attachTypes
+INFO: Couldn't find grammar element for class java.io.InputStream
+2020-12-03 07:22:55,676 INFO  httpfsaudit - 
+2020-12-03 07:22:55,734 INFO  audit - allowed=true	ugi=root (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=append	src=/tmp/testOperation-0/foo.txt	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:55,752 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:55,757 INFO  DataNode - Receiving BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001 src: /127.0.0.1:45686 dest: /127.0.0.1:35030
+2020-12-03 07:22:55,758 INFO  FsDatasetImpl - Appending to FinalizedReplica, blk_1073741825_1001, FINALIZED
+  getNumBytes()     = 1
+  getBytesOnDisk()  = 1
+  getVisibleLength()= 1
+  getVolume()       = /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/dfs/data/data9
+  getBlockURI()     = file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/dfs/data/data9/current/BP-1675257865-172.17.0.5-1606980161901/current/finalized/subdir0/subdir0/blk_1073741825
+2020-12-03 07:22:55,809 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:55,811 INFO  DataNode - Receiving BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001 src: /127.0.0.1:33044 dest: /127.0.0.1:40056
+2020-12-03 07:22:55,812 INFO  FsDatasetImpl - Appending to FinalizedReplica, blk_1073741825_1001, FINALIZED
+  getNumBytes()     = 1
+  getBytesOnDisk()  = 1
+  getVisibleLength()= 1
+  getVolume()       = /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/dfs/data/data1
+  getBlockURI()     = file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/dfs/data/data1/current/BP-1675257865-172.17.0.5-1606980161901/current/finalized/subdir0/subdir0/blk_1073741825
+2020-12-03 07:22:55,866 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:55,870 INFO  DataNode - Receiving BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1001 src: /127.0.0.1:33654 dest: /127.0.0.1:33278
+2020-12-03 07:22:55,870 INFO  FsDatasetImpl - Appending to FinalizedReplica, blk_1073741825_1001, FINALIZED
+  getNumBytes()     = 1
+  getBytesOnDisk()  = 1
+  getVisibleLength()= 1
+  getVolume()       = /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/dfs/data/data17
+  getBlockURI()     = file:/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/dfs/data/data17/current/BP-1675257865-172.17.0.5-1606980161901/current/finalized/subdir0/subdir0/blk_1073741825
+2020-12-03 07:22:55,920 INFO  FSNamesystem - updatePipeline(blk_1073741825_1001, newGS=1002, newLength=1, newNodes=[127.0.0.1:35030, 127.0.0.1:40056, 127.0.0.1:33278], client=DFSClient_NONMAPREDUCE_-836847330_1995)
+2020-12-03 07:22:55,923 INFO  FSNamesystem - updatePipeline(blk_1073741825_1001 => blk_1073741825_1002) success
+2020-12-03 07:22:55,941 INFO  clienttrace - src: /127.0.0.1:33654, dest: /127.0.0.1:33278, bytes: 2, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-836847330_1995, offset: 0, srvID: 45270d67-b93d-41f4-b4b4-4ade27ac42f2, blockid: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1002, duration(ns): 27191224
+2020-12-03 07:22:55,941 INFO  DataNode - PacketResponder: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1002, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:22:55,945 INFO  clienttrace - src: /127.0.0.1:33044, dest: /127.0.0.1:40056, bytes: 2, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-836847330_1995, offset: 0, srvID: 3500c00b-bebe-4511-a319-be69eb502c5c, blockid: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1002, duration(ns): 31072683
+2020-12-03 07:22:55,945 INFO  DataNode - PacketResponder: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1002, type=HAS_DOWNSTREAM_IN_PIPELINE, downstreams=1:[127.0.0.1:33278] terminating
+2020-12-03 07:22:55,951 INFO  clienttrace - src: /127.0.0.1:45686, dest: /127.0.0.1:35030, bytes: 2, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-836847330_1995, offset: 0, srvID: fa63578b-14e2-4a57-8781-e8a192b2ac49, blockid: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1002, duration(ns): 35359082
+2020-12-03 07:22:55,951 INFO  DataNode - PacketResponder: BP-1675257865-172.17.0.5-1606980161901:blk_1073741825_1002, type=HAS_DOWNSTREAM_IN_PIPELINE, downstreams=2:[127.0.0.1:40056, 127.0.0.1:33278] terminating
+2020-12-03 07:22:55,954 INFO  StateChange - DIR* completeFile: /tmp/testOperation-0/foo.txt is closed by DFSClient_NONMAPREDUCE_-836847330_1995
+2020-12-03 07:22:55,959 INFO  httpfsaudit - [/tmp/testOperation-0/foo.txt]
+2020-12-03 07:22:55,967 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=open	src=/tmp/testOperation-0/foo.txt	dst=null	perm=null	proto=rpc
+2020-12-03 07:22:56,001 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:22:56,039 INFO  AbstractConnector - Stopped ServerConnector@25bbe1b6{HTTP/1.1,[http/1.1]}{localhost:34357}
+2020-12-03 07:22:56,040 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:22:56,043 INFO  Server - Services destroyed
+2020-12-03 07:22:56,043 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:22:56,043 INFO  Server - ======================================================
+msx-rc 0

@@ -1,0 +1,18 @@
+2020-12-03 07:19:28,780 [main] INFO  store.StateStoreService (StateStoreService.java:serviceInit(185)) - Registered StateStoreMBean: Hadoop:service=Router,name=StateStore
+2020-12-03 07:19:28,798 [main] WARN  impl.StateStoreFileImpl (StateStoreFileImpl.java:getRootDir(93)) - The root directory is not available, using /tmp/1606979968798-0
+2020-12-03 07:19:28,799 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979968798-0/MembershipState data directory doesn't exist, creating it
+2020-12-03 07:19:28,800 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979968798-0/RouterState data directory doesn't exist, creating it
+2020-12-03 07:19:28,800 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979968798-0/DisabledNameservice data directory doesn't exist, creating it
+2020-12-03 07:19:28,801 [main] INFO  impl.StateStoreFileBaseImpl (StateStoreFileBaseImpl.java:initRecordStorage(181)) - /tmp/1606979968798-0/MountTable data directory doesn't exist, creating it
+2020-12-03 07:19:28,801 [main] INFO  store.StateStoreService (StateStoreService.java:loadDriver(275)) - Connection to the State Store driver StateStoreFileImpl is open and ready
+2020-12-03 07:19:28,808 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStart(141)) - Starting periodic service StateStoreConnectionMonitorService
+2020-12-03 07:19:28,809 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStart(141)) - Starting periodic service StateStoreCacheUpdateService
+2020-12-03 07:19:29,048 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(176)) - Inserting new NN registration: router0->ns0:nn0:localhost:1476-ACTIVE
+2020-12-03 07:19:29,081 [main] INFO  store.StateStoreService (StateStoreService.java:refreshCaches(404)) - Skipping State Store cache update, driver is not ready.
+2020-12-03 07:19:29,089 [main] ERROR resolver.MembershipNamenodeResolver (MembershipNamenodeResolver.java:getNamenodesForBlockPoolId(234)) - Cannot locate eligible NNs for ns0
+2020-12-03 07:19:29,090 [main] INFO  impl.MembershipStoreImpl (MembershipStoreImpl.java:namenodeHeartbeat(176)) - Inserting new NN registration: router0->ns0:nn0:localhost:1476-ACTIVE
+2020-12-03 07:19:29,095 [main] INFO  router.PeriodicService (PeriodicService.java:stopPeriodic(157)) - StateStoreCacheUpdateService is shutting down
+2020-12-03 07:19:29,096 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStop(148)) - Stopping periodic service StateStoreCacheUpdateService
+2020-12-03 07:19:29,096 [main] INFO  router.PeriodicService (PeriodicService.java:stopPeriodic(157)) - StateStoreConnectionMonitorService is shutting down
+2020-12-03 07:19:29,101 [main] INFO  router.PeriodicService (PeriodicService.java:serviceStop(148)) - Stopping periodic service StateStoreConnectionMonitorService
+msx-rc 0

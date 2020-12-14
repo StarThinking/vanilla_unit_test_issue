@@ -1,0 +1,69 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:23:53,149 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDirAcls-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:23:53,152 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:23:53,152 INFO  Server - Server [httpfs] starting
+2020-12-03 07:23:53,153 INFO  Server -   Built information:
+2020-12-03 07:23:53,153 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:23:53,153 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:23:53,153 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:23:53,153 INFO  Server -     Built by          : root
+2020-12-03 07:23:53,153 INFO  Server -     Built timestamp   : 2020-12-03T07:23:32+0000
+2020-12-03 07:23:53,154 INFO  Server -   Runtime information:
+2020-12-03 07:23:53,154 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDirAcls-1
+2020-12-03 07:23:53,154 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDirAcls-1/conf
+2020-12-03 07:23:53,154 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDirAcls-1/log
+2020-12-03 07:23:53,154 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDirAcls-1/temp
+2020-12-03 07:23:53,208 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:23:53,227 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:23:53,250 INFO  Server - Services initialized
+2020-12-03 07:23:53,251 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:23:53,265 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:36344]
+2020-12-03 07:23:53,280 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:23:53,282 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:23:53,290 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:23:53 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:23:53 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:23:53 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+Dec 03, 2020 7:23:53 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:23:54,620 INFO  ContextHandler - Started o.e.j.w.WebAppContext@46a953cf{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:23:54,622 INFO  AbstractConnector - Started ServerConnector@cb644e{HTTP/1.1,[http/1.1]}{localhost:40131}
+2020-12-03 07:23:54,622 INFO  Server - Started @17044ms
+2020-12-03 07:23:54,625 INFO  audit - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/aclDirTest	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:23:54,865 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/aclDirTest	dst=null	perm=null	proto=rpc
+2020-12-03 07:23:54,883 INFO  httpfsaudit - [/aclDirTest]
+2020-12-03 07:23:54,948 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getAclStatus	src=/aclDirTest	dst=null	perm=null	proto=rpc
+2020-12-03 07:23:54,965 INFO  httpfsaudit - ACL status for [/aclDirTest]
+2020-12-03 07:23:55,023 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=setAcl	src=/aclDirTest	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:23:55,039 INFO  httpfsaudit - [/aclDirTest] to acl [default:user:glarch:r-x]
+2020-12-03 07:23:55,060 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/aclDirTest	dst=null	perm=null	proto=rpc
+2020-12-03 07:23:55,061 INFO  httpfsaudit - [/aclDirTest]
+2020-12-03 07:23:55,085 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getAclStatus	src=/aclDirTest	dst=null	perm=null	proto=rpc
+2020-12-03 07:23:55,086 INFO  httpfsaudit - ACL status for [/aclDirTest]
+2020-12-03 07:23:55,122 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=removeDefaultAcl	src=/aclDirTest	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:23:55,124 INFO  httpfsaudit - [/aclDirTest] remove default acl
+2020-12-03 07:23:55,144 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/aclDirTest	dst=null	perm=null	proto=rpc
+2020-12-03 07:23:55,145 INFO  httpfsaudit - [/aclDirTest]
+2020-12-03 07:23:55,170 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getAclStatus	src=/aclDirTest	dst=null	perm=null	proto=rpc
+2020-12-03 07:23:55,170 INFO  httpfsaudit - ACL status for [/aclDirTest]
+2020-12-03 07:23:55,177 INFO  AbstractConnector - Stopped ServerConnector@cb644e{HTTP/1.1,[http/1.1]}{localhost:40131}
+2020-12-03 07:23:55,178 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:23:55,180 INFO  Server - Services destroyed
+2020-12-03 07:23:55,180 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:23:55,180 INFO  Server - ======================================================
+msx-rc 0

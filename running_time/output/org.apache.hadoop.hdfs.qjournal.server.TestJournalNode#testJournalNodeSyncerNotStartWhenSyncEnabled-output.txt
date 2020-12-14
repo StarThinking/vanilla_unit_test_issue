@@ -1,0 +1,48 @@
+2020-12-03 07:23:56,616 [main] INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(118)) - Loaded properties from hadoop-metrics2.properties
+2020-12-03 07:23:56,759 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(374)) - Scheduled Metric snapshot period at 0 second(s).
+2020-12-03 07:23:56,761 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JournalNode metrics system started
+2020-12-03 07:23:56,932 [main] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://0.0.0.0:8480
+2020-12-03 07:23:56,957 [main] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:56,974 [main] INFO  util.log (Log.java:initialized(192)) - Logging initialized @1678ms
+2020-12-03 07:23:57,148 [main] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:23:57,199 [main] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:23:57,200 [main] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:57,211 [main] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:23:57,213 [main] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:23:57,214 [main] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:23:57,214 [main] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:23:57,245 [main] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 8480
+2020-12-03 07:23:57,247 [main] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:23:57,295 [main] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@550ee7e5{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:23:57,299 [main] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@247d8ae{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:23:57,341 [main] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@60099951{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:23:57,350 [main] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@31a8ca48{HTTP/1.1,[http/1.1]}{0.0.0.0:8480}
+2020-12-03 07:23:57,351 [main] INFO  server.Server (Server.java:doStart(419)) - Started @2055ms
+2020-12-03 07:23:57,354 [main] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to 0.0.0.0:0
+2020-12-03 07:23:57,400 [main] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:23:57,412 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:23:57,686 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:23:57,686 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:23:57,775 [Listener at 0.0.0.0/35362] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1
+2020-12-03 07:23:57,793 [Listener at 0.0.0.0/35362] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1 does not exist
+2020-12-03 07:23:58,123 [Listener at 0.0.0.0/35362] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(308)) - Could not parse JournalNode addresses: qjournal://jn0:9900;jn1:9901/test-journalid-1
+2020-12-03 07:23:58,123 [Listener at 0.0.0.0/35362] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:58,124 [Listener at 0.0.0.0/35362] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : test-journalid-1 with namespace info: lv=-65;cid=mycluster;nsid=12345;c=0;bpid=my-bp and force: false
+2020-12-03 07:23:58,124 [Listener at 0.0.0.0/35362] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1 does not exist. Creating ...
+2020-12-03 07:23:58,190 [Listener at 0.0.0.0/35362] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1/in_use.lock acquired by nodename 7461@8dff57e1d4f6
+2020-12-03 07:23:58,191 [Listener at 0.0.0.0/35362] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1; location= null with nsid: 12345
+2020-12-03 07:23:58,248 [Listener at 0.0.0.0/35362] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1/current/paxos
+2020-12-03 07:23:58,289 [Listener at 0.0.0.0/35362] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1/in_use.lock acquired by nodename 7461@8dff57e1d4f6
+2020-12-03 07:23:58,344 [Listener at 0.0.0.0/35362] INFO  server.JournalNodeSyncer (JournalNodeSyncer.java:start(122)) - Starting SyncJournal daemon for journal test-journalid-1
+2020-12-03 07:23:58,346 [Listener at 0.0.0.0/35362] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 35362
+2020-12-03 07:23:58,347 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:23:58,347 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:23:58,350 [Listener at 0.0.0.0/35362] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@60099951{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:23:58,356 [Listener at 0.0.0.0/35362] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@31a8ca48{HTTP/1.1,[http/1.1]}{0.0.0.0:8480}
+2020-12-03 07:23:58,356 [Listener at 0.0.0.0/35362] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@247d8ae{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:23:58,357 [Listener at 0.0.0.0/35362] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@550ee7e5{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:23:58,359 [Listener at 0.0.0.0/35362] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournalNode/test-journalid-1; location= null
+2020-12-03 07:23:58,359 [Listener at 0.0.0.0/35362] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping JournalNode metrics system...
+2020-12-03 07:23:58,360 [Listener at 0.0.0.0/35362] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - JournalNode metrics system stopped.
+2020-12-03 07:23:58,360 [Listener at 0.0.0.0/35362] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(607)) - JournalNode metrics system shutdown complete.
+msx-rc 0

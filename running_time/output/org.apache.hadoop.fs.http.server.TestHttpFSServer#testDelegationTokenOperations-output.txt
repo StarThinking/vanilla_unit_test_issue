@@ -1,0 +1,57 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:23:50,502 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDelegationTokenOperations-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:23:50,522 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:23:50,522 INFO  Server - Server [httpfs] starting
+2020-12-03 07:23:50,522 INFO  Server -   Built information:
+2020-12-03 07:23:50,523 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:23:50,523 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:23:50,523 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:23:50,523 INFO  Server -     Built by          : root
+2020-12-03 07:23:50,523 INFO  Server -     Built timestamp   : 2020-12-03T07:23:29+0000
+2020-12-03 07:23:50,523 INFO  Server -   Runtime information:
+2020-12-03 07:23:50,523 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDelegationTokenOperations-1
+2020-12-03 07:23:50,523 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDelegationTokenOperations-1/conf
+2020-12-03 07:23:50,523 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDelegationTokenOperations-1/log
+2020-12-03 07:23:50,524 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testDelegationTokenOperations-1/temp
+2020-12-03 07:23:50,564 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:23:50,575 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:23:50,590 INFO  Server - Services initialized
+2020-12-03 07:23:50,591 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:23:50,604 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:37425]
+2020-12-03 07:23:50,622 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:23:50,624 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:23:50,626 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:23:50 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:23:50 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:23:50 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+Dec 03, 2020 7:23:50 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:23:51,817 INFO  ContextHandler - Started o.e.j.w.WebAppContext@153cd6bb{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:23:51,819 INFO  AbstractConnector - Started ServerConnector@cb644e{HTTP/1.1,[http/1.1]}{localhost:36916}
+2020-12-03 07:23:51,819 INFO  Server - Started @17317ms
+2020-12-03 07:23:52,860 INFO  AbstractDelegationTokenSecretManager - Creating password for identifier: (WEBHDFS delegation owner=u, renewer=u, realUser=, issueDate=1606980232860, maxDate=1607585032860, sequenceNumber=1, masterKeyId=2), currentKey: 2
+2020-12-03 07:23:52,978 INFO  httpfsaudit - 
+2020-12-03 07:23:52,999 INFO  AbstractDelegationTokenSecretManager - Token renewal for identifier: (WEBHDFS delegation owner=u, renewer=u, realUser=, issueDate=1606980232860, maxDate=1607585032860, sequenceNumber=1, masterKeyId=2); total currentTokens 1
+2020-12-03 07:23:53,018 INFO  AbstractDelegationTokenSecretManager - Token cancellation requested for identifier: (WEBHDFS delegation owner=u, renewer=u, realUser=, issueDate=1606980232860, maxDate=1607585032860, sequenceNumber=1, masterKeyId=2)
+2020-12-03 07:23:53,149 INFO  audit - allowed=true	ugi=p (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getEZForPath	src=/	dst=null	perm=root:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:23:53,162 INFO  httpfsaudit - [/]
+2020-12-03 07:23:53,178 INFO  AbstractConnector - Stopped ServerConnector@cb644e{HTTP/1.1,[http/1.1]}{localhost:36916}
+2020-12-03 07:23:53,185 INFO  Server - Services destroyed
+2020-12-03 07:23:53,185 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:23:53,186 INFO  Server - ======================================================
+msx-rc 0

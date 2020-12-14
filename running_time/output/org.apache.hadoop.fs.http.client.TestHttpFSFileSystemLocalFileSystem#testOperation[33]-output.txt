@@ -1,0 +1,70 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:19:58,948 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:19:58,949 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:19:58,949 INFO  Server - Server [httpfs] starting
+2020-12-03 07:19:58,949 INFO  Server -   Built information:
+2020-12-03 07:19:58,950 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:19:58,950 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:19:58,950 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:19:58,950 INFO  Server -     Built by          : root
+2020-12-03 07:19:58,950 INFO  Server -     Built timestamp   : 2020-12-03T07:19:39+0000
+2020-12-03 07:19:58,951 INFO  Server -   Runtime information:
+2020-12-03 07:19:58,951 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1
+2020-12-03 07:19:58,951 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/conf
+2020-12-03 07:19:58,951 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/log
+2020-12-03 07:19:58,951 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperation-1/temp
+2020-12-03 07:19:58,987 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:19:58,999 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:19:59,007 INFO  Server - Services initialized
+2020-12-03 07:19:59,008 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:19:59,022 INFO  HttpFSServerWebApp - Connects to Namenode [file:///]
+2020-12-03 07:19:59,038 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:19:59,039 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:19:59,046 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:19:59 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:19:59 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:19:59 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+Dec 03, 2020 7:19:59 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:20:00,146 INFO  BlockStateChange - BLOCK* processReport 0x6442f88965d082c6: Processing first storage report for DS-be3cbcc1-6215-4ba4-83b9-0d44bf3821fd from datanode a170be97-3cb7-45d8-a6fb-737de09bddb8
+2020-12-03 07:20:00,147 INFO  BlockStateChange - BLOCK* processReport 0x6442f88965d082c6: from storage DS-be3cbcc1-6215-4ba4-83b9-0d44bf3821fd node DatanodeRegistration(127.0.0.1:39964, datanodeUuid=a170be97-3cb7-45d8-a6fb-737de09bddb8, infoPort=38439, infoSecurePort=0, ipcPort=33372, storageInfo=lv=-57;cid=testClusterID;nsid=523845096;c=1606979987659), blocks: 0, hasStaleStorage: true, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:20:00,147 INFO  BlockStateChange - BLOCK* processReport 0x6442f88965d082c6: Processing first storage report for DS-e1fe43bf-24f8-47ca-9991-dce38120adb1 from datanode a170be97-3cb7-45d8-a6fb-737de09bddb8
+2020-12-03 07:20:00,147 INFO  BlockStateChange - BLOCK* processReport 0x6442f88965d082c6: from storage DS-e1fe43bf-24f8-47ca-9991-dce38120adb1 node DatanodeRegistration(127.0.0.1:39964, datanodeUuid=a170be97-3cb7-45d8-a6fb-737de09bddb8, infoPort=38439, infoSecurePort=0, ipcPort=33372, storageInfo=lv=-57;cid=testClusterID;nsid=523845096;c=1606979987659), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:20:00,148 INFO  DataNode - Successfully sent block report 0x6442f88965d082c6,  containing 2 storage report(s), of which we sent 2. The reports had 0 total blocks and used 1 RPC(s). This took 0 msec to generate and 3 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2020-12-03 07:20:00,148 INFO  DataNode - Got finalize command for block pool BP-1653034241-172.17.0.11-1606979987659
+2020-12-03 07:20:00,281 INFO  BlockStateChange - BLOCK* processReport 0xdd98497fa2c03f77: Processing first storage report for DS-d7d61503-cfb2-4f62-b7db-ed3e5c149076 from datanode b43c0bbb-ed86-4c63-83a9-21039ad3cc06
+2020-12-03 07:20:00,281 INFO  BlockStateChange - BLOCK* processReport 0xdd98497fa2c03f77: from storage DS-d7d61503-cfb2-4f62-b7db-ed3e5c149076 node DatanodeRegistration(127.0.0.1:43603, datanodeUuid=b43c0bbb-ed86-4c63-83a9-21039ad3cc06, infoPort=45370, infoSecurePort=0, ipcPort=43681, storageInfo=lv=-57;cid=testClusterID;nsid=523845096;c=1606979987659), blocks: 0, hasStaleStorage: true, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:20:00,281 INFO  BlockStateChange - BLOCK* processReport 0xdd98497fa2c03f77: Processing first storage report for DS-8f5217e3-eb88-4a49-a72a-39c584aeb268 from datanode b43c0bbb-ed86-4c63-83a9-21039ad3cc06
+2020-12-03 07:20:00,281 INFO  BlockStateChange - BLOCK* processReport 0xdd98497fa2c03f77: from storage DS-8f5217e3-eb88-4a49-a72a-39c584aeb268 node DatanodeRegistration(127.0.0.1:43603, datanodeUuid=b43c0bbb-ed86-4c63-83a9-21039ad3cc06, infoPort=45370, infoSecurePort=0, ipcPort=43681, storageInfo=lv=-57;cid=testClusterID;nsid=523845096;c=1606979987659), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:20:00,282 INFO  BlockStateChange - BLOCK* processReport 0xe09105cfabdb0c78: Processing first storage report for DS-c9356597-60b7-455f-b1d9-2c02c6caa7bd from datanode f1d94137-8f0e-4785-a49e-0b9b04d05865
+2020-12-03 07:20:00,282 INFO  BlockStateChange - BLOCK* processReport 0xe09105cfabdb0c78: from storage DS-c9356597-60b7-455f-b1d9-2c02c6caa7bd node DatanodeRegistration(127.0.0.1:33585, datanodeUuid=f1d94137-8f0e-4785-a49e-0b9b04d05865, infoPort=44151, infoSecurePort=0, ipcPort=43379, storageInfo=lv=-57;cid=testClusterID;nsid=523845096;c=1606979987659), blocks: 0, hasStaleStorage: true, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:20:00,283 INFO  BlockStateChange - BLOCK* processReport 0xe09105cfabdb0c78: Processing first storage report for DS-18c39abc-aba1-4242-b095-829761e1d8bf from datanode f1d94137-8f0e-4785-a49e-0b9b04d05865
+2020-12-03 07:20:00,283 INFO  BlockStateChange - BLOCK* processReport 0xe09105cfabdb0c78: from storage DS-18c39abc-aba1-4242-b095-829761e1d8bf node DatanodeRegistration(127.0.0.1:33585, datanodeUuid=f1d94137-8f0e-4785-a49e-0b9b04d05865, infoPort=44151, infoSecurePort=0, ipcPort=43379, storageInfo=lv=-57;cid=testClusterID;nsid=523845096;c=1606979987659), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2020-12-03 07:20:00,283 INFO  DataNode - Successfully sent block report 0xdd98497fa2c03f77,  containing 2 storage report(s), of which we sent 2. The reports had 0 total blocks and used 1 RPC(s). This took 0 msec to generate and 5 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2020-12-03 07:20:00,283 INFO  DataNode - Got finalize command for block pool BP-1653034241-172.17.0.11-1606979987659
+2020-12-03 07:20:00,284 INFO  DataNode - Successfully sent block report 0xe09105cfabdb0c78,  containing 2 storage report(s), of which we sent 2. The reports had 0 total blocks and used 1 RPC(s). This took 0 msec to generate and 2 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2020-12-03 07:20:00,284 INFO  DataNode - Got finalize command for block pool BP-1653034241-172.17.0.11-1606979987659
+2020-12-03 07:20:00,476 INFO  ContextHandler - Started o.e.j.w.WebAppContext@3a01773b{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:20:00,478 INFO  AbstractConnector - Started ServerConnector@3159c4b8{HTTP/1.1,[http/1.1]}{localhost:41591}
+2020-12-03 07:20:00,478 INFO  Server - Started @15285ms
+2020-12-03 07:20:00,487 INFO  AbstractConnector - Stopped ServerConnector@3159c4b8{HTTP/1.1,[http/1.1]}{localhost:41591}
+2020-12-03 07:20:00,488 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:20:00,490 INFO  Server - Services destroyed
+2020-12-03 07:20:00,491 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:20:00,491 INFO  Server - ======================================================
+msx-rc 0

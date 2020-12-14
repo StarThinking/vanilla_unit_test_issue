@@ -1,0 +1,18 @@
+2020-12-03 07:19:33,823 [main] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal does not exist
+2020-12-03 07:19:33,844 [main] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:19:33,893 [main] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : test-journal with namespace info: lv=-65;cid=mycluster;nsid=12345;c=0;bpid=my-bp and force: false
+2020-12-03 07:19:33,893 [main] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal does not exist. Creating ...
+2020-12-03 07:19:33,940 [main] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/in_use.lock acquired by nodename 332@cdbfc2497dd7
+2020-12-03 07:19:33,942 [main] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal; location= null with nsid: 12345
+2020-12-03 07:19:33,992 [main] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/current/paxos
+2020-12-03 07:19:34,025 [main] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/in_use.lock acquired by nodename 332@cdbfc2497dd7
+2020-12-03 07:19:34,027 [main] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:19:34,036 [main] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client null ; journal id: test-journal
+2020-12-03 07:19:34,091 [main] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:34,093 [main] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal)
+2020-12-03 07:19:34,110 [main] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 1 for client null ; journal id: test-journal
+2020-12-03 07:19:34,494 [main] INFO  server.Journal (JournaledEditsCache.java:updateLayoutVersion(342)) - Updating edits cache to use layout version -65 starting from txn ID 1
+2020-12-03 07:19:34,544 [main] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal/current/edits_0000000000000000001-0000000000000000015
+2020-12-03 07:19:34,657 [main] INFO  server.Journal (JournaledEditsCache.java:updateLayoutVersion(342)) - Updating edits cache to use layout version -66 starting from txn ID 16; previous version was -65; old entries will be cleared.
+2020-12-03 07:19:34,686 [main] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/dfs/TestJournal; location= null
+msx-rc 0

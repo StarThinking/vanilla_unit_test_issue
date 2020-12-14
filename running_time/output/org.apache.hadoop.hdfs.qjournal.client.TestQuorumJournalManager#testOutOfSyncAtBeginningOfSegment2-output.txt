@@ -1,0 +1,577 @@
+2020-12-03 07:23:13,779 [main] INFO  qjournal.MiniJournalCluster (MiniJournalCluster.java:<init>(101)) - Starting MiniJournalCluster with 3 journal nodes
+2020-12-03 07:23:14,063 [main] INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(118)) - Loaded properties from hadoop-metrics2.properties
+2020-12-03 07:23:14,215 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(374)) - Scheduled Metric snapshot period at 0 second(s).
+2020-12-03 07:23:14,215 [main] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JournalNode metrics system started
+2020-12-03 07:23:14,389 [main] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:0
+2020-12-03 07:23:14,406 [main] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:14,424 [main] INFO  util.log (Log.java:initialized(192)) - Logging initialized @1853ms
+2020-12-03 07:23:14,611 [main] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:23:14,664 [main] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:23:14,665 [main] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:14,676 [main] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:23:14,680 [main] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:23:14,680 [main] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:23:14,681 [main] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:23:14,712 [main] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 38101
+2020-12-03 07:23:14,715 [main] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:23:14,768 [main] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@15aab8c6{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:23:14,770 [main] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@4de4b452{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:23:14,808 [main] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@740cae06{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:23:14,816 [main] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@449a4f23{HTTP/1.1,[http/1.1]}{localhost:38101}
+2020-12-03 07:23:14,817 [main] INFO  server.Server (Server.java:doStart(419)) - Started @2246ms
+2020-12-03 07:23:14,818 [main] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:0
+2020-12-03 07:23:14,877 [main] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:23:14,894 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:23:15,233 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:23:15,233 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:23:15,236 [Listener at localhost/41373] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JournalNode metrics system started (again)
+2020-12-03 07:23:15,239 [Listener at localhost/41373] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:0
+2020-12-03 07:23:15,240 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:15,242 [Listener at localhost/41373] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:23:15,243 [Listener at localhost/41373] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:23:15,244 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:15,247 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:23:15,248 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:23:15,248 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:23:15,249 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:23:15,250 [Listener at localhost/41373] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 46367
+2020-12-03 07:23:15,251 [Listener at localhost/41373] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:23:15,254 [Listener at localhost/41373] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@41294f8{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:23:15,256 [Listener at localhost/41373] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@20435c40{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:23:15,263 [Listener at localhost/41373] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@4397ad89{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:23:15,265 [Listener at localhost/41373] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@59cba5a{HTTP/1.1,[http/1.1]}{localhost:46367}
+2020-12-03 07:23:15,265 [Listener at localhost/41373] INFO  server.Server (Server.java:doStart(419)) - Started @2694ms
+2020-12-03 07:23:15,267 [Listener at localhost/41373] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:0
+2020-12-03 07:23:15,267 [Listener at localhost/41373] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:23:15,268 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:23:15,273 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:23:15,273 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:23:15,275 [Listener at localhost/45637] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JournalNode metrics system started (again)
+2020-12-03 07:23:15,278 [Listener at localhost/45637] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:0
+2020-12-03 07:23:15,278 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:15,280 [Listener at localhost/45637] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:23:15,281 [Listener at localhost/45637] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:23:15,281 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:15,284 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:23:15,285 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:23:15,285 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:23:15,286 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:23:15,287 [Listener at localhost/45637] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 35800
+2020-12-03 07:23:15,288 [Listener at localhost/45637] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:23:15,293 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@79dc5318{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:23:15,294 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@37e4d7bb{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:23:15,305 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@69f1a286{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:23:15,340 [Listener at localhost/45637] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@763ccea5{HTTP/1.1,[http/1.1]}{localhost:35800}
+2020-12-03 07:23:15,340 [Listener at localhost/45637] INFO  server.Server (Server.java:doStart(419)) - Started @2770ms
+2020-12-03 07:23:15,345 [Listener at localhost/45637] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:0
+2020-12-03 07:23:15,347 [Listener at localhost/45637] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:23:15,348 [Socket Reader #1 for port 0] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 0
+2020-12-03 07:23:15,353 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:23:15,353 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 0: starting
+2020-12-03 07:23:16,234 [Logger channel (from single-thread executor) to /127.0.0.1:45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 97: Call -> /127.0.0.1:45637: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,246 [Logger channel (from single-thread executor) to /127.0.0.1:41373] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 96: Call -> /127.0.0.1:41373: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,234 [Logger channel (from single-thread executor) to /127.0.0.1:41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 98: Call -> /127.0.0.1:41080: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,312 [IPC Server handler 1 on default port 41080] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/waitactive
+2020-12-03 07:23:16,312 [IPC Server handler 0 on default port 41373] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/waitactive
+2020-12-03 07:23:16,312 [IPC Server handler 2 on default port 45637] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/waitactive
+2020-12-03 07:23:16,332 [IPC Server handler 0 on default port 41373] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/waitactive does not exist
+2020-12-03 07:23:16,332 [IPC Server handler 2 on default port 45637] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/waitactive does not exist
+2020-12-03 07:23:16,332 [IPC Server handler 1 on default port 41080] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/waitactive does not exist
+2020-12-03 07:23:16,336 [IPC Server handler 0 on default port 41373] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:16,336 [IPC Server handler 2 on default port 45637] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:16,336 [IPC Server handler 1 on default port 41080] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:16,371 [IPC Server handler 0 on default port 41373] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:16,371 [IPC Server handler 0 on default port 41373] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:16,372 [IPC Server handler 1 on default port 41080] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:16,373 [IPC Server handler 1 on default port 41080] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:16,375 [IPC Server handler 2 on default port 45637] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:16,375 [IPC Server handler 2 on default port 45637] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:16,381 [Logger channel (from single-thread executor) to /127.0.0.1:41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 312ms
+2020-12-03 07:23:16,382 [Logger channel (from single-thread executor) to /127.0.0.1:41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 98: Response <- /127.0.0.1:41080: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,382 [Logger channel (from single-thread executor) to /127.0.0.1:41373] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 313ms
+2020-12-03 07:23:16,383 [Logger channel (from single-thread executor) to /127.0.0.1:41373] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 96: Response <- /127.0.0.1:41373: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,383 [Logger channel (from single-thread executor) to /127.0.0.1:45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 314ms
+2020-12-03 07:23:16,384 [Logger channel (from single-thread executor) to /127.0.0.1:45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 97: Response <- /127.0.0.1:45637: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,392 [Logger channel (from single-thread executor) to /127.0.0.1:41373] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 105: Call -> /127.0.0.1:41373: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,392 [Logger channel (from single-thread executor) to /127.0.0.1:41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 107: Call -> /127.0.0.1:41080: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,393 [Logger channel (from single-thread executor) to /127.0.0.1:45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 106: Call -> /127.0.0.1:45637: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,397 [Logger channel (from single-thread executor) to /127.0.0.1:45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 4ms
+2020-12-03 07:23:16,397 [Logger channel (from single-thread executor) to /127.0.0.1:45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 106: Response <- /127.0.0.1:45637: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,401 [Logger channel (from single-thread executor) to /127.0.0.1:41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 9ms
+2020-12-03 07:23:16,401 [Logger channel (from single-thread executor) to /127.0.0.1:41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 107: Response <- /127.0.0.1:41080: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,402 [Logger channel (from single-thread executor) to /127.0.0.1:41373] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 10ms
+2020-12-03 07:23:16,402 [Logger channel (from single-thread executor) to /127.0.0.1:41373] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 105: Response <- /127.0.0.1:41373: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,408 [Logger channel (from single-thread executor) to /127.0.0.1:41373] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 112: Call -> /127.0.0.1:41373: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,409 [Logger channel (from single-thread executor) to /127.0.0.1:45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 113: Call -> /127.0.0.1:45637: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,409 [Logger channel (from single-thread executor) to /127.0.0.1:41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 114: Call -> /127.0.0.1:41080: isFormatted {jid { identifier: "waitactive" }}
+2020-12-03 07:23:16,412 [Logger channel (from single-thread executor) to /127.0.0.1:41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 3ms
+2020-12-03 07:23:16,412 [Logger channel (from single-thread executor) to /127.0.0.1:41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 114: Response <- /127.0.0.1:41080: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,414 [Logger channel (from single-thread executor) to /127.0.0.1:45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 6ms
+2020-12-03 07:23:16,414 [Logger channel (from single-thread executor) to /127.0.0.1:45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 113: Response <- /127.0.0.1:45637: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,415 [Logger channel (from single-thread executor) to /127.0.0.1:41373] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: isFormatted took 7ms
+2020-12-03 07:23:16,415 [Logger channel (from single-thread executor) to /127.0.0.1:41373] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 112: Response <- /127.0.0.1:41373: isFormatted {isFormatted: false}
+2020-12-03 07:23:16,711 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:41373: format {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } force: false}
+2020-12-03 07:23:16,748 [IPC Server handler 3 on default port 41373] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal
+2020-12-03 07:23:16,750 [IPC Server handler 3 on default port 41373] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal does not exist
+2020-12-03 07:23:16,750 [IPC Server handler 3 on default port 41373] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:16,762 [IPC Server handler 3 on default port 41373] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:16,763 [IPC Server handler 3 on default port 41373] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:16,763 [IPC Server handler 3 on default port 41373] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : test-journal with namespace info: lv=-65;cid=mycluster;nsid=12345;c=0;bpid=my-bp and force: false
+2020-12-03 07:23:16,763 [IPC Server handler 3 on default port 41373] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal does not exist. Creating ...
+2020-12-03 07:23:16,806 [IPC Server handler 3 on default port 41373] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:16,807 [IPC Server handler 3 on default port 41373] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal; location= null with nsid: 12345
+2020-12-03 07:23:16,872 [IPC Server handler 3 on default port 41373] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/paxos
+2020-12-03 07:23:16,973 [IPC Server handler 3 on default port 41373] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:16,974 [IPC Server handler 3 on default port 41373] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:16,976 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: format took 270ms
+2020-12-03 07:23:16,978 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:41373: format {}
+2020-12-03 07:23:16,981 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:45637: format {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } force: false}
+2020-12-03 07:23:16,989 [IPC Server handler 0 on default port 45637] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal
+2020-12-03 07:23:16,990 [IPC Server handler 0 on default port 45637] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal does not exist
+2020-12-03 07:23:16,990 [IPC Server handler 0 on default port 45637] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:16,995 [IPC Server handler 0 on default port 45637] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:16,995 [IPC Server handler 0 on default port 45637] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:16,995 [IPC Server handler 0 on default port 45637] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : test-journal with namespace info: lv=-65;cid=mycluster;nsid=12345;c=0;bpid=my-bp and force: false
+2020-12-03 07:23:16,995 [IPC Server handler 0 on default port 45637] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal does not exist. Creating ...
+2020-12-03 07:23:17,076 [IPC Server handler 0 on default port 45637] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:17,076 [IPC Server handler 0 on default port 45637] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal; location= null with nsid: 12345
+2020-12-03 07:23:17,147 [IPC Server handler 0 on default port 45637] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/paxos
+2020-12-03 07:23:17,220 [IPC Server handler 0 on default port 45637] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:17,221 [IPC Server handler 0 on default port 45637] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:17,222 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: format took 242ms
+2020-12-03 07:23:17,222 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:45637: format {}
+2020-12-03 07:23:17,225 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:41080: format {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } force: false}
+2020-12-03 07:23:17,236 [IPC Server handler 3 on default port 41080] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal
+2020-12-03 07:23:17,243 [IPC Server handler 3 on default port 41080] WARN  common.Storage (Storage.java:analyzeStorage(671)) - Storage directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal does not exist
+2020-12-03 07:23:17,244 [IPC Server handler 3 on default port 41080] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:17,249 [IPC Server handler 3 on default port 41080] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:17,249 [IPC Server handler 3 on default port 41080] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:17,250 [IPC Server handler 3 on default port 41080] INFO  server.Journal (Journal.java:format(256)) - Formatting journal id : test-journal with namespace info: lv=-65;cid=mycluster;nsid=12345;c=0;bpid=my-bp and force: false
+2020-12-03 07:23:17,250 [IPC Server handler 3 on default port 41080] INFO  common.Storage (Storage.java:analyzeStorage(674)) - /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal does not exist. Creating ...
+2020-12-03 07:23:17,329 [IPC Server handler 3 on default port 41080] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:17,330 [IPC Server handler 3 on default port 41080] INFO  common.Storage (JNStorage.java:format(225)) - Formatting journal Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal; location= null with nsid: 12345
+2020-12-03 07:23:17,393 [IPC Server handler 3 on default port 41080] INFO  common.Storage (JNStorage.java:getOrCreatePaxosDir(162)) - Creating paxos dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal/current/paxos
+2020-12-03 07:23:17,490 [IPC Server handler 3 on default port 41080] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:17,491 [IPC Server handler 3 on default port 41080] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:17,492 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: format took 268ms
+2020-12-03 07:23:17,493 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:41080: format {}
+2020-12-03 07:23:17,494 [Listener at localhost/41080] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(477)) - Starting recovery process for unclosed journal segments...
+2020-12-03 07:23:17,498 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:41373: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:17,507 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: getJournalState took 10ms
+2020-12-03 07:23:17,508 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:41373: getJournalState {lastPromisedEpoch: 0 httpPort: 38101 fromURL: "http://localhost:38101"}
+2020-12-03 07:23:17,509 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:45637: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:17,521 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: getJournalState took 12ms
+2020-12-03 07:23:17,522 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:45637: getJournalState {lastPromisedEpoch: 0 httpPort: 46367 fromURL: "http://localhost:46367"}
+2020-12-03 07:23:17,523 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:41080: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:17,533 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: getJournalState took 10ms
+2020-12-03 07:23:17,534 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:41080: getJournalState {lastPromisedEpoch: 0 httpPort: 35800 fromURL: "http://localhost:35800"}
+2020-12-03 07:23:17,548 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: newEpoch {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } epoch: 1}
+2020-12-03 07:23:17,556 [IPC Server handler 4 on default port 41373] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:17,611 [IPC Server handler 4 on default port 41373] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal)
+2020-12-03 07:23:17,613 [IPC Server handler 4 on default port 41373] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal)
+2020-12-03 07:23:17,614 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: newEpoch took 75ms
+2020-12-03 07:23:17,615 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: newEpoch {}
+2020-12-03 07:23:17,617 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: newEpoch {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } epoch: 1}
+2020-12-03 07:23:17,623 [IPC Server handler 3 on default port 45637] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:17,667 [IPC Server handler 3 on default port 45637] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal)
+2020-12-03 07:23:17,668 [IPC Server handler 3 on default port 45637] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal)
+2020-12-03 07:23:17,669 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: newEpoch took 53ms
+2020-12-03 07:23:17,669 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: newEpoch {}
+2020-12-03 07:23:17,671 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: newEpoch {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } epoch: 1}
+2020-12-03 07:23:17,677 [IPC Server handler 1 on default port 41080] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 0 to 1 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:17,718 [IPC Server handler 1 on default port 41080] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal)
+2020-12-03 07:23:17,719 [IPC Server handler 1 on default port 41080] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(245)) - No files in FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal)
+2020-12-03 07:23:17,720 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: newEpoch took 50ms
+2020-12-03 07:23:17,721 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41080: newEpoch {}
+2020-12-03 07:23:17,723 [Listener at localhost/41080] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(479)) - Successfully started new epoch 1
+2020-12-03 07:23:17,731 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 0 } txid: 1 layoutVersion: -65}
+2020-12-03 07:23:17,738 [IPC Server handler 0 on default port 41373] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 1 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:18,089 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 359ms
+2020-12-03 07:23:18,090 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: startLogSegment {}
+2020-12-03 07:23:18,092 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 0 } txid: 1 layoutVersion: -65}
+2020-12-03 07:23:18,104 [IPC Server handler 2 on default port 45637] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 1 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:18,241 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 149ms
+2020-12-03 07:23:18,242 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: startLogSegment {}
+2020-12-03 07:23:18,243 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 0 } txid: 1 layoutVersion: -65}
+2020-12-03 07:23:18,256 [IPC Server handler 2 on default port 41080] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 0 to 1 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:18,343 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 100ms
+2020-12-03 07:23:18,344 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41080: startLogSegment {}
+2020-12-03 07:23:18,427 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 1 } firstTxnId: 1 numTxns: 3 records: "\003\000\000\000D\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\004tx 1\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000^\257\246\240\003\000\000\000D\000\000\000\000\000\000\000\002\000\000\000\000\000\000\000\000\000\004tx 2\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\276d\313\001\003\000\000\000D\000\000\000\000\000\000\000\003\000\000\000\000\000\000\000\000\000\004tx 3\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\341\335\357\236" segmentTxnId: 1}
+2020-12-03 07:23:18,433 [IPC Server handler 3 on default port 41373] INFO  server.Journal (JournaledEditsCache.java:updateLayoutVersion(342)) - Updating edits cache to use layout version -65 starting from txn ID 1
+2020-12-03 07:23:18,472 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: journal took 47ms
+2020-12-03 07:23:18,473 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: journal {}
+2020-12-03 07:23:18,476 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 1 } firstTxnId: 1 numTxns: 3 records: "\003\000\000\000D\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\004tx 1\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000^\257\246\240\003\000\000\000D\000\000\000\000\000\000\000\002\000\000\000\000\000\000\000\000\000\004tx 2\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\276d\313\001\003\000\000\000D\000\000\000\000\000\000\000\003\000\000\000\000\000\000\000\000\000\004tx 3\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\341\335\357\236" segmentTxnId: 1}
+2020-12-03 07:23:18,481 [IPC Server handler 0 on default port 45637] INFO  server.Journal (JournaledEditsCache.java:updateLayoutVersion(342)) - Updating edits cache to use layout version -65 starting from txn ID 1
+2020-12-03 07:23:18,494 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: journal took 18ms
+2020-12-03 07:23:18,497 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: journal {}
+2020-12-03 07:23:18,499 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 1 } firstTxnId: 1 numTxns: 3 records: "\003\000\000\000D\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\004tx 1\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000^\257\246\240\003\000\000\000D\000\000\000\000\000\000\000\002\000\000\000\000\000\000\000\000\000\004tx 2\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\276d\313\001\003\000\000\000D\000\000\000\000\000\000\000\003\000\000\000\000\000\000\000\000\000\004tx 3\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\341\335\357\236" segmentTxnId: 1}
+2020-12-03 07:23:18,507 [IPC Server handler 4 on default port 41080] INFO  server.Journal (JournaledEditsCache.java:updateLayoutVersion(342)) - Updating edits cache to use layout version -65 starting from txn ID 1
+2020-12-03 07:23:18,523 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: journal took 25ms
+2020-12-03 07:23:18,526 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41080: journal {}
+2020-12-03 07:23:18,540 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 2 committedTxId: 3 } startTxId: 1 endTxId: 3}
+2020-12-03 07:23:18,552 [IPC Server handler 4 on default port 41373] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_0000000000000000001-0000000000000000003
+2020-12-03 07:23:18,576 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 38ms
+2020-12-03 07:23:18,577 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: finalizeLogSegment {}
+2020-12-03 07:23:18,579 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 2 committedTxId: 3 } startTxId: 1 endTxId: 3}
+2020-12-03 07:23:18,586 [IPC Server handler 3 on default port 45637] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_0000000000000000001-0000000000000000003
+2020-12-03 07:23:18,587 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 9ms
+2020-12-03 07:23:18,588 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: finalizeLogSegment {}
+2020-12-03 07:23:18,589 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 2 committedTxId: 3 } startTxId: 1 endTxId: 3}
+2020-12-03 07:23:18,595 [IPC Server handler 1 on default port 41080] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal/current/edits_inprogress_0000000000000000001 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal/current/edits_0000000000000000001-0000000000000000003
+2020-12-03 07:23:18,596 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 7ms
+2020-12-03 07:23:18,597 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41080: finalizeLogSegment {}
+2020-12-03 07:23:18,600 [Listener at localhost/41080] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 45637
+2020-12-03 07:23:18,602 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:23:18,602 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:23:18,608 [Listener at localhost/41080] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@4397ad89{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:23:18,616 [Listener at localhost/41080] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@59cba5a{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:23:18,616 [Listener at localhost/41080] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@20435c40{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:23:18,617 [Listener at localhost/41080] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@41294f8{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:23:18,621 [Listener at localhost/41080] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/waitactive; location= null
+2020-12-03 07:23:18,621 [Listener at localhost/41080] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal; location= null
+2020-12-03 07:23:18,625 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 3 committedTxId: 3 } txid: 4 layoutVersion: -65}
+2020-12-03 07:23:18,706 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 82ms
+2020-12-03 07:23:18,706 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: startLogSegment {}
+2020-12-03 07:23:18,708 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 3 committedTxId: 3 } txid: 4 layoutVersion: -65}
+2020-12-03 07:23:18,719 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:45637: startLogSegment {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:45637 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:18,723 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 3 committedTxId: 3 } txid: 4 layoutVersion: -65}
+2020-12-03 07:23:18,787 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 65ms
+2020-12-03 07:23:18,788 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41080: startLogSegment {}
+2020-12-03 07:23:18,815 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 4 committedTxId: 3 } firstTxnId: 4 numTxns: 1 records: "\003\000\000\000D\000\000\000\000\000\000\000\004\000\000\000\000\000\000\000\000\000\004tx 4\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\244\203\026\002" segmentTxnId: 4}
+2020-12-03 07:23:18,824 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:45637: journal {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:45637 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:18,833 [Listener at localhost/41080] WARN  client.QuorumJournalManager (IPCLoggerChannel.java:call(400)) - Remote journal 127.0.0.1:45637 failed to write txns 4-4. Will try to write to this JN again after the next log roll.
+java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:45637 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:833)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:757)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1549)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1491)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1388)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:233)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:118)
+	at com.sun.proxy.$Proxy16.journal(Unknown Source)
+	at org.apache.hadoop.hdfs.qjournal.protocolPB.QJournalProtocolTranslatorPB.journal(QJournalProtocolTranslatorPB.java:191)
+	at org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel$7.call(IPCLoggerChannel.java:397)
+	at org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel$7.call(IPCLoggerChannel.java:390)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:57)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+	at org.apache.hadoop.hdfs.qjournal.client.DirectExecutorService.execute(DirectExecutorService.java:152)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(MoreExecutors.java:525)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(AbstractListeningExecutorService.java:66)
+	at org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel.sendEdits(IPCLoggerChannel.java:390)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager$1$1$$EnhancerByMockitoWithCGLIB$$e6f78e59.CGLIB$sendEdits$4(<generated>)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager$1$1$$EnhancerByMockitoWithCGLIB$$e6f78e59$$FastClassByMockitoWithCGLIB$$c324ba3d.invoke(<generated>)
+	at org.mockito.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:216)
+	at org.mockito.internal.creation.AbstractMockitoMethodProxy.invokeSuper(AbstractMockitoMethodProxy.java:10)
+	at org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod.invoke(CGLIBProxyRealMethod.java:22)
+	at org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod.invoke(FilteredCGLIBProxyRealMethod.java:27)
+	at org.mockito.internal.invocation.Invocation.callRealMethod(Invocation.java:211)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:36)
+	at org.mockito.internal.MockHandler.handle(MockHandler.java:99)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:47)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager$1$1$$EnhancerByMockitoWithCGLIB$$e6f78e59.sendEdits(<generated>)
+	at org.apache.hadoop.hdfs.qjournal.client.AsyncLoggerSet.sendEdits(AsyncLoggerSet.java:259)
+	at org.apache.hadoop.hdfs.qjournal.client.QuorumOutputStream.flushAndSync(QuorumOutputStream.java:110)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogOutputStream.flush(EditLogOutputStream.java:115)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogOutputStream.flush(EditLogOutputStream.java:109)
+	at org.apache.hadoop.hdfs.qjournal.QJMTestUtil.writeTxns(QJMTestUtil.java:112)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager.doTestOutOfSyncAtBeginningOfSegment(TestQuorumJournalManager.java:332)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager.testOutOfSyncAtBeginningOfSegment2(TestQuorumJournalManager.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:714)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:533)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:700)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:804)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:421)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1606)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1435)
+	... 60 more
+2020-12-03 07:23:18,840 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 1 ipcSerialNumber: 4 committedTxId: 3 } firstTxnId: 4 numTxns: 1 records: "\003\000\000\000D\000\000\000\000\000\000\000\004\000\000\000\000\000\000\000\000\000\004tx 4\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\244\203\026\002" segmentTxnId: 4}
+2020-12-03 07:23:18,865 [Listener at localhost/41080] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: journal took 25ms
+2020-12-03 07:23:18,866 [Listener at localhost/41080] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41080: journal {}
+2020-12-03 07:23:18,870 [Listener at localhost/41080] WARN  client.QuorumJournalManager (QuorumOutputStream.java:abort(73)) - Aborting QuorumOutputStream starting at txid 4
+2020-12-03 07:23:18,871 [Listener at localhost/41080] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 45637
+2020-12-03 07:23:18,872 [Listener at localhost/41080] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/waitactive; location= null
+2020-12-03 07:23:18,872 [Listener at localhost/41080] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal; location= null
+2020-12-03 07:23:18,873 [Listener at localhost/41080] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JournalNode metrics system started (again)
+2020-12-03 07:23:18,877 [Listener at localhost/41080] INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1641)) - Starting Web-server for journal at: http://localhost:46367
+2020-12-03 07:23:18,878 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:18,881 [Listener at localhost/41080] INFO  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2020-12-03 07:23:18,884 [Listener at localhost/41080] INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(81)) - Http request log for http.requests.journal is not defined
+2020-12-03 07:23:18,884 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:getWebAppsPath(1072)) - Web server is in development mode. Resources will be read from the source tree.
+2020-12-03 07:23:18,888 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(990)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2020-12-03 07:23:18,889 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:addFilter(963)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context journal
+2020-12-03 07:23:18,890 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2020-12-03 07:23:18,890 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:addFilter(973)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2020-12-03 07:23:18,892 [Listener at localhost/41080] INFO  http.HttpServer2 (HttpServer2.java:bindListener(1206)) - Jetty bound to port 46367
+2020-12-03 07:23:18,892 [Listener at localhost/41080] INFO  server.Server (Server.java:doStart(351)) - jetty-9.3.24.v20180605, build timestamp: 2018-06-05T17:11:56Z, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+2020-12-03 07:23:18,897 [Listener at localhost/41080] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@5c153b9e{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,AVAILABLE}
+2020-12-03 07:23:18,898 [Listener at localhost/41080] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.s.ServletContextHandler@758a34ce{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,AVAILABLE}
+2020-12-03 07:23:18,908 [Listener at localhost/41080] INFO  handler.ContextHandler (ContextHandler.java:doStart(781)) - Started o.e.j.w.WebAppContext@3543df7d{/,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/journal/,AVAILABLE}{/journal}
+2020-12-03 07:23:18,910 [Listener at localhost/41080] INFO  server.AbstractConnector (AbstractConnector.java:doStart(278)) - Started ServerConnector@7c541c15{HTTP/1.1,[http/1.1]}{localhost:46367}
+2020-12-03 07:23:18,910 [Listener at localhost/41080] INFO  server.Server (Server.java:doStart(419)) - Started @6339ms
+2020-12-03 07:23:18,911 [Listener at localhost/41080] INFO  server.JournalNode (JournalNodeRpcServer.java:<init>(85)) - RPC server is binding to localhost:45637
+2020-12-03 07:23:18,926 [Listener at localhost/41080] INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(84)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2020-12-03 07:23:18,927 [Socket Reader #1 for port 45637] INFO  ipc.Server (Server.java:run(1219)) - Starting Socket Reader #1 for port 45637
+2020-12-03 07:23:18,935 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1460)) - IPC Server Responder: starting
+2020-12-03 07:23:18,935 [IPC Server listener on 45637] INFO  ipc.Server (Server.java:run(1298)) - IPC Server listener on 45637: starting
+2020-12-03 07:23:18,953 [Listener at localhost/45637] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 41080
+2020-12-03 07:23:18,954 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:23:18,956 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@69f1a286{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:23:18,959 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:23:18,987 [Listener at localhost/45637] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@763ccea5{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:23:18,988 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@37e4d7bb{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:23:18,989 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@79dc5318{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:23:18,991 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/waitactive; location= null
+2020-12-03 07:23:18,991 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal; location= null
+2020-12-03 07:23:18,997 [Listener at localhost/45637] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(477)) - Starting recovery process for unclosed journal segments...
+2020-12-03 07:23:19,001 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:41373: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:19,013 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: getJournalState took 13ms
+2020-12-03 07:23:19,013 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:41373: getJournalState {lastPromisedEpoch: 1 httpPort: 38101 fromURL: "http://localhost:38101"}
+2020-12-03 07:23:19,016 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:45637: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:19,024 [IPC Server handler 0 on default port 45637] INFO  server.JournalNode (JournalNode.java:getOrCreateJournal(101)) - Initializing journal in directory /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal
+2020-12-03 07:23:19,083 [IPC Server handler 0 on default port 45637] INFO  common.Storage (Storage.java:tryLock(923)) - Lock on /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/in_use.lock acquired by nodename 6718@8dff57e1d4f6
+2020-12-03 07:23:19,084 [IPC Server handler 0 on default port 45637] INFO  server.Journal (JournaledEditsCache.java:<init>(132)) - Enabling the journaled edits cache with a capacity of bytes: 1048576
+2020-12-03 07:23:19,098 [IPC Server handler 0 on default port 45637] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal)
+2020-12-03 07:23:19,111 [IPC Server handler 0 on default port 45637] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(233)) - Latest log is EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) ; journal id: test-journal
+2020-12-03 07:23:19,112 [IPC Server handler 0 on default port 45637] ERROR server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeAddrs(298)) - Could not construct Shared Edits Uri
+2020-12-03 07:23:19,112 [IPC Server handler 0 on default port 45637] WARN  server.JournalNodeSyncer (JournalNodeSyncer.java:getOtherJournalNodeProxies(145)) - Other JournalNode addresses not available. Journal Syncing cannot be done
+2020-12-03 07:23:19,114 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: getJournalState took 99ms
+2020-12-03 07:23:19,115 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- /127.0.0.1:45637: getJournalState {lastPromisedEpoch: 1 httpPort: 46367 fromURL: "http://localhost:46367"}
+2020-12-03 07:23:19,118 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> /127.0.0.1:41080: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:19,124 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: getJournalState {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:19,126 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: newEpoch {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } epoch: 2}
+2020-12-03 07:23:19,136 [IPC Server handler 2 on default port 41373] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 1 to 2 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:19,203 [IPC Server handler 2 on default port 41373] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal)
+2020-12-03 07:23:19,226 [IPC Server handler 2 on default port 41373] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(233)) - Latest log is EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_inprogress_0000000000000000004,first=0000000000000000004,last=-000000000000012345,inProgress=true,hasCorruptHeader=false) ; journal id: test-journal
+2020-12-03 07:23:19,226 [IPC Server handler 2 on default port 41373] WARN  server.Journal (Journal.java:scanStorageForLatestEdits(236)) - Latest log EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_inprogress_0000000000000000004,first=0000000000000000004,last=-000000000000012345,inProgress=true,hasCorruptHeader=false) has no transactions. moving it aside and looking for previous log ; journal id: test-journal
+2020-12-03 07:23:19,227 [IPC Server handler 2 on default port 41373] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(233)) - Latest log is EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) ; journal id: test-journal
+2020-12-03 07:23:19,228 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: newEpoch took 102ms
+2020-12-03 07:23:19,228 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: newEpoch {lastSegmentTxId: 1}
+2020-12-03 07:23:19,229 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: newEpoch {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } epoch: 2}
+2020-12-03 07:23:19,233 [IPC Server handler 1 on default port 45637] INFO  server.Journal (Journal.java:updateLastPromisedEpoch(369)) - Updating lastPromisedEpoch from 1 to 2 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:19,312 [IPC Server handler 1 on default port 45637] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(227)) - Scanning storage FileJournalManager(root=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal)
+2020-12-03 07:23:19,313 [IPC Server handler 1 on default port 45637] INFO  server.Journal (Journal.java:scanStorageForLatestEdits(233)) - Latest log is EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) ; journal id: test-journal
+2020-12-03 07:23:19,314 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: newEpoch took 85ms
+2020-12-03 07:23:19,315 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: newEpoch {lastSegmentTxId: 1}
+2020-12-03 07:23:19,317 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: newEpoch {jid { identifier: "test-journal" } nsInfo { buildVersion: "Unknown" unused: 0 blockPoolID: "my-bp" storageInfo { layoutVersion: 4294967231 namespceID: 12345 clusterID: "mycluster" cTime: 0 } softwareVersion: "3.2.1" capabilities: 1 } epoch: 2}
+2020-12-03 07:23:19,318 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: newEpoch {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:19,320 [Listener at localhost/45637] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(479)) - Successfully started new epoch 2
+2020-12-03 07:23:19,321 [Listener at localhost/45637] DEBUG client.QuorumJournalManager (QuorumJournalManager.java:recoverUnfinalizedSegments(482)) - newEpoch(2) responses:
+127.0.0.1:45637: lastSegmentTxId: 1
+127.0.0.1:41373: lastSegmentTxId: 1
+2020-12-03 07:23:19,321 [Listener at localhost/45637] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnclosedSegment(313)) - Beginning recovery of unclosed segment starting at txid 1
+2020-12-03 07:23:19,325 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: prepareRecovery {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 0 } segmentTxId: 1}
+2020-12-03 07:23:19,344 [IPC Server handler 3 on default port 41373] INFO  server.Journal (Journal.java:getSegmentInfo(807)) - getSegmentInfo(1): EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) -> startTxId: 1 endTxId: 3 isInProgress: false ; journal id: test-journal
+2020-12-03 07:23:19,345 [IPC Server handler 3 on default port 41373] INFO  server.Journal (Journal.java:prepareRecovery(851)) - Prepared recovery for segment 1: segmentState { startTxId: 1 endTxId: 3 isInProgress: false } lastWriterEpoch: 1 lastCommittedTxId: 3 ; journal id: test-journal
+2020-12-03 07:23:19,345 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: prepareRecovery took 20ms
+2020-12-03 07:23:19,346 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: prepareRecovery {segmentState { startTxId: 1 endTxId: 3 isInProgress: false } lastWriterEpoch: 1 lastCommittedTxId: 3}
+2020-12-03 07:23:19,351 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: prepareRecovery {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 0 } segmentTxId: 1}
+2020-12-03 07:23:19,359 [IPC Server handler 2 on default port 45637] INFO  server.Journal (Journal.java:getSegmentInfo(807)) - getSegmentInfo(1): EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) -> startTxId: 1 endTxId: 3 isInProgress: false ; journal id: test-journal
+2020-12-03 07:23:19,359 [IPC Server handler 2 on default port 45637] INFO  server.Journal (Journal.java:prepareRecovery(851)) - Prepared recovery for segment 1: segmentState { startTxId: 1 endTxId: 3 isInProgress: false } lastWriterEpoch: 1 lastCommittedTxId: 3 ; journal id: test-journal
+2020-12-03 07:23:19,360 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: prepareRecovery took 13ms
+2020-12-03 07:23:19,361 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: prepareRecovery {segmentState { startTxId: 1 endTxId: 3 isInProgress: false } lastWriterEpoch: 1 lastCommittedTxId: 3}
+2020-12-03 07:23:19,362 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: getJournalState {jid { identifier: "test-journal" }}
+2020-12-03 07:23:19,364 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: getJournalState {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:19,366 [Listener at localhost/45637] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnclosedSegment(322)) - Recovery prepare phase complete. Responses:
+127.0.0.1:45637: segmentState { startTxId: 1 endTxId: 3 isInProgress: false } lastWriterEpoch: 1 lastCommittedTxId: 3
+127.0.0.1:41373: segmentState { startTxId: 1 endTxId: 3 isInProgress: false } lastWriterEpoch: 1 lastCommittedTxId: 3
+2020-12-03 07:23:19,368 [Listener at localhost/45637] INFO  client.QuorumJournalManager (QuorumJournalManager.java:recoverUnclosedSegment(346)) - Using longest log: 127.0.0.1:45637=segmentState {
+  startTxId: 1
+  endTxId: 3
+  isInProgress: false
+}
+lastWriterEpoch: 1
+lastCommittedTxId: 3
+
+2020-12-03 07:23:19,376 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: acceptRecovery {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 1 } stateToAccept { startTxId: 1 endTxId: 3 isInProgress: false } fromURL: "http://localhost:46367/getJournal?jid=test-journal&segmentTxId=1&storageInfo=-65%3A12345%3A0%3Amycluster&inProgressOk=true"}
+2020-12-03 07:23:19,393 [IPC Server handler 4 on default port 41373] INFO  server.Journal (Journal.java:getSegmentInfo(807)) - getSegmentInfo(1): EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) -> startTxId: 1 endTxId: 3 isInProgress: false ; journal id: test-journal
+2020-12-03 07:23:19,393 [IPC Server handler 4 on default port 41373] INFO  server.Journal (Journal.java:acceptRecovery(939)) - Skipping download of log startTxId: 1 endTxId: 3 isInProgress: false: already have up-to-date logs ; journal id: test-journal
+2020-12-03 07:23:19,448 [IPC Server handler 4 on default port 41373] INFO  server.Journal (Journal.java:acceptRecovery(972)) - Accepted recovery for segment 1: segmentState { startTxId: 1 endTxId: 3 isInProgress: false } acceptedInEpoch: 2 ; journal id: test-journal
+2020-12-03 07:23:19,450 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: acceptRecovery took 74ms
+2020-12-03 07:23:19,452 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: acceptRecovery {}
+2020-12-03 07:23:19,456 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: acceptRecovery {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 1 } stateToAccept { startTxId: 1 endTxId: 3 isInProgress: false } fromURL: "http://localhost:46367/getJournal?jid=test-journal&segmentTxId=1&storageInfo=-65%3A12345%3A0%3Amycluster&inProgressOk=true"}
+2020-12-03 07:23:19,460 [IPC Server handler 3 on default port 45637] INFO  server.Journal (Journal.java:getSegmentInfo(807)) - getSegmentInfo(1): EditLogFile(file=/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_0000000000000000001-0000000000000000003,first=0000000000000000001,last=0000000000000000003,inProgress=false,hasCorruptHeader=false) -> startTxId: 1 endTxId: 3 isInProgress: false ; journal id: test-journal
+2020-12-03 07:23:19,460 [IPC Server handler 3 on default port 45637] INFO  server.Journal (Journal.java:acceptRecovery(939)) - Skipping download of log startTxId: 1 endTxId: 3 isInProgress: false: already have up-to-date logs ; journal id: test-journal
+2020-12-03 07:23:19,571 [IPC Server handler 3 on default port 45637] INFO  server.Journal (Journal.java:acceptRecovery(972)) - Accepted recovery for segment 1: segmentState { startTxId: 1 endTxId: 3 isInProgress: false } acceptedInEpoch: 2 ; journal id: test-journal
+2020-12-03 07:23:19,572 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: acceptRecovery took 119ms
+2020-12-03 07:23:19,572 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: acceptRecovery {}
+2020-12-03 07:23:19,573 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: acceptRecovery {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 0 } stateToAccept { startTxId: 1 endTxId: 3 isInProgress: false } fromURL: "http://localhost:46367/getJournal?jid=test-journal&segmentTxId=1&storageInfo=-65%3A12345%3A0%3Amycluster&inProgressOk=true"}
+2020-12-03 07:23:19,575 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: acceptRecovery {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:19,576 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 2 } startTxId: 1 endTxId: 3}
+2020-12-03 07:23:19,585 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 9ms
+2020-12-03 07:23:19,585 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: finalizeLogSegment {}
+2020-12-03 07:23:19,587 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 2 } startTxId: 1 endTxId: 3}
+2020-12-03 07:23:19,593 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 7ms
+2020-12-03 07:23:19,594 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: finalizeLogSegment {}
+2020-12-03 07:23:19,595 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 1 } startTxId: 1 endTxId: 3}
+2020-12-03 07:23:19,596 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: finalizeLogSegment {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:19,598 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 3 } txid: 4 layoutVersion: -65}
+2020-12-03 07:23:19,614 [IPC Server handler 1 on default port 41373] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 1 to 2 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:19,786 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 188ms
+2020-12-03 07:23:19,786 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: startLogSegment {}
+2020-12-03 07:23:19,788 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 3 } txid: 4 layoutVersion: -65}
+2020-12-03 07:23:19,794 [IPC Server handler 0 on default port 45637] INFO  server.Journal (Journal.java:startLogSegment(609)) - Updating lastWriterEpoch from 1 to 2 for client /127.0.0.1 ; journal id: test-journal
+2020-12-03 07:23:19,971 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: startLogSegment took 183ms
+2020-12-03 07:23:19,972 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: startLogSegment {}
+2020-12-03 07:23:19,973 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: startLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 2 } txid: 4 layoutVersion: -65}
+2020-12-03 07:23:19,974 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: startLogSegment {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:19,978 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 4 } firstTxnId: 4 numTxns: 3 records: "\003\000\000\000D\000\000\000\000\000\000\000\004\000\000\000\000\000\000\000\000\000\004tx 4\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\244\203\026\002\003\000\000\000D\000\000\000\000\000\000\000\005\000\000\000\000\000\000\000\000\000\004tx 5\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\373:2\235\003\000\000\000D\000\000\000\000\000\000\000\006\000\000\000\000\000\000\000\000\000\004tx 6\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\033\361_<" segmentTxnId: 4}
+2020-12-03 07:23:20,014 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: journal took 37ms
+2020-12-03 07:23:20,014 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: journal {}
+2020-12-03 07:23:20,016 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 4 } firstTxnId: 4 numTxns: 3 records: "\003\000\000\000D\000\000\000\000\000\000\000\004\000\000\000\000\000\000\000\000\000\004tx 4\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\244\203\026\002\003\000\000\000D\000\000\000\000\000\000\000\005\000\000\000\000\000\000\000\000\000\004tx 5\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\373:2\235\003\000\000\000D\000\000\000\000\000\000\000\006\000\000\000\000\000\000\000\000\000\004tx 6\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\033\361_<" segmentTxnId: 4}
+2020-12-03 07:23:20,019 [IPC Server handler 1 on default port 45637] INFO  server.Journal (JournaledEditsCache.java:updateLayoutVersion(342)) - Updating edits cache to use layout version -65 starting from txn ID 4
+2020-12-03 07:23:20,054 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: journal took 38ms
+2020-12-03 07:23:20,055 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: journal {}
+2020-12-03 07:23:20,057 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: journal {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 3 } firstTxnId: 4 numTxns: 3 records: "\003\000\000\000D\000\000\000\000\000\000\000\004\000\000\000\000\000\000\000\000\000\004tx 4\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\244\203\026\002\003\000\000\000D\000\000\000\000\000\000\000\005\000\000\000\000\000\000\000\000\000\004tx 5\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\373:2\235\003\000\000\000D\000\000\000\000\000\000\000\006\000\000\000\000\000\000\000\000\000\004tx 6\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\btestuser\ttestgroup\001\377\000\000\000\000\000\033\361_<" segmentTxnId: 4}
+2020-12-03 07:23:20,058 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: journal {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:20,058 [Listener at localhost/45637] WARN  client.QuorumJournalManager (IPCLoggerChannel.java:call(400)) - Remote journal 127.0.0.1:41080 failed to write txns 4-6. Will try to write to this JN again after the next log roll.
+java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:833)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:757)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1549)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1491)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1388)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:233)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:118)
+	at com.sun.proxy.$Proxy16.journal(Unknown Source)
+	at org.apache.hadoop.hdfs.qjournal.protocolPB.QJournalProtocolTranslatorPB.journal(QJournalProtocolTranslatorPB.java:191)
+	at org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel$7.call(IPCLoggerChannel.java:397)
+	at org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel$7.call(IPCLoggerChannel.java:390)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:57)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+	at org.apache.hadoop.hdfs.qjournal.client.DirectExecutorService.execute(DirectExecutorService.java:152)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(MoreExecutors.java:525)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(AbstractListeningExecutorService.java:66)
+	at org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel.sendEdits(IPCLoggerChannel.java:390)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager$1$1$$EnhancerByMockitoWithCGLIB$$e6f78e59.CGLIB$sendEdits$4(<generated>)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager$1$1$$EnhancerByMockitoWithCGLIB$$e6f78e59$$FastClassByMockitoWithCGLIB$$c324ba3d.invoke(<generated>)
+	at org.mockito.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:216)
+	at org.mockito.internal.creation.AbstractMockitoMethodProxy.invokeSuper(AbstractMockitoMethodProxy.java:10)
+	at org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod.invoke(CGLIBProxyRealMethod.java:22)
+	at org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod.invoke(FilteredCGLIBProxyRealMethod.java:27)
+	at org.mockito.internal.invocation.Invocation.callRealMethod(Invocation.java:211)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:36)
+	at org.mockito.internal.MockHandler.handle(MockHandler.java:99)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:47)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager$1$1$$EnhancerByMockitoWithCGLIB$$e6f78e59.sendEdits(<generated>)
+	at org.apache.hadoop.hdfs.qjournal.client.AsyncLoggerSet.sendEdits(AsyncLoggerSet.java:259)
+	at org.apache.hadoop.hdfs.qjournal.client.QuorumOutputStream.flushAndSync(QuorumOutputStream.java:110)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogOutputStream.flush(EditLogOutputStream.java:115)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogOutputStream.flush(EditLogOutputStream.java:109)
+	at org.apache.hadoop.hdfs.qjournal.QJMTestUtil.writeTxns(QJMTestUtil.java:112)
+	at org.apache.hadoop.hdfs.qjournal.QJMTestUtil.writeSegment(QJMTestUtil.java:90)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager.doTestOutOfSyncAtBeginningOfSegment(TestQuorumJournalManager.java:383)
+	at org.apache.hadoop.hdfs.qjournal.client.TestQuorumJournalManager.testOutOfSyncAtBeginningOfSegment2(TestQuorumJournalManager.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:714)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:533)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:700)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:804)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:421)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1606)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1435)
+	... 61 more
+2020-12-03 07:23:20,062 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41373: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 5 committedTxId: 6 } startTxId: 4 endTxId: 6}
+2020-12-03 07:23:20,072 [IPC Server handler 3 on default port 41373] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_inprogress_0000000000000000004 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal/current/edits_0000000000000000004-0000000000000000006
+2020-12-03 07:23:20,074 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 13ms
+2020-12-03 07:23:20,074 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:41373: finalizeLogSegment {}
+2020-12-03 07:23:20,076 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:45637: finalizeLogSegment {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 5 committedTxId: 6 } startTxId: 4 endTxId: 6}
+2020-12-03 07:23:20,081 [IPC Server handler 2 on default port 45637] INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_inprogress_0000000000000000004 -> /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal/current/edits_0000000000000000004-0000000000000000006
+2020-12-03 07:23:20,082 [Listener at localhost/45637] DEBUG ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(254)) - Call: finalizeLogSegment took 6ms
+2020-12-03 07:23:20,082 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:getReturnMessage(292)) - 1: Response <- localhost/127.0.0.1:45637: finalizeLogSegment {}
+2020-12-03 07:23:20,086 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(224)) - 1: Call -> localhost/127.0.0.1:41080: heartbeat {reqInfo { journalId { identifier: "test-journal" } epoch: 2 ipcSerialNumber: 4 committedTxId: 6 }}
+2020-12-03 07:23:20,088 [Listener at localhost/45637] TRACE ipc.ProtobufRpcEngine (ProtobufRpcEngine.java:invoke(239)) - 1: Exception <- localhost/127.0.0.1:41080: heartbeat {java.net.ConnectException: Call From 8dff57e1d4f6/172.17.0.5 to localhost:41080 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused}
+2020-12-03 07:23:20,102 [Listener at localhost/45637] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 41373
+2020-12-03 07:23:20,103 [IPC Server listener on 0] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 0
+2020-12-03 07:23:20,103 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:23:20,104 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@740cae06{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:23:20,136 [Listener at localhost/45637] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@449a4f23{HTTP/1.1,[http/1.1]}{localhost:0}
+2020-12-03 07:23:20,137 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@4de4b452{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:23:20,138 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@15aab8c6{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:23:20,143 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/waitactive; location= null
+2020-12-03 07:23:20,144 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-0/test-journal; location= null
+2020-12-03 07:23:20,145 [Listener at localhost/45637] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping JournalNode metrics system...
+2020-12-03 07:23:20,147 [Listener at localhost/45637] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - JournalNode metrics system stopped.
+2020-12-03 07:23:20,148 [Listener at localhost/45637] INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(607)) - JournalNode metrics system shutdown complete.
+2020-12-03 07:23:20,149 [Listener at localhost/45637] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 45637
+2020-12-03 07:23:20,150 [IPC Server listener on 45637] INFO  ipc.Server (Server.java:run(1330)) - Stopping IPC Server listener on 45637
+2020-12-03 07:23:20,150 [IPC Server Responder] INFO  ipc.Server (Server.java:run(1465)) - Stopping IPC Server Responder
+2020-12-03 07:23:20,152 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.w.WebAppContext@3543df7d{/,null,UNAVAILABLE}{/journal}
+2020-12-03 07:23:20,153 [Listener at localhost/45637] INFO  server.AbstractConnector (AbstractConnector.java:doStop(318)) - Stopped ServerConnector@7c541c15{HTTP/1.1,[http/1.1]}{localhost:46367}
+2020-12-03 07:23:20,154 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@758a34ce{/static,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/,UNAVAILABLE}
+2020-12-03 07:23:20,155 [Listener at localhost/45637] INFO  handler.ContextHandler (ContextHandler.java:doStop(910)) - Stopped o.e.j.s.ServletContextHandler@5c153b9e{/logs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/log/,UNAVAILABLE}
+2020-12-03 07:23:20,163 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-1/test-journal; location= null
+2020-12-03 07:23:20,164 [Listener at localhost/45637] INFO  ipc.Server (Server.java:stop(3359)) - Stopping server on 41080
+2020-12-03 07:23:20,165 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/waitactive; location= null
+2020-12-03 07:23:20,165 [Listener at localhost/45637] INFO  common.Storage (JNStorage.java:close(283)) - Closing journal storage for Storage Directory root= /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs/target/test/data/Gen6g8tHDC/journalnode-2/test-journal; location= null
+msx-rc 0

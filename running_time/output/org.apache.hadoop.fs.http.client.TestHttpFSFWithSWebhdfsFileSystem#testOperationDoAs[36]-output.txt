@@ -1,0 +1,129 @@
+>>> test.properties : <NONE>
+>>> test.dir        : /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Formatting using clusterid: testClusterID
+2020-12-03 07:21:32,903 WARN  Server - Log4j [/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperationDoAs-1/conf/httpfs-log4j.properties] configuration file not found, using default configuration from classpath
+2020-12-03 07:21:32,904 INFO  Server - ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-03 07:21:32,904 INFO  Server - Server [httpfs] starting
+2020-12-03 07:21:32,904 INFO  Server -   Built information:
+2020-12-03 07:21:32,904 INFO  Server -     Version           : 3.2.1
+2020-12-03 07:21:32,904 INFO  Server -     Source Repository : REPO NOT AVAIL
+2020-12-03 07:21:32,904 INFO  Server -     Source Revision   : REVISION NOT AVAIL
+2020-12-03 07:21:32,904 INFO  Server -     Built by          : root
+2020-12-03 07:21:32,904 INFO  Server -     Built timestamp   : 2020-12-03T07:21:09+0000
+2020-12-03 07:21:32,904 INFO  Server -   Runtime information:
+2020-12-03 07:21:32,904 INFO  Server -     Home   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperationDoAs-1
+2020-12-03 07:21:32,904 INFO  Server -     Config dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperationDoAs-1/conf
+2020-12-03 07:21:32,908 INFO  Server -     Log    dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperationDoAs-1/log
+2020-12-03 07:21:32,908 INFO  Server -     Temp   dir: /root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/testOperationDoAs-1/temp
+2020-12-03 07:21:32,940 INFO  FileSystemAccessService - Using FileSystemAccess JARs version [3.2.1]
+2020-12-03 07:21:32,949 INFO  FileSystemAccessService - Using FileSystemAccess simple/pseudo authentication, principal [root]
+2020-12-03 07:21:32,955 INFO  Server - Services initialized
+2020-12-03 07:21:32,955 INFO  Server - Server [httpfs] started!, status [NORMAL]
+2020-12-03 07:21:32,965 INFO  HttpFSServerWebApp - Connects to Namenode [hdfs://localhost:33654]
+2020-12-03 07:21:32,983 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+2020-12-03 07:21:32,985 INFO  AbstractDelegationTokenSecretManager - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2020-12-03 07:21:32,991 INFO  AbstractDelegationTokenSecretManager - Updating the current master key for generating delegation tokens
+Dec 03, 2020 7:21:33 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.apache.hadoop.fs.http.server
+  org.apache.hadoop.lib.wsrs
+Dec 03, 2020 7:21:33 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSServer
+Dec 03, 2020 7:21:33 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.apache.hadoop.fs.http.server.HttpFSExceptionProvider
+  class org.apache.hadoop.lib.wsrs.JSONMapProvider
+  class org.apache.hadoop.fs.http.server.HttpFSParametersProvider
+  class org.apache.hadoop.lib.wsrs.JSONProvider
+Dec 03, 2020 7:21:33 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+2020-12-03 07:21:34,803 INFO  ContextHandler - Started o.e.j.w.WebAppContext@1ba359bd{/webhdfs,file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp/,AVAILABLE}{/root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/webapp}
+2020-12-03 07:21:34,813 INFO  SslContextFactory - x509=X509@2cd388f5(server,h=[],w=[]) for SslContextFactory@1725dc0f(file:///root/hadoop-3.2.1-src/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-dir/e5d8581c-655e-4953-9390-a2e20c1dc16c/serverKS.jks,null)
+2020-12-03 07:21:34,823 INFO  AbstractConnector - Started ServerConnector@418e7838{SSL,[ssl, http/1.1]}{localhost:46038}
+2020-12-03 07:21:34,823 INFO  Server - Started @18018ms
+2020-12-03 07:21:34,875 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test	dst=null	perm=user1:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:34,886 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=allowSnapshot	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:34,904 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test/subdir	dst=null	perm=user1:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:36,223 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:36,245 INFO  httpfsaudit - [/tmp/tmp-snap-test]
+2020-12-03 07:21:36,496 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/tmp-snap-test/file1	dst=null	perm=user1:supergroup:rw-------	proto=rpc
+2020-12-03 07:21:36,524 INFO  StateChange - BLOCK* allocate blk_1073741825_1001, replicas=127.0.0.1:32982, 127.0.0.1:44162 for /tmp/tmp-snap-test/file1
+2020-12-03 07:21:36,542 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:21:36,605 INFO  DataNode - Receiving BP-325798261-172.17.0.8-1606980080873:blk_1073741825_1001 src: /127.0.0.1:53632 dest: /127.0.0.1:32982
+2020-12-03 07:21:36,635 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:21:36,637 INFO  DataNode - Receiving BP-325798261-172.17.0.8-1606980080873:blk_1073741825_1001 src: /127.0.0.1:54570 dest: /127.0.0.1:44162
+2020-12-03 07:21:36,697 INFO  clienttrace - src: /127.0.0.1:54570, dest: /127.0.0.1:44162, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1946986488_2001, offset: 0, srvID: f7cc17c8-9bdc-48a2-8294-aeed73ecc727, blockid: BP-325798261-172.17.0.8-1606980080873:blk_1073741825_1001, duration(ns): 26472166
+2020-12-03 07:21:36,698 INFO  DataNode - PacketResponder: BP-325798261-172.17.0.8-1606980080873:blk_1073741825_1001, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:21:36,702 INFO  clienttrace - src: /127.0.0.1:53632, dest: /127.0.0.1:32982, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1946986488_2001, offset: 0, srvID: 69a70691-949a-4693-a9b7-1f87d7e97140, blockid: BP-325798261-172.17.0.8-1606980080873:blk_1073741825_1001, duration(ns): 34965986
+2020-12-03 07:21:36,702 INFO  DataNode - PacketResponder: BP-325798261-172.17.0.8-1606980080873:blk_1073741825_1001, type=HAS_DOWNSTREAM_IN_PIPELINE, downstreams=1:[127.0.0.1:44162] terminating
+2020-12-03 07:21:36,712 INFO  FSNamesystem - BLOCK* blk_1073741825_1001 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /tmp/tmp-snap-test/file1
+2020-12-03 07:21:37,116 INFO  StateChange - DIR* completeFile: /tmp/tmp-snap-test/file1 is closed by DFSClient_NONMAPREDUCE_1946986488_2001
+2020-12-03 07:21:37,119 INFO  httpfsaudit - [/tmp/tmp-snap-test/file1] permission [384] override [false] replication [2] blockSize [104857600] unmaskedpermission [384]
+2020-12-03 07:21:37,141 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test/file1	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,148 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=open	src=/tmp/tmp-snap-test/file1	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,176 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:21:37,247 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=createSnapshot	src=/tmp/tmp-snap-test	dst=/tmp/tmp-snap-test/.snapshot/snap1	perm=null	proto=rpc
+2020-12-03 07:21:37,249 INFO  httpfsaudit - [/tmp/tmp-snap-test] snapshot created as [snap1]
+2020-12-03 07:21:37,327 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/tmp/tmp-snap-test/file2	dst=null	perm=user1:supergroup:rw-------	proto=rpc
+2020-12-03 07:21:37,335 INFO  StateChange - BLOCK* allocate blk_1073741826_1002, replicas=127.0.0.1:34416, 127.0.0.1:35646 for /tmp/tmp-snap-test/file2
+2020-12-03 07:21:37,337 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:21:37,339 INFO  DataNode - Receiving BP-325798261-172.17.0.8-1606980080873:blk_1073741826_1002 src: /127.0.0.1:36380 dest: /127.0.0.1:34416
+2020-12-03 07:21:37,340 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:21:37,341 INFO  DataNode - Receiving BP-325798261-172.17.0.8-1606980080873:blk_1073741826_1002 src: /127.0.0.1:47824 dest: /127.0.0.1:35646
+2020-12-03 07:21:37,358 INFO  clienttrace - src: /127.0.0.1:47824, dest: /127.0.0.1:35646, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1946986488_2001, offset: 0, srvID: 0d5b8a12-4352-4145-b65b-aafd66717703, blockid: BP-325798261-172.17.0.8-1606980080873:blk_1073741826_1002, duration(ns): 14449486
+2020-12-03 07:21:37,359 INFO  DataNode - PacketResponder: BP-325798261-172.17.0.8-1606980080873:blk_1073741826_1002, type=LAST_IN_PIPELINE terminating
+2020-12-03 07:21:37,362 INFO  clienttrace - src: /127.0.0.1:36380, dest: /127.0.0.1:34416, bytes: 1, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1946986488_2001, offset: 0, srvID: b7580c2b-1295-443d-b9ef-3c06967dd6d4, blockid: BP-325798261-172.17.0.8-1606980080873:blk_1073741826_1002, duration(ns): 16256162
+2020-12-03 07:21:37,362 INFO  DataNode - PacketResponder: BP-325798261-172.17.0.8-1606980080873:blk_1073741826_1002, type=HAS_DOWNSTREAM_IN_PIPELINE, downstreams=1:[127.0.0.1:35646] terminating
+2020-12-03 07:21:37,366 INFO  StateChange - DIR* completeFile: /tmp/tmp-snap-test/file2 is closed by DFSClient_NONMAPREDUCE_1946986488_2001
+2020-12-03 07:21:37,368 INFO  httpfsaudit - [/tmp/tmp-snap-test/file2] permission [384] override [false] replication [2] blockSize [104857600] unmaskedpermission [384]
+2020-12-03 07:21:37,375 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test/file2	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,380 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=open	src=/tmp/tmp-snap-test/file2	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,383 INFO  SaslDataTransferClient - SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-12-03 07:21:37,414 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=createSnapshot	src=/tmp/tmp-snap-test	dst=/tmp/tmp-snap-test/.snapshot/snap2	perm=null	proto=rpc
+2020-12-03 07:21:37,417 INFO  httpfsaudit - [/tmp/tmp-snap-test] snapshot created as [snap2]
+2020-12-03 07:21:37,456 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=computeSnapshotDiff	src=/tmp/tmp-snap-test/.snapshot/snap1	dst=/tmp/tmp-snap-test/.snapshot/snap2	perm=null	proto=rpc
+2020-12-03 07:21:37,483 INFO  httpfsaudit - [/tmp/tmp-snap-test]
+2020-12-03 07:21:37,488 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=computeSnapshotDiff	src=/tmp/tmp-snap-test/.snapshot/snap1	dst=/tmp/tmp-snap-test/.snapshot/snap2	perm=null	proto=rpc
+2020-12-03 07:21:37,525 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=deleteSnapshot	src=/tmp/tmp-snap-test/.snapshot/snap2	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,526 INFO  httpfsaudit - [/tmp/tmp-snap-test] deleted snapshot [snap2]
+2020-12-03 07:21:37,547 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=deleteSnapshot	src=/tmp/tmp-snap-test/.snapshot/snap1	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,548 INFO  httpfsaudit - [/tmp/tmp-snap-test] deleted snapshot [snap1]
+2020-12-03 07:21:37,553 INFO  httpfsaudit - [/tmp/tmp-snap-test] recursive [true]
+2020-12-03 07:21:37,566 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,571 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test	dst=null	perm=user1:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:37,573 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=allowSnapshot	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,574 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/tmp-snap-test/subdir	dst=null	perm=user1:supergroup:rwxr-xr-x	proto=rpc
+2020-12-03 07:21:37,663 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,664 INFO  httpfsaudit - [/tmp/tmp-snap-test]
+2020-12-03 07:21:37,693 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,694 INFO  httpfsaudit - [/tmp/tmp-snap-test]
+2020-12-03 07:21:37,825 INFO  Server - IPC Server handler 7 on default port 33654, call Call#146 Retry#0 org.apache.hadoop.hdfs.protocol.ClientProtocol.getSnapshotDiffReportListing from 127.0.0.1:56126
+org.apache.hadoop.hdfs.protocol.SnapshotException: Cannot find the snapshot of directory /tmp/tmp-snap-test with name snap1
+	at org.apache.hadoop.hdfs.server.namenode.snapshot.DirectorySnapshottableFeature.getSnapshotByName(DirectorySnapshottableFeature.java:357)
+	at org.apache.hadoop.hdfs.server.namenode.snapshot.DirectorySnapshottableFeature.computeDiff(DirectorySnapshottableFeature.java:325)
+	at org.apache.hadoop.hdfs.server.namenode.snapshot.SnapshotManager.diff(SnapshotManager.java:507)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirSnapshotOp.getSnapshotDiffReportListing(FSDirSnapshotOp.java:183)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getSnapshotDiffReportListing(FSNamesystem.java:6704)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getSnapshotDiffReportListing(NameNodeRpcServer.java:1981)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getSnapshotDiffReportListing(ClientNamenodeProtocolServerSideTranslatorPB.java:1311)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:528)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1070)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:999)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:927)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1730)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2915)
+2020-12-03 07:21:37,849 INFO  httpfsaudit - [/tmp/tmp-snap-test] recursive [true]
+2020-12-03 07:21:37,859 INFO  audit - allowed=true	ugi=user1 (auth:PROXY) via root (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/tmp/tmp-snap-test	dst=null	perm=null	proto=rpc
+2020-12-03 07:21:37,866 INFO  AbstractConnector - Stopped ServerConnector@418e7838{SSL,[ssl, http/1.1]}{localhost:46038}
+2020-12-03 07:21:37,867 ERROR AbstractDelegationTokenSecretManager - ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2020-12-03 07:21:37,869 INFO  Server - Services destroyed
+2020-12-03 07:21:37,869 INFO  Server - Server [httpfs] shutdown!
+2020-12-03 07:21:37,869 INFO  Server - ======================================================
+msx-rc 0

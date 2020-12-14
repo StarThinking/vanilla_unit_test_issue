@@ -1,0 +1,116 @@
+2020-12-03 07:23:04,392 [main] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:23:04,541 [main] INFO  datanode.DataNode (SimulatedFSDataset.java:registerMBean(1358)) - Registered FSDatasetState MBean
+2020-12-03 07:23:04,545 [main] INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2020-12-03 07:23:04,652 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(193)) - fullBlockReportLeaseId=0
+2020-12-03 07:23:04,665 [Thread-3] INFO  datanode.DataNode (BPServiceActor.java:run(817)) - Block pool <registering> (Datanode Uuid unassigned) service to 0.0.0.0/0.0.0.0:0 starting to offer service
+2020-12-03 07:23:04,667 [Thread-3] DEBUG datanode.DataNode (BPServiceActor.java:retrieveNamespaceInfo(232)) - Block pool <registering> (Datanode Uuid unassigned) service to 0.0.0.0/0.0.0.0:0 received versionRequest response: lv=-65;cid=fake cluster;nsid=1;c=0;bpid=fake bpid
+2020-12-03 07:23:04,674 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:register(767)) - Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0 beginning handshake with NN
+2020-12-03 07:23:04,675 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:register(786)) - Block pool Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0 successfully registered with NN
+2020-12-03 07:23:04,676 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:offerService(616)) - For namenode 0.0.0.0/0.0.0.0:0 using BLOCKREPORT_INTERVAL of 21600000msec CACHEREPORT_INTERVAL of 10000msec Initial delay: 0msec; heartBeatInterval=3000
+2020-12-03 07:23:04,678 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] DEBUG datanode.DataNode (BPServiceActor.java:sendHeartBeat(497)) - Sending heartbeat with 1 storage reports from service actor: Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0
+2020-12-03 07:23:04,695 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(193)) - fullBlockReportLeaseId=1
+2020-12-03 07:23:04,703 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(1023)) - leaseId = 1
+2020-12-03 07:23:04,704 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:blockReport(424)) - Unsuccessfully sent block report 0xce7bedd6d4604d0c,  containing 1 storage report(s), of which we sent 0. The reports had 0 total blocks and used 0 RPC(s). This took 7 msec to generate and 1 msecs for RPC and NN processing. Got back no commands.
+2020-12-03 07:23:04,705 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] WARN  datanode.DataNode (BPServiceActor.java:offerService(731)) - IOException in offerService
+java.net.ConnectException: network is not reachable for test. 
+	at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$13.answer(TestBPOfferService.java:1029)
+	at org.mockito.internal.stubbing.StubbedInvocationMatcher.answer(StubbedInvocationMatcher.java:31)
+	at org.mockito.internal.MockHandler.handle(MockHandler.java:97)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:47)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB$$EnhancerByMockitoWithCGLIB$$6aa510ca.blockReport(<generated>)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.blockReport(BPServiceActor.java:390)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:701)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:849)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:23:04,782 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:get(570)) - waiting on block registerDatanode: 
+datanodeProtocolClientSideTranslatorPB.registerDatanode(
+    <any>
+);
+Wanted 2 times:
+-> at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$7.get(TestBPOfferService.java:567)
+But was 1 time:
+-> at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.register(BPServiceActor.java:772)
+
+2020-12-03 07:23:05,283 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:get(570)) - waiting on block registerDatanode: 
+datanodeProtocolClientSideTranslatorPB.registerDatanode(
+    <any>
+);
+Wanted 2 times:
+-> at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$7.get(TestBPOfferService.java:567)
+But was 1 time:
+-> at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.register(BPServiceActor.java:772)
+
+2020-12-03 07:23:05,709 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(1023)) - leaseId = 1
+2020-12-03 07:23:05,709 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:blockReport(424)) - Unsuccessfully sent block report 0xce7bedd6d4604d0d,  containing 1 storage report(s), of which we sent 0. The reports had 0 total blocks and used 0 RPC(s). This took 0 msec to generate and 1 msecs for RPC and NN processing. Got back no commands.
+2020-12-03 07:23:05,710 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] WARN  datanode.DataNode (BPServiceActor.java:offerService(731)) - IOException in offerService
+java.net.ConnectException: network is not reachable for test. 
+	at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$13.answer(TestBPOfferService.java:1029)
+	at org.mockito.internal.stubbing.StubbedInvocationMatcher.answer(StubbedInvocationMatcher.java:31)
+	at org.mockito.internal.MockHandler.handle(MockHandler.java:97)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:47)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB$$EnhancerByMockitoWithCGLIB$$6aa510ca.blockReport(<generated>)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.blockReport(BPServiceActor.java:390)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:701)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:849)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:23:05,787 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:get(570)) - waiting on block registerDatanode: 
+datanodeProtocolClientSideTranslatorPB.registerDatanode(
+    <any>
+);
+Wanted 2 times:
+-> at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$7.get(TestBPOfferService.java:567)
+But was 1 time:
+-> at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.register(BPServiceActor.java:772)
+
+2020-12-03 07:23:06,288 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:get(570)) - waiting on block registerDatanode: 
+datanodeProtocolClientSideTranslatorPB.registerDatanode(
+    <any>
+);
+Wanted 2 times:
+-> at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$7.get(TestBPOfferService.java:567)
+But was 1 time:
+-> at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.register(BPServiceActor.java:772)
+
+2020-12-03 07:23:06,712 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(1023)) - leaseId = 1
+2020-12-03 07:23:06,712 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:blockReport(424)) - Unsuccessfully sent block report 0xce7bedd6d4604d0e,  containing 1 storage report(s), of which we sent 0. The reports had 0 total blocks and used 0 RPC(s). This took 1 msec to generate and 1 msecs for RPC and NN processing. Got back no commands.
+2020-12-03 07:23:06,713 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] WARN  datanode.DataNode (BPServiceActor.java:offerService(731)) - IOException in offerService
+java.net.ConnectException: network is not reachable for test. 
+	at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$13.answer(TestBPOfferService.java:1029)
+	at org.mockito.internal.stubbing.StubbedInvocationMatcher.answer(StubbedInvocationMatcher.java:31)
+	at org.mockito.internal.MockHandler.handle(MockHandler.java:97)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:47)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB$$EnhancerByMockitoWithCGLIB$$6aa510ca.blockReport(<generated>)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.blockReport(BPServiceActor.java:390)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:701)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:849)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-03 07:23:06,790 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:get(570)) - waiting on block registerDatanode: 
+datanodeProtocolClientSideTranslatorPB.registerDatanode(
+    <any>
+);
+Wanted 2 times:
+-> at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$7.get(TestBPOfferService.java:567)
+But was 1 time:
+-> at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.register(BPServiceActor.java:772)
+
+2020-12-03 07:23:07,291 [Thread-2] INFO  datanode.TestBPOfferService (TestBPOfferService.java:get(570)) - waiting on block registerDatanode: 
+datanodeProtocolClientSideTranslatorPB.registerDatanode(
+    <any>
+);
+Wanted 2 times:
+-> at org.apache.hadoop.hdfs.server.datanode.TestBPOfferService$7.get(TestBPOfferService.java:567)
+But was 1 time:
+-> at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.register(BPServiceActor.java:772)
+
+2020-12-03 07:23:07,715 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] DEBUG datanode.DataNode (BPServiceActor.java:sendHeartBeat(497)) - Sending heartbeat with 1 storage reports from service actor: Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0
+2020-12-03 07:23:07,716 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPOfferService.java:processCommandFromActor(672)) - DatanodeCommand action : DNA_REGISTER from 0.0.0.0/0.0.0.0:0 with standby state
+2020-12-03 07:23:07,717 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] DEBUG datanode.DataNode (BPServiceActor.java:retrieveNamespaceInfo(232)) - Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0 received versionRequest response: lv=-65;cid=fake cluster;nsid=1;c=0;bpid=fake bpid
+2020-12-03 07:23:07,718 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:register(767)) - Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0 beginning handshake with NN
+2020-12-03 07:23:07,718 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:register(786)) - Block pool Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0 successfully registered with NN
+2020-12-03 07:23:07,719 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] DEBUG datanode.DataNode (BPServiceActor.java:sendHeartBeat(497)) - Sending heartbeat with 1 storage reports from service actor: Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0
+2020-12-03 07:23:07,720 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(193)) - fullBlockReportLeaseId=2
+2020-12-03 07:23:07,721 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.TestBPOfferService (TestBPOfferService.java:answer(1023)) - leaseId = 2
+2020-12-03 07:23:07,721 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] INFO  datanode.DataNode (BPServiceActor.java:blockReport(424)) - Successfully sent block report 0xce7bedd6d4604d0f,  containing 1 storage report(s), of which we sent 1. The reports had 0 total blocks and used 1 RPC(s). This took 0 msec to generate and 1 msecs for RPC and NN processing. Got back no commands.
+2020-12-03 07:23:07,793 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] WARN  datanode.IncrementalBlockReportManager (IncrementalBlockReportManager.java:waitTillNextIBR(160)) - IncrementalBlockReportManager interrupted
+2020-12-03 07:23:07,794 [fake bpid heartbeating to 0.0.0.0/0.0.0.0:0] WARN  datanode.DataNode (BPServiceActor.java:run(860)) - Ending block pool service for: Block pool fake bpid (Datanode Uuid null) service to 0.0.0.0/0.0.0.0:0
+msx-rc 0
